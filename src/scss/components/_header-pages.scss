@@ -1,0 +1,102 @@
+/* Imagenes superiores */
+.header-page{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    
+    @media (min-width: 300px) and (max-width: 768px) {
+        height: 300px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 350px;
+    }
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        height: 500px;
+    }
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        height: 450px;
+
+        & .container{
+            height: 450px;
+        }
+    }
+    @media (min-width: 1440px) {
+        height: 600px;
+
+        & .container{
+            height: 600px;
+        }
+    }
+}
+.text-header{
+    font-family: $archivo;
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 24px;
+    }
+    @media (min-width: 1440px) {
+        font-size: 40px;
+    }
+}
+
+/* Seminuevos */
+.header-seminuevos{
+    background-image: url('../../../web/img/pag_seminuevo/rectangle.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 300px) {
+        background-image: url('../../../web/img/pag_seminuevo/rectangle@2x.jpg');
+        background-position: right;
+    }
+
+    @media (min-width: 768px) {
+        background-image: url('../../../web/img/pag_seminuevo/rectangle@3x.jpg');
+        background-position: right;
+    }
+}
+
+/* Nuestra empresa */
+.header-about{
+    background-image: url('../../../web/img/pag_about/rectangle.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 300px) {
+        background-image: url('../../../web/img/pag_about/rectangle@2x.jpg');
+        background-position: right;
+    }
+
+    @media (min-width: 768px) {
+        background-image: url('../../../web/img/pag_about/rectangle@2x.jpg');
+        background-position: right;
+    }
+}
+
+
+/* Aviso de privacidad */
+.header-privacidad{
+    background-image: url('../../../web/img/pag_privacidad/rectangle@3x.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: 300px) {
+        background-image: url('../../../web/img/pag_privacidad/rectangle.jpg');
+        background-position: right;
+    }
+
+    @media (min-width: 768px) {
+        background-image: url('../../../web/img/pag_privacidad/rectangle@2x.jpg');
+        background-position: right;
+    }
+}
+

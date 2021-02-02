@@ -1,0 +1,640 @@
+input{
+    outline: none; 
+}
+input:focus {
+    outline: none;
+}
+.input-search{
+    @media (min-width: 300px) and (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+button:focus{
+    outline: none;
+}
+
+/* Páginado */
+.page-link{
+    &:hover{
+        background-color: $color-green-hover !important;
+        color: white !important;
+    }
+}
+.active-item{
+   &  a {
+        background-color: $color-green-default;
+        border-color: $color-green-default !important;
+        color: white !important;
+   }
+   
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.line-space{
+    width: 100%;
+    border: solid;
+}
+
+
+.font-archivo{
+    font-family: $archivo;
+}
+.color-gray-03{
+    color: $color-gray-03;
+}
+.font-openSans{
+    font-family: $openSans;
+}
+.font-archivo{
+    font-family: $archivo;
+}
+.font-ligth{
+    font-weight: 100;
+}
+.font-regular{
+    font-weight: 400;
+}
+.font-medium{
+    font-weight: 500;
+}
+.font-semibold{
+    font-weight: 600;
+}
+.font-bold{
+    font-weight: 700;
+}
+
+/* Tamaño de fuente */
+.font-s-1{
+    font-size: 16px;
+}
+.font-s-2{
+    font-size: 20px;
+}
+.font-s-3{
+    font-size: 3rem;
+}
+.font-s-4{
+    font-size: 4rem;
+}
+.font-s-5{
+    font-size: 5rem;
+}
+
+
+.text-white{
+    color: white;
+}
+.text-purple-100{
+    color: $color-purple-01;
+} 
+
+.box-ipsum{
+    width: 100%;
+    height: 350px;
+    background-color: $color-gray-03;
+}
+
+.text-color-ligth{
+    color: $color-gray-03;
+}
+.text-justify{
+    text-align: justify;
+}
+
+/* Border */
+.border-b-1 {
+    border-bottom: solid 1px;
+}
+.border-b-2 {
+    border-bottom: solid 2px;
+}
+.border-b-3 {
+    border-bottom: solid 3px;
+}
+.border-b-4 {
+    border-bottom: solid 4px;
+}
+.border-b-5 {
+    border-bottom: solid 5px;
+}
+
+/* Border colors */
+
+.border-green-01{
+    border-color: $color-green-default;
+}
+.border-green-02{
+    border-color: $color-green-hover;
+}
+.border-green-03{
+    border-color: $color-green-03;
+}
+.border-purple-01{
+    border-color: $color-purple-01;
+}
+
+/*********************************************/
+
+
+/* Border radio */
+.b-radius-1{
+    border-radius: 10px;
+}
+.b-radius-100{
+    border-radius: 100px;
+}
+/*********************************************/
+
+/* Border Heith */
+
+.bh-1 {
+    border-width: 1px !important;
+}
+.bh-2 {
+    border-width: 2px !important;
+}
+.bh-3 {
+    border-width: 3px !important;
+}
+.bh-4 {
+    border-width: 4px !important;
+}
+.bh-5 {
+    border-width: 5px !important;
+}
+
+/*********************************************/
+
+
+/* Margins */
+.mar-1{
+    margin-right: 2rem;
+}
+.mar-2{
+    margin-right: 4rem;
+}
+.mar-3{
+    margin-right: 8rem;
+}
+.mar-4{
+    margin-right: 10rem;
+}
+
+
+
+/* Margen Rigth xl */
+.mar-xl-1{
+    @media (min-width: 1440px) {
+        margin-left: 1rem;
+    }
+}
+.mar-xl-2{
+    @media (min-width: 1440px) {
+        margin-left: 2rem;
+    }
+}
+.mar-xl-3{
+    @media (min-width: 1440px) {
+        margin-left: 3rem;
+    }
+}
+.mar-xl-4{
+    @media (min-width: 1440px) {
+        margin-left: 4rem;
+    }
+}
+.mar-xl-5{
+    @media (min-width: 1440px) {
+        margin-left: 5rem;
+    }
+}
+.mar-xl-6{
+    @media (min-width: 1440px) {
+        margin-left: 6rem;
+    }
+}
+.mar-xl-7{
+    @media (min-width: 1440px) {
+        margin-left: 7rem;
+    }
+}
+.mar-xl-8{
+    @media (min-width: 1440px) {
+        margin-left: 8rem;
+    }
+}
+.mar-xl-9{
+    @media (min-width: 1440px) {
+        margin-left: 9rem;
+    }
+}
+.mar-xl-10{
+    @media (min-width: 1440px) {
+        margin-left: 10rem;
+    }
+}
+.mar-xl-11{
+    @media (min-width: 1440px) {
+        margin-left: 11rem;
+    }
+}
+.mar-xl-12{
+    @media (min-width: 1440px) {
+        margin-left: 12rem;
+    }
+}
+
+
+
+/* Flex className */
+.mart-xl-1{
+    @media (min-width: 1440px) {
+        margin-top: 1rem;
+    }
+}
+.mart-xl-2{
+    @media (min-width: 1440px) {
+        margin-top: 2rem;
+    }
+}
+.mart-xl-3{
+    @media (min-width: 1440px) {
+        margin-top: 3rem;
+    }
+}
+.mart-xl-4{
+    @media (min-width: 1440px) {
+        margin-top: 4rem;
+    }
+}
+.mart-xl-5{
+    @media (min-width: 1440px) {
+        margin-top: 5rem;
+    }
+}
+.mart-xl-6{
+    @media (min-width: 1440px) {
+        margin-top: 6rem;
+    }
+}
+
+/* Flex className */
+.box-inline{
+    display: flex;
+    flex-direction: row;
+}
+.box-column{
+    display: flex;
+    flex-direction: column;
+}
+.center-end{
+    align-items: center;
+    justify-content: flex-end;
+}
+.center-center{
+    align-items: center;
+    justify-content: center;
+}
+.center-space{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.w-1{
+    width: 100%;
+}
+
+/* Altura lg xl xxl  */
+.h-1{
+    height: 4rem;
+}
+.h-2{
+    height: 8rem;
+}
+.h-3{
+    height: 12rem;
+}
+.h-4{
+    height: 16rem;
+}
+.h-5{
+    height: 20rem;
+}
+.h-6{
+    height: 24rem;
+}
+.h-7{
+    height: 28rem;
+}
+.h-8{
+    height: 32rem;
+}
+.h-9{
+    height: 36rem;
+}
+.h-10{
+    height: 40rem;
+}
+.h-full{
+    height: 100%;
+}
+
+/* Altura small  */
+.sm-h1{
+    @media (min-width: 300px) and (max-width: 768px) {
+        height: 3rem;
+    }
+}
+
+.sm-h2{
+    @media (min-width: 300px) and (max-width: 768px) {
+        height: 3rem;
+    }
+}
+
+.sm-h3{
+    @media (min-width: 300px) and (max-width: 768px) {
+        height: 4rem;
+    }
+}
+
+.sm-h4{
+    @media (min-width: 300px) and (max-width: 768px) {
+        height: 8rem;
+    }
+}
+
+/* Altura media  */
+
+.md-h1{
+    @media (min-width: 768px) and (max-width: 922px) {
+        height: 3rem;
+    }
+}
+.md-h2{
+    @media (min-width: 768px) and (max-width: 922px) {
+        height: 4rem;
+    }
+}
+.md-h3{
+    @media (min-width: 768px) and (max-width: 922px) {
+        height: 6rem;
+    }
+}
+
+.md-h4{
+    @media (min-width: 768px) and (max-width: 922px) {
+        height: 8rem;
+    }
+}
+
+.z-index-over{
+    z-index: 1;
+}
+.z-index-dawn{
+    z-index: -1;
+}
+
+
+/******************************************************/
+
+/* Buttons */
+.btn-full{
+    width: 100%;
+}
+.btn-clean{
+    background-color: transparent;
+}
+.btn-default{
+    width: 152px;
+    height: 44px;
+    background-color: $color-green-default;
+    border: none;
+    color: white;
+    font-family: $openSans;
+    font-weight: 400;
+
+    &:hover{
+        background-color: $color-green-hover;
+    }
+
+    @media (min-width: 300px) {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+.btn-secondary{
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
+    font-family: $openSans;
+    font-weight: 400;
+    border: solid 1px;
+    border-color: $color-green-default;
+
+    &:hover{
+        background-color: $color-green-hover;
+    }
+}
+.button-select{
+    width: 100%;
+    height: auto;
+    border: solid 1px $color-gray-01;
+    background-color: transparent;
+    color: $color-gray-03;
+}
+.dropdown-menu{
+    width: 100%;
+    padding: 0;
+
+    & li {
+        padding: 20px 0 20px 15px;
+        font-family: $openSans;
+        font-weight: 400;
+
+        &:hover{
+            cursor: default;
+            background-color: $color-green-default;
+            color: white;
+        }
+    }   
+
+}
+.btn-dawn{
+    width: 100%;
+    height: auto;
+    
+    @media (min-width: 300px) and (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+.dawn-menu{
+    height: 100%;
+    position: relative;
+}
+.dawn-list{
+    width: 100%;
+    height: auto;
+    display: none;
+    margin-top: 16px;
+    margin-right: 2px;
+    list-style: none;
+    padding: 0;
+    border: solid 1px $color-gray-03;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+
+        & li {
+            color: $color-gray-03;
+            font-family: $openSans;
+            font-weight: 400;
+            padding: 23px 5px 23px 25px; 
+
+            &:hover{
+                background-color: $color-green-default;
+                color: white;
+                cursor: default;
+            }
+        }
+}
+.showMenu{
+    display: block;
+}
+
+/******************************************************/
+
+/* Colores de texto */
+.text-white{
+    color: white;
+}
+.text-purple-01{
+    color: $color-purple-01;
+}
+.text-gray-01{
+    color: $color-gray-01;
+}
+.text-gray-02{
+    color: $color-gray-02;
+}
+.text-gray-03{
+    color: $color-gray-03;
+}
+.text-gray-04{
+    color: $color-gray-04;
+}
+.text-gray-05{
+    color: $color-gray-05;
+}
+/******************************************************/
+
+/* Backgrounds colors */
+.bg-green-01{
+    background-color: $color-green-default;
+}
+.bg-purple-01{
+    background-color: $color-purple-01;
+}
+/******************************************************/
+
+/* Borders */
+.border-left{
+    border-left: solid;
+}
+.border-right{
+    border-right: solid;
+}
+.border-bottom{
+    border-bottom: solid;
+}
+.border-top{
+    border-top: solid;
+}
+
+/* Border Colors */
+.border-gray-01{
+    border-color: $color-gray-01;
+}
+.border-gray-02{
+    border-color: $color-gray-02;
+}
+.border-gray-03{
+    border-color: $color-gray-03;
+}
+.border-gray-04{
+    border-color: $color-gray-04;
+}
+.border-gray-05{
+    border-color: $color-gray-05 !important;
+}
+.border-gray-06{
+    border-color: $color-gray-06 !important;
+}
+.border-gray-07{
+    border-color: $color-gray-07 !important;
+}
+.border-green-01{
+    border-color: $color-green-default !important;
+}
+.border-green-02{
+    border-color: $color-green-hover !important;
+}
+
+.border-heigth-01 {
+    border-width: 1px;
+}
+.border-heigth-02 {
+    border-width: 2px;
+}
+.border-heigth-03{
+    border-width: 3px;
+}
+.border-heigth-04{
+    border-width: 4px !important;
+}
+
+/* Flex content */
+.flex-column-start-center{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.flex-column-center-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/******************************************************/
+
+/* Width */
+.w-30{
+    width: 30%;
+}
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width: 50%;
+}
+.w-60{
+    width: 60%;
+}
+.w-70{
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+.w-90{
+    width: 80%;
+}
+.w-100{
+    width: 100% !important;
+}

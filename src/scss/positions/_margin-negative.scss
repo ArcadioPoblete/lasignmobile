@@ -1,0 +1,47 @@
+.mart-n-1{
+    margin-top: -1rem;
+}
+.mart-n-2{
+    margin-top: -2rem;
+}
+.mart-n-3{
+    margin-top: -4rem;
+}
+.mart-n-4{
+    margin-top: -8rem;
+}
+.mart-n-5{
+    margin-top: -10rem;
+}
+.mart-n-6{
+    margin-top: -12rem;
+}
+.mart-n-7{
+    margin-top: -14rem;
+}
+
+.mart-n-1{
+    @media (min-width: 1440px) {
+       margin-top: 10rem;
+    }
+}
+.mart-n-2{
+    @media (min-width: 1440px) {
+       margin-top: 20rem;
+    }
+}
+.mart-n-3{
+    @media (min-width: 1440px) {
+       margin-top: 30rem;
+    }
+}
+.mart-n-4{
+    @media (min-width: 1440px) {
+       margin-top: 40rem;
+    }
+}
+.mart-n-5{
+    @media (min-width: 1440px) {
+       margin-top: 50rem;
+    }
+}

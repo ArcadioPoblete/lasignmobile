@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leasign mobile</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
+    <link rel="stylesheet" href="../../web/css/datepicker.css">
+    <link rel="stylesheet" href="../../web/css/ion.rangeSlider.css"/>
+</head>
+<body>
+    
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-2 col-lg-3 col-xl-3 secc-brand sm-h3 md-h3 h-2">
+                        <a href="index.html"><img src="../../web/img/logo.svg"  alt="" srcset=""></a>
+                    </div>
+                    <div class="col-md-8 col-lg-7 col-xl-6 offset-lg-2 offset-md-2 offset-xl-3 d-none d-md-block d-lg-block">
+                        <div class="row">
+                            <div class="col-5 d-flex justify-content-end align-items-center md-h3 h-2">
+                                <div class="icon-phone float-start"></div>
+                                <p>442-267-8890</p>
+                            </div>
+                            <div class="col-7 d-flex justify-content-end align-items-center  md-h3 h-2">
+                                <div class="icon-mail float-start"></div>
+                                <p>buzon@leasingmobile.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn-menu" class="col-6 d-md-none d-lg-none d-flex justify-content-end">
+                        <ul class="btn-burger">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-none d-sm-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 ">
+                        <ul class="secc-nav">
+                            <li class="active">
+                                <a href="autosytransport.html">Autos y Equipos <br class="d-lg-none"> de Transporte</a>
+                            </li>
+                            <li>
+                                <a href="">Maquinaria y Equipos <br class="d-lg-none"> de Computo</a>
+                            </li>
+                            <li>
+                                <a href="">Sistemas <br class="d-lg-none"> de Energía Solar</a>
+                            </li>
+                            <li>
+                                <a href="">Inversionistas</a>
+                            </li>
+                            <li>
+                                <a href="empresa.html">Nuestra <br class="d-lg-none"> Empresa</a>
+                            </li>
+                            <li>
+                                <a href="./blog/index.html">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nav mobile -->
+    <div class="layout-hide d-none"></div>
+    <div class="container-nav-mobile">
+        <ul class="nav-mobile">
+            <li class="active">
+                <div class="icon-arrow"></div>
+                <a href="">Autos y Equipos <br> de Transporte</a>
+            </li>
+            <li>
+                <div class="icon-circle"></div>
+                <a href="">Maquinaria y Equipos <br> de Computo</a>
+            </li>
+            <li>
+                <div class="icon-circle"></div>
+                <a href="">Sistemas <br> de Energía Solar</a>
+            </li>
+            <li>
+                <div class="icon-circle"></div>
+                <a href="">Inversionistas</a>
+            </li>
+            <li>
+                <div class="icon-circle"></div>
+                <a href="">Nuestra Empresa</a>
+            </li>
+            <li>
+                <div class="icon-circle"></div>
+                <a href="">Blog</a>
+            </li>
+            <li class="btn-close-menu">
+                <div class="close-arrow"></div>
+                <p>Cerrar</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="header-carousel mt-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+            <!-- Slectores del carousel -->
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" ></li>
+              <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" ></li>
+            </ol>
+
+            <!-- Contenedor de imágenes -->
+            <div class="carousel-inner">
+            <!-- Slide item 01 -->
+              <div class="carousel-item active">
+                <div class="slide-item" style="background-image: url('../../web/img/pag_at_tran/boxService01@3x.jpg');">
+                    <div class="container h-full">
+                        <div class="row h-full flex-column-start-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-xl-1">
+                                <h1 class="text-white font-archivo font-regular  fs-4">Autos y Equipos de Transporte</h1>
+                                <p class="text-white font-openSans font-regular">Soluciones de arrendamiento con expertos en valuación de riesgo.</p>
+                                <button class="btn-secondary">Conoce más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            
+              <!-- Slide item 02 -->
+              <div class="carousel-item">
+                <div class="slide-item" style="background-image: url('../../web/img/pag_at_tran/boxService01@3x.jpg');">
+                    <div class="container h-full">
+                        <div class="row h-full flex-column-start-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-xl-1">
+                                <h1 class="text-white font-archivo font-regular  fs-4">Autos y Equipos de Transporte</h1>
+                                <p class="text-white font-openSans font-regular">Soluciones de arrendamiento con expertos en valuación de riesgo.</p>
+                                <button class="btn-secondary">Conoce más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Slide item 03 -->
+              <div class="carousel-item">
+                <div class="slide-item" style="background-image: url('../../web/img/pag_at_tran/boxService01@3x.jpg');">
+                    <div class="container h-full">
+                        <div class="row h-full flex-column-start-center">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 offset-xl-1">
+                                <h1 class="text-white font-archivo font-regular  fs-4">Autos y Equipos de Transporte</h1>
+                                <p class="text-white font-openSans font-regular">Soluciones de arrendamiento con expertos en valuación de riesgo.</p>
+                                <button class="btn-secondary">Conoce más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Boton de configuración -->
+            <div class="tab-controls">
+                <!-- Tabs navegación -->
+                <ul class="col-10 col-xxl-8 offset-1 offset-xxl-2 nav nav-pills  mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item col-4" role="presentation">
+                        <a class="nav-link active text-white" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <div class="icon-auto"></div>
+                            <p class="d-none d-md-block d-lg-block m-0">Autos y <br> Equipos de Transporte</p>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4" role="presentation">
+                        <a class="nav-link text-white border border-top-0 border-bottom-0" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                            <div class="icon-computo"></div>
+                            <p class="d-none d-md-block d-lg-block m-0">Maquinaria y <br> Equipos de Computo</p>
+                        </a>
+                    </li>
+                    <li class="nav-item col-4" role="presentation">
+                        <a class="nav-link text-white d-flex " id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">
+                            <div class="icon-energia"></div>
+                            <p class="d-none d-md-block d-lg-block m-0">Sistemas <br> de Energía Solar</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Arrows -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="secc-tabs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-8 offset-lg-1 offset-xxl-2 border border-top-0 bg-white px-lg-5 py-5">
+                      <!-- Contenido tabs  -->
+                      <div class="tab-content pb-4" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-md-12 col-xl-12 col-xxl-12">
+                                        <label class="text-gray-07 mb-3">Selecciona una opción:</label>
+                                        <div class="col-12 col-lg-5 d-flex justify-content-start">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Renta de autos
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Venta de seminuevos
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5">
+                                     <!-- Marca | Modelo | Precio -->
+                                    
+                                    <!-- Marca -->
+                                    <div class="col-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                        <label>Selecciona una marca:</label>
+                                        <div class="dropdown mt-3">
+                                            <button class="button-select py-2 d-flex justify-content-between px-4 text-gray-06" type="button" id="selectMarca" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <p class="p-0 m-0">Marca</p>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu font-openSans" aria-labelledby="selectMarca">
+                                              <li>Optiion 1</li>
+                                              <li>Optiion 2</li>
+                                              <li>Optiion 3</li>
+                                            </ul>
+                                          </div>
+                                    </div>
+                                    
+                                    <!-- Modelo -->
+                                    <div class="col-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                        <label>Selecciona un modelo:</label>
+                                        <div class="dropdown mt-3">
+                                            <button class="button-select py-2 d-flex justify-content-between px-4 text-gray-06" type="button" id="selectModelo" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <p class="p-0 m-0">Modelo</p>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu font-openSans" aria-labelledby="selectModelo">
+                                              <li>Optiion 1</li>
+                                              <li>Optiion 2</li>
+                                              <li>Optiion 3</li>
+                                            </ul>
+                                          </div>
+                                    </div>
+
+                                    <!-- Slider range -->
+                                    <div class="col-12 col-md-4 col-lg-6 col-xl-6 col-xxl-4">
+                                        <div class="col-10  offset-1 mt-4">
+                                            <input type="text" class="js-range-slider" name="my_range" value="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5">
+                                    <!-- Date picker Desde -->
+                                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                        <label>Fecha de inicio:</label>
+                                        <div class="border d-flex justify-content-between align-items-center mt-3 px-2 py-2">
+                                            <input type="text" class="datePicker border-0 text-gray-02" name="" placeholder="Desde">
+                                            <div class="icon-calendario" ></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Date picker Hasta -->
+                                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                        <label>Fecha de entrega:</label>
+                                        <div class="border d-flex justify-content-between align-items-center mt-3 px-2 py-2">
+                                            <input type="text" class="datePicker border-0 text-gray-02" name="" placeholder="Hasta">
+                                            <div class="icon-calendario" ></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-3 col-lx-3 col-xxl-4 d-flex align-items-end">
+                                        <button class="border-0 btn-default">Buscar auto</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere porro 
+                            sequi labore, quaerat ipsam optio aspernatur, soluta quos fugiat incidunt iste 
+                            rem eveniet a nulla temporibus adipisci doloribus provident harum.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quos beatae officia debitis 
+                            eveniet excepturi ad dicta reiciendis laudantium. Culpa qui excepturi eveniet voluptatum non 
+                            ipsa veritatis, possimus id dignissimos.
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Secction 02 -->
+        <div class="secc-about mat-lg-6 mab-lg-2">
+            <div class="path-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="d-flex align-items-end">
+                        <!-- Img 01 -->
+                        <div class="img-collage-01">
+                            <picture>
+                                <!-- Large -->
+                                <source media="(min-width: 576px)" srcset="../../web/img/pag_at_tran/rectangle-copy-2.jpg">
+                                <!-- Medium -->
+                                <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-2@2x.jpg" >
+                                <!-- fallback -->
+                                <img src="../../web/img/pag_at_tran/rectangle-copy-2@3x.jpg" width="100%" alt="">
+                            </picture>
+                        </div>
+                        
+                        <!-- Img 02 -->
+                        <div class="img-collage-02">
+                            <picture>
+                                <!-- Large -->
+                                <source media="(min-width: 300px)" srcset="../../web/img/pag_at_tran/rectangle-copy-4.jpg">
+                                <!-- Medium -->
+                                <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-4@2x.jpg" >
+                                <!-- fallback -->
+                                <img src="../../web/img/pag_at_tran/rectangle-copy-4@3x.jpg" width="100%" alt="">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start">
+                            <!-- Img 03 -->
+                            <div class="img-collage-03">
+                                <picture>
+                                    <!-- Large -->
+                                    <source media="(min-width: 922px)" srcset="../../web/img/pag_at_tran/rectangle-copy-3.jpg">            
+                                    <!-- Medium -->
+                                    <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-3@2x.jpg" >
+                                    <!-- fallback -->
+                                    <img src="../../web/img/pag_at_tran/rectangle-copy-3@3x.jpg" width="100%" alt="">
+                                </picture>
+                            </div>
+
+                            <!-- Img 04 -->
+                            <div class="img-collage-04">
+                                <picture>
+                                    <!-- Large -->
+                                    <source media="(min-width: 922px)" srcset="../../web/img/pag_at_tran/boxService02.jpg">
+                                    <!-- Medium -->
+                                    <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/boxService02@2x.jpg" >
+                                    <!-- fallback -->
+                                    <img src="../../web/img/pag_at_tran/boxService02@3x.jpg" width="100%" alt="">
+                                </picture>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5 mt-5 mt-md-0 mt-lg-0">
+                    <p class="col-12 col-lg-7 text-gray-03 font-archivo font-regular border-b-1 border-green-01 pb-4">¿Quiénes somos?</p>
+                    <p class="col-12 col-lg-9 text-gray-02 font-archivo font-semibold">
+                    Contamos con servicios de arrendamiento puro y múltiples beneficios para tu empresa</p>
+                    <p class="font-openSans font-regular">Leasing Mobile te ofrece arrendamiento en energía, transporte, 
+                    maquinaria y equipos de cómputo para tu negocio.</p>
+                    <p class="font-openSans font-regular">Al tener un esquema de arrendamiento puro bien diseñado, 
+                    las empresas pueden hacer grandes inversiones en activos cada cierto tiempo, manteniendo 
+                    el flujo de efectivo estable pues se evita una descapitalización y genera una mejor 
+                    administración de flujo de efectivo.</p>
+                </div>
+            </div>
+                <div class="row mat-lg-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6 offset-md-3 offset-xl-3 text-center">
+                                <h1>¿Qué ofrecemos?</h1>
+                                <p>Somos una empresa de arrendamiento puro, lista para generar soluciones flexibles y a la medida de tus necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="column-list">
+                <!-- Pointer 1 -->
+                <div class="col-12 col-xxl-12 mt-5">
+                    <div class="col-8 col-xxl-7 offset-4 box-point">
+                       <div class="col-10 offset-1 box-selector-rigth">
+                            <div class="box-circle">
+                                <img src="../../web/img/icons/iconEsquema.svg" alt="">
+                            </div>
+                            <div class="path">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                       </div>
+                        <div class="box-desc mt-3">
+                            <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">01</h4>
+                            <p class="p-0 font-archivo font-semibold text-gray-03">Atención <br> personalizada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pointer 2 -->
+                <div class="col-12 mt-5">
+                    <div class="box-point">
+                       <div class="col-7 col-xxl-6 offset-1 box-selector-rigth">
+                            <div class="box-circle">
+                                <img src="../../web/img/icons/iconEsquema.svg" alt="">
+                            </div>
+                            <div class="path">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                       </div>
+                        <div class="col-12 box-desc mt-3">
+                            <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">02</h4>
+                            <p class="p-0 font-archivo font-semibold text-gray-03">Cotizaciones competitivas <br> de acuerdo a las necesidades</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pointer 3 -->
+                <div class="col-12 mt-5">
+                    <div class="col-7 col-xxl-6 offset-4 box-point">
+                       <div class="box-selector-rigth">
+                            <div class="box-circle">
+                                <img src="../../web/img/icons/iconEsquema.svg" alt="">
+                            </div>
+                            <div class="path">
+                                <div class="line"></div>
+                                <div class="circle"></div>
+                            </div>
+                       </div>
+                        <div class="col-12 box-desc mt-3">
+                            <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">03</h4>
+                            <p class="p-0 font-archivo font-semibold text-gray-03">Esquemas <br> creativos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Columna 2 -->
+         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-none d-md-block ">
+            <picture>
+                <img src="../../web/img/pag_at_tran/hw-108292@3x.png" class="img-auto-top" alt="" srcset="">
+            </picture>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+             <!-- Pointer 4 -->
+             <div class="col-7 col-xxl-6 mt-5">
+                <div class=" box-point">
+                   <div class="box-selector-left">
+                        <div class="box-circle">
+                            <img src="../../web/img/icons/iconEsquema.svg" alt="">
+                        </div>
+                        <div class="path">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                   </div>
+                    <div class="col-6 offset-5 box-desc mt-3">
+                        <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">04</h4>
+                        <p class="p-0 font-archivo font-semibold text-gray-03">Autorización <br> oportuna</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pointer 5 -->
+            <div class="col-7 col-xxl-6 offset-3 mt-5">
+                <div class="box-point">
+                   <div class="box-selector-left">
+                        <div class="box-circle">
+                            <img src="../../web/img/icons/iconEsquema.svg" alt="">
+                        </div>
+                        <div class="path">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                   </div>
+                    <div class="col-6 offset-5 box-desc mt-3">
+                        <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">05</h4>
+                        <p class="p-0 font-archivo font-semibold text-gray-03">Flexibles en <br> autorización</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pointer 6 -->
+            <div class="col-12 mt-5">
+                <div class="col-7 col-xxl-6 box-point">
+                   <div class="box-selector-left">
+                        <div class="box-circle">
+                            <img src="../../web/img/icons/iconEsquema.svg" alt="">
+                        </div>
+                        <div class="path">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                   </div>
+                    <div class="col-10 offset-2 box-desc mt-3">
+                        <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">06</h4>
+                        <p class="p-0 font-archivo font-semibold text-gray-03">Convenios y <br> precios de flotilla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
+
+<div class="container mat-lg-4 mab-lg-4">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 offset-xl-4 px-5">
+            <button class="btn-clean border bh-1 border-green-01 b-radius-100 p-0  w-100 d-flex justify-content-between align-items-center">
+                <img src="../../web/img/pag_at_tran/iconAvatar@3x.png" width="50px" alt="">
+                <p class="m-0 font-openSans font-regular w-100">Solicita una cotización</p>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Green Box -->
+<div class="green-box bg-green-01">
+    <img src="../../web/img/pag_at_tran/iconHyundai.svg" height="40px" alt="" srcset="">
+    <img src="../../web/img/pag_at_tran/iconMazda.svg" height="40px" alt="" srcset="">
+    <img src="../../web/img/pag_at_tran/iconMitsubishi.svg" height="40px" alt="" srcset="">
+    <img src="../../web/img/pag_at_tran/iconNissan.svg" height="40px" alt="" srcset="">
+    <img src="../../web/img/pag_at_tran/iconJeep.svg" height="40px" alt="" srcset="">
+    <img src="../../web/img/pag_at_tran/iconToyota.svg" height="40px" alt="" srcset="">
+    <img src="../../web/img/pag_at_tran/iconKia.svg" height="40px" alt="" srcset="">
+    <img src="../../web/img/pag_at_tran/iconVolkswagen-w.svg" height="40px" alt="" srcset="">
+    <img src="../../web/img/pag_at_tran/iconFord.svg" height="40px" alt="" srcset="">
+</div>
+
+<!-- Sec Arendamiento puro -->
+<div class="container-fluid p-0 mat-lg-4">
+    <div class="row g-0">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-4 col-xxl-3 offset-xl-1 offset-xxl-2 p-0">
+            <!-- Text header -->
+            <p class="font-archivo font-regular text-gray-03">Arrendamiento puro</p>
+            <h3 class="uppercase fs-6">Invierte en tu empresa, <br> nosotros nos encargamos del equipo.</h3>
+            <div class="col-6">
+                <div class="line-space bh-1  border-green-01"></div>
+            </div>
+            
+            <!-- Controls -->
+            <ul class="nav nav-pills mb-3 board-control mt-5" id="pills-tab" role="tablist">
+                
+                <li class="nav-item btn-board" role="presentation">
+                    <a class="nav-link" id="tab-01" data-bs-toggle="pill" href="#tab-aren-01" role="tab" aria-controls="tab-aren-01" aria-selected="false">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">01</h3>
+                            <img src="../../web/img/pag_at_tran/icons/iconArren-01.svg" class="d-none d-lg-block icon-board" alt="">
+                        </div>
+                        <small class="w-100  text-left">Financiamiento flexible</small>
+                    </a>
+                </li>
+
+                <li class="nav-item btn-board" role="presentation">
+                    <a class="nav-link active" id="tab-02" data-bs-toggle="pill" href="#tab-aren-02" role="tab" aria-controls="tab-aren-02" aria-selected="true">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">02</h3>
+                            <img src="../../web/img/pag_at_tran/icons/iconArren-02.svg" class="d-none d-lg-block icon-board" alt="">
+                        </div>
+                        <small class="w-100  text-left">Financiamiento flexible</small>
+                    </a>
+                </li>
+
+                <li class="nav-item btn-board" role="presentation">
+                    <a class="nav-link" id="tab-03" data-bs-toggle="pill" href="#tab-aren-03" role="tab" aria-controls="tab-aren-03" aria-selected="false">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">03</h3>
+                            <img src="../../web/img/pag_at_tran/icons/iconArren-03.svg" class="d-none d-lg-block icon-board" alt="">
+                        </div>
+                        <small class="w-100  text-left">Financiamiento flexible</small>
+                    </a>
+                </li>
+
+                <li class="nav-item btn-board" role="presentation">
+                    <a class="nav-link" id="tab-04" data-bs-toggle="pill" href="#tab-aren-04" role="tab" aria-controls="tab-aren-04" aria-selected="false">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">04</h3>
+                            <img src="../../web/img/pag_at_tran/icons/iconArren-04.svg" class="d-none d-lg-block icon-board" alt="">
+                        </div>
+                        <small class="w-100  text-left">Financiamiento flexible</small>
+                    </a>
+                </li>
+
+                <li class="nav-item btn-board" role="presentation">
+                    <a class="nav-link" id="tab-05" data-bs-toggle="pill" href="#tab-aren-05" role="tab" aria-controls="tab-aren-05" aria-selected="false">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">05</h3>
+                            <img src="../../web/img/pag_at_tran/icons/iconArren-05.svg" class="d-none d-lg-block icon-board" alt="">
+                        </div>
+                        <small class="w-100  text-left">Financiamiento flexible</small>
+                    </a>
+                </li>
+
+                <li class="nav-item btn-board" role="presentation">
+                    <a class="nav-link" id="tab-06" data-bs-toggle="pill" href="#tab-aren-06" role="tab" aria-controls="tab-aren-06" aria-selected="false">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">06</h3>
+                            <img src="../../web/img/pag_at_tran/icons/iconArren-06.svg" class="d-none d-lg-block icon-board" alt="">
+                        </div>
+                        <small class="w-100  text-left">Financiamiento flexible</small>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 offset-xl-1  offset-xxl-1 p-0">
+
+            <div class="tab-content" id="pills-tabContent">
+            
+                <div class="tab-pane board-content fade " id="tab-aren-01" role="tabpanel" aria-labelledby="tab-01">
+                    <div class="d-flex align-items-end">
+                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">01</h3>
+                        <p class="font-archivo font-semibold">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="col-xxl-5 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
+                </div>
+
+                <div class="tab-pane board-content fade show active" id="tab-aren-02" role="tabpanel" aria-labelledby="tab-02">
+                    <div class="d-flex align-items-end">
+                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">02</h3>
+                        <p class="font-archivo font-semibold">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="col-xxl-5 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
+                </div>
+
+                <div class="tab-pane board-content fade" id="tab-aren-03" role="tabpanel" aria-labelledby="tab-03">
+                    <div class="d-flex align-items-end">
+                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">03</h3>
+                        <p class="font-archivo font-semibold">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="col-8 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos de inversión y liquidez.</p>
+                </div>
+
+                <div class="tab-pane board-content fade" id="tab-aren-04" role="tabpanel" aria-labelledby="tab-04">
+                    <div class="d-flex align-items-end">
+                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">04</h3>
+                        <p class="font-archivo font-semibold">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="col-8 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos de inversión y liquidez.</p>
+                </div>
+
+                <div class="tab-pane board-content fade" id="tab-aren-05" role="tabpanel" aria-labelledby="tab-05">
+                    <div class="d-flex align-items-end">
+                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">05</h3>
+                        <p class="font-archivo font-semibold">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="col-8 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos de inversión y liquidez.</p>
+                </div>
+
+                <div class="tab-pane board-content fade" id="tab-aren-06" role="tabpanel" aria-labelledby="tab-06">
+                    <div class="d-flex align-items-end">
+                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">06</h3>
+                        <p class="font-archivo font-semibold">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="col-8 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos de inversión y liquidez.</p>
+                </div>
+
+              </div>
+              <picture>
+                    <!-- Large -->
+                    <source media="(min-width: 922px)" srcset="../../web/img/pag_at_tran/arrows-left.jpg">
+                        <!-- Medium -->
+                        <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/arrows-left@2x.jpg" >
+                        <!-- fallback -->
+                  <img src="../../web/img/pag_at_tran/arrows-left@3x.jpg" width="100%" class="img-auto-tabs" alt="" srcset="">
+              </picture>
+        </div>
+    </div>
+</div>
+
+    
+    <footer>
+        <div class="footer-newsletter">
+            <div class="bg-box">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-7 col-xxl-6 d-none d-sm-none d-md-none d-lg-block">
+                            <img src="../../web/img/my-20-mazda-6-sport-snowflake-white-car-ds-front-3-q@3x.png" class="img-auto" alt="">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 col-xxl-6">
+                            <div class="container-form box-column center-center">
+                                <p class="uppercase font-archivo font-regular m-0">No te pierdas nuestras actualizaciones</p>
+                                <p class="font-openSans font-regular mt-3">Suscríbete a nuestro newsletter</p>
+                                
+                                <!-- Input newsletter -->
+                                <form action="" class="mt-3">
+                                    <div class="input-group">
+                                        <input  type="mail"  name="" placeholder="Ingresa tu correo electrónico">
+                                        <button type="submit" class="btn-submit"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer nav -->
+        <div class="footer-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li><a href="">Autos y Equipos <br class="d-none d-md-block d-lg-none"> de Transporte</a></li>
+                            <li><a href="">Maquinaria y Equipos <br class="d-none d-md-block d-lg-none"> de Computo</a></li>
+                            <li><a href="">Sistemas <br class="d-none d-md-block d-lg-none"> de Energía Solar</a></li>
+                            <li><a href="">Nuestra <br class="d-none d-md-block d-lg-none"> Empresa</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fotter info -->
+        <div class="footer-info">
+            <div class="footer-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-2 col-xl-2  offset-lg-1 offset-xl-1">
+                            <div class="box-footer">
+                                <div class="icon-phone"></div>
+                                <p>442-267-8890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="box-footer">
+                                <div class="icon-mail"></div>
+                                <p>contacto@leasingmobile.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="box-footer">
+                                <div class="icon-mapa"></div>
+                                <p>Ver dirección en mapa</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-2 col-xl-2">
+                            <div class="box-footer">
+                                <a href=""><div class="icon-faceboock"></div></a>
+                                <a href=""><div class="icon-instagram"></div></a>
+                                <a href=""><div class="icon-twitter"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer author -->
+        <div class="footer-author">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 box-author">
+                        <p>© 2020 Leasing Mobile. Derechos Reservados.</p>
+                        <a href="privacidad.html">Aviso de privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../web/js/datepicker-full.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script type="module" src="../js/app.js"></script>
+</body>
+</html>
