@@ -199,3 +199,24 @@
         padding:  0 5rem 0 5rem;
     }
 }
+
+@media (min-width: 1440px) {
+    .pad-r-xl-1{
+        padding-right: 10px !important;
+    }
+    .pad-r-xl-2{
+        padding-right: 20px !important;
+    }
+    .pad-r-xl-3{
+        padding-right: 30px !important;
+    }
+    .pad-r-xl-4{
+        padding-right: 40px !important;
+    }
+    .pad-r-xl-5{
+        padding-right: 50px !important;
+    }
+    .pad-r-xl-6{
+        padding-right: 60px !important;
+    }
+}

@@ -5,6 +5,15 @@
     & .bg-box{
         width: 100%;
         background-image: linear-gradient(to bottom, #62619a, #43426b);
+
+        @media (min-width: 300px) and (max-width: 768px) {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         
         @media (min-width: 900px){
             width: 100%;
@@ -22,7 +31,12 @@
         }
     }
 }
-
+.bg-car{
+    background-image: url('../../../web/img/group-9.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+}
 .img-auto{
     @media (min-width: 900px){
         width: 550px;

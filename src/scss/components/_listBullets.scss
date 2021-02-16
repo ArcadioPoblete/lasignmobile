@@ -1,0 +1,80 @@
+.listBullets {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.listBullets__item{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 30px 0 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @media screen and (min-width: 1900px) {
+        margin: 40px 0 0 0;
+    }
+}
+.listBullets__item--center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.listBullets__item__container {
+    width: 90%;
+    height: auto;
+}
+.listBullets__circle{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.listBullets__circle--purple{
+    background-color: $color-purple-01;
+}
+.listBullets__circle--green{
+    background-color: $color-green-default;
+}
+.listBullets__circle--rounded{
+    border-radius: 100px;
+}
+.listBullets__icon{
+    width: 17px;
+    height: 14px;
+}
+.listBullets__icon--left{
+    transform: rotate(180deg);
+}
+.listBullets__icon--rigth{
+    transform: rotate(360deg);
+}
+.listBullets__icon--flat {
+    margin-right: 10px;
+}
+.listBullets__item__title {
+    margin: 0 0 10px 17px;
+    font-family: $openSans;
+    font-weight: 600;
+    font-size: 1rem;
+    color: $color-gray-02;
+}
+.listBullets__text{
+    margin: 0 0 0 17px;
+    color: $color-gray-02;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 80%;
+        height: auto;
+        padding: 0 10px 0 10px;
+    }
+    @media screen and (min-width: 1900px) {
+        font-size: 20px;
+}
+}

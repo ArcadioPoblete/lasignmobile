@@ -1,0 +1,223 @@
+.slideHeader {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.slideHeader__img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.slideHeader__container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seccEmpresa {
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+    @media (min-width: 1200px) {
+        width: auto;
+        height: 500px;
+    }
+
+    @media (min-width: 1900px) {
+        height: 600px;
+    }
+}
+.seccEmpresa__img {
+    width: auto;
+    height: 500px;
+    position: absolute;
+
+    @media (min-width: 1200px) {
+        width: auto;
+        height: 500px;
+    }
+
+    @media (min-width: 1900px) {
+        height: 600px;
+    }
+}
+.seccEmpresa__img--left {
+    left: 0;
+}
+.seccEmpresa__img--rigth {
+    right: 0;
+}
+.seccEmpresa__elements {
+    width: 100%;    
+    height: 500px;
+    position: absolute;
+    
+    @media (min-width: 1900px) {
+        height: 600px;
+    }
+
+}
+.seccEmpresa__elements--rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.seccEmpresa__elements--left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.seccEmpresa__top--rigth {
+    width: 164px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    @media (min-width: 1900px) {
+        width: 265px;
+        height: 135px;
+    }
+}
+.seccEmpresa__bottom--rigth {
+    width: 164px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media (min-width: 1900px) {
+        width: 265px;
+        height: 135px;
+    }
+}
+.seccEmpresa__top--left {
+    width: 164px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @media (min-width: 1900px) {
+        width: 265px;
+        height: 135px;
+    }
+}
+.seccEmpresa__bottom--left {
+    width: 164px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    @media (min-width: 1900px) {
+        width: 265px;
+        height: 135px;
+    }
+}
+.boxEmpresa {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1200px) {
+        width: 230px;
+        height: 230px;
+    }
+
+    @media (min-width: 1900px) {
+        width: 350px;
+        height: 350px;
+    }
+}
+.boxEmpresa__text {
+    margin-top: 20px;
+    font-family: $openSans;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.boxEmpresa--green {
+    background-color: $color-green-default;
+}
+.boxEmpresa--purple {
+    background-color: $color-purple-01;
+}
+.seccEmpresa__boxs {
+    width: 84px;
+    height: auto;
+
+    @media (min-width: 1200px) {
+        width: 80px;
+        height: auto;
+    }
+
+    @media (min-width: 1900px) {
+        width: 100px;
+        height: auto;
+    }
+}
+.boxEmpresa__icon {
+    @media (min-width: 1900px) {
+       width: 70px;
+       height: 70px;
+    }
+}
+.seccEmpresa__arrows {
+    width: 200px;
+    height: auto;
+
+    @media (min-width: 1200px) {
+        width:  150px;
+        height: auto;
+    }
+
+    @media (min-width: 1900px) {
+        width: 200px;
+        height: auto;
+    }
+}
+.services {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.listServices {
+    padding: 0 !important;
+    margin: 0  !important;
+}
+.listSrvices__item {
+    padding: 0;
+    margin: 50px 0 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.listServices__icon {
+    width: 25px;
+    height: 25px;
+}
+.listServices__text {
+    font-family: $openSans;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+
+

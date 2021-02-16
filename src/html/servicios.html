@@ -10,26 +10,26 @@
 </head>
 <body>
     
-    <header>
-        <div class="top-header">
+    <header  class="headroom">
+        <div class="top-header py-3">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-2 col-lg-3 col-xl-3 secc-brand  h-2">
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-3 secc-brand">
                         <a href="index.html"><img src="../../web/img/logo.svg"  alt="" srcset=""></a>
                     </div>
-                    <div class="col-md-8 col-lg-7 col-xl-6 offset-lg-2 offset-md-2 offset-xl-3 d-none d-md-block d-lg-block">
+                    <div class="col-md-8 col-lg-7 col-xl-6 offset-lg-2 offset-md-2 offset-xl-3 py-3 d-none d-md-none d-lg-block">
                         <div class="row">
-                            <div class="col-5 d-flex justify-content-end align-items-center h-2">
+                            <div class="col-5 d-flex justify-content-end align-items-center">
                                 <div class="icon-phone float-start"></div>
                                 <p>442-267-8890</p>
                             </div>
-                            <div class="col-7 d-flex justify-content-end align-items-center h-2">
+                            <div class="col-7 d-flex justify-content-end align-items-center">
                                 <div class="icon-mail float-start"></div>
                                 <p>buzon@leasingmobile.mx</p>
                             </div>
                         </div>
                     </div>
-                    <div id="btn-menu" class="col-6 d-md-none d-lg-none d-flex justify-content-end">
+                    <div id="btn-menu" class="col-2 col-md-1 offset-4 offset-md-7  d-md-block d-lg-none">
                         <ul class="btn-burger">
                             <li></li>
                             <li></li>
@@ -39,17 +39,30 @@
                 </div>
             </div>
         </div>
-        <div class="nav-header d-none d-sm-block">
+
+        <div class="nav-header d-none d-md-none d-lg-block ">
             <div class="container">
                 <div class="row">
                     <div class="col-12 ">
                         <ul class="secc-nav">
-                            <li><a href="">Autos y Equipos <br class="d-lg-none"> de Transporte</a></li>
-                            <li><a href="">Maquinaria y Equipos <br class="d-lg-none"> de Computo</a></li>
-                            <li><a href="">Sistemas <br class="d-lg-none"> de Energía Solar</a></li>
-                            <li><a href="">Inversionistas</a></li>
-                            <li class="active"><a href="about.html">Nuestra <br class="d-lg-none"> Empresa</a></li>
-                            <li><a href="./blog/index.html">Blog</a></li>
+                            <li>
+                                <a href="./autosytransportes.html">Autos y Equipos <br class="d-lg-none"> de Transporte</a>
+                            </li>
+                            <li>
+                                <a href="./maquinasycomputo.html">Maquinaria y Equipos <br class="d-lg-none"> de Computo</a>
+                            </li>
+                            <li>
+                                <a href="./energiasolar.html">Sistemas <br class="d-lg-none"> de Energía Solar</a>
+                            </li>
+                            <li>
+                                <a href="">Inversionistas</a>
+                            </li>
+                            <li class="active">
+                                <a href="empresa.html">Nuestra <br class="d-lg-none"> Empresa</a>
+                            </li>
+                            <li>
+                                <a href="./blog/index.html">Blog</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -57,20 +70,21 @@
         </div>
     </header>
 
+   
     <!-- Nav mobile -->
     <div class="layout-hide d-none"></div>
-    <div class="container-nav-mobile">
+    <div class="container-nav-mobile zindex-modal d-block d-md-block d-lg-none">
         <ul class="nav-mobile">
-            <li class="active">
-                <div class="icon-arrow"></div>
+            <li>
+                <div class="icon-circle"></div>
                 <a href="">Autos y Equipos <br> de Transporte</a>
             </li>
             <li>
                 <div class="icon-circle"></div>
                 <a href="">Maquinaria y Equipos <br> de Computo</a>
             </li>
-            <li>
-                <div class="icon-circle"></div>
+            <li class="active">
+                <div class="icon-arrow"></div>
                 <a href="">Sistemas <br> de Energía Solar</a>
             </li>
             <li>
@@ -94,6 +108,7 @@
 
 
     <!-- Header top -->
+    <div class="space-top"></div>
     <div class="header-servicios mt-4">
         <div class="container h-8 d-flex align-items-center">
             <div class="row">
@@ -135,18 +150,18 @@
     </div>
 
     <!-- Líneas de negocio -->
-    <div class="container mt-2">
+    <div class="container mt-5">
         <div class="row d-flex justify-content-center">
             <div class="col-3 border-b-1 border-green-01">
                 <h1 class="font-archivo fs-6 uppercase text-gray-03 text-center">Líneas de negocio</h1>
             </div>
         </div>
-        <div class="row mt-3">
+        <div class="row mt-1">
             <p class="col-12 font-openSans font-regular text-gray-02 text-center">Conoce la amplia línea de servicios que Leasing Mobile tiene para ofrecerte.</p>
         </div>
     </div>
 
-    <div class="container  mb-5">
+    <div class="container mt-3">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="box-services bg-purple-01">
@@ -176,7 +191,7 @@
     </div>
 
     <!-- Section Colaboradores -->
-    <div class="container mat-lg-5 mat-xl-6">
+    <div class="container mt-8">
         <div class="row mb-5">
             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
                 <div class="h-4 flex-column-start-center">
@@ -198,42 +213,42 @@
                     </picture>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-5">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-2">
                 <div class="h-4 bg-green-01 flex-column-center-center">
                     <picture>
                         <img src="../../web/img/icons/logo_axa@3x.png" width="120px" alt="" srcset="">
                     </picture>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-5">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-2">
                 <div class="h-4 bg-green-01 flex-column-center-center">
                     <picture>
                         <img src="../../web/img/icons/logo_toyotire@3x.png" width="230px" alt="" srcset="">
                     </picture>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-5">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-2">
                 <div class="h-4 bg-green-01 flex-column-center-center">
                     <picture>
                         <img src="../../web/img/icons/logo_grease@3x.png" width="109px" alt="" srcset="">
                     </picture>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-5">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-2">
                 <div class="h-4 bg-green-01 flex-column-center-center">
                     <picture>
                         <img src="../../web/img/icons/logo_autozone@3x.png" width="100px" alt="" srcset="">
                     </picture>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-5">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-2">
                 <div class="h-4 bg-green-01 flex-column-center-center">
                     <picture>
                         <img src="../../web/img/icons/logo_national@3x.png" width="131px" alt="" srcset="">
                     </picture>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-5">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-2">
                 <div class="h-4 bg-green-01 flex-column-center-center">
                     <picture>
                         <img src="../../web/img/icons/logo_jiffy@3x.png" width="198px" alt="" srcset="">
@@ -340,6 +355,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Footer nav -->
         <div class="footer-nav">
             <div class="container">
@@ -405,8 +421,6 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script type="module" src="../js/app.js"></script>
 </body>
 </html>

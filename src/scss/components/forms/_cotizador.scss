@@ -1,0 +1,177 @@
+
+.cotizador--absolute {
+    position: absolute;
+    z-index: 1;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        position: inherit;
+        padding: 0 20px 0 20px;
+        background-color: $color-purple-01;
+    }
+}
+.cotizador__container {
+    width: 100%;
+    height: auto;
+}
+.cotizador__left {
+    width: 100%;
+    height: 750px;
+    background-color: $color-purple-01;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 800px;
+    }
+}
+.cotizador__decorator {
+    width: 650px;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    
+    @media (min-width: 300px) and (max-width: 700px) {
+        display: none;
+    }
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 600px;
+    }
+    @media (min-width: 1440px){
+        width: 720px;
+    }
+}
+.cotizador__cover {
+    width: 100%;
+    height: 750px;
+
+    @media (min-width: 300px) and (max-width: 700px) {
+        height: auto;
+    }
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100%;
+        height: 750px;
+    }
+    
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 800px;
+    }
+    
+}
+.cotizador__form {
+    width: 100%;
+    height: 750px;
+    padding: 0 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        padding: 20px 0 30px 0;
+        background-color: $color-purple-01;
+    }
+
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 800px;
+    }
+
+}
+.cotizador__input {
+    width: 100%;
+    height: 60px;
+    padding: 20px 30px 20px 50px;
+    margin: 30px 0 0 0;
+    border: none;
+    font-family: $openSans;
+    font-weight: 400;
+    color: $color-gray-03;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        padding: 0 0 0 20px;
+    }
+}
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0 40px 40px;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        flex-direction: column;
+        padding: 0;
+    }
+
+}
+.checkbox__text {
+    font-family: $openSans;
+    color: #ffff;
+    padding: 0 20px 0 0;
+}
+.checkbox__inputs {
+    font-family: $openSans;
+    color: #ffff;
+}
+.vehicles {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.vehicles__button {
+    width: 100px;
+    height: 65px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .vehicles__icon--active {
+        display: none;
+    }
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 60px;
+    }
+}
+.vehicles__icon {
+    width: 50px;
+    height: auto;
+}
+.vehicles__button--active {
+    background-color: #ffff;
+
+    & .vehicles__icon--default {
+        display: none;
+    }
+    & .vehicles__icon--active {
+        display: block;
+    }
+
+    & p {
+        color: $color-purple-01;
+    }
+    
+}
+.vehicles__text {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-family: $openSans;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffff;
+}
+.zindex-1 {
+    z-index: 1;
+}

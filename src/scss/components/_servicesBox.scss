@@ -1,0 +1,56 @@
+.servicesBox {
+    width: 100%;
+    height: 350px;
+    position: relative;
+
+}
+.servicesBox__img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.servicesBox__container {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.servicesBox__waves{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 200px;
+        height: 200px;
+    }
+}
+.servicesBox__circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100px;
+        height: 100px;
+    }
+}
+.servicesBox__circle--green {
+    background-color: $color-green-default;
+}
+.servicesBox__circle--purple {
+    background-color: $color-purple-01;
+}

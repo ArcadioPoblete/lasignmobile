@@ -32,11 +32,29 @@ button:focus{
 .uppercase{
     text-transform: uppercase;
 }
-.line-space{
-    width: 100%;
-    border: solid;
+.line-white{
+    background-color: white;
 }
-
+.line-space-1{
+    width: 100%;
+    height: 1px;
+}
+.line-space-2{
+    width: 100%;
+    height: 2px;
+}
+.line-space-3{
+    width: 100%;
+    height: 3px;
+}
+.line-space-4{
+    width: 100%;
+    height: 4px;
+}
+.line-space-5{
+    width: 100%;
+    height: 5px;
+}
 
 .font-archivo{
     font-family: $archivo;
@@ -537,7 +555,10 @@ button:focus{
     background-color: $color-green-default;
 }
 .bg-purple-01{
-    background-color: $color-purple-01;
+    background-color: $color-purple-01 !important;
+}
+.bg-white {
+    background-color: #ffffff  !important;
 }
 /******************************************************/
 

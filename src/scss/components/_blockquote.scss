@@ -1,0 +1,154 @@
+.blockquote {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100%;
+        height: 500px;
+    }
+
+    @media (min-width: 1900px) {
+        height: 750px;
+    }
+}
+.blockquote--green {
+    background-color: $color-green-default;
+} 
+.blockquote--controls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blockquote__text {
+    margin: 10px 0 0 0;
+    font-family: $openSans;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 25px;
+    
+    @media (min-width: 1900px) {
+        margin: 20px 0 0 0;
+        font-size: 20px;
+    }
+}
+.blockquote__controls {
+    width: 55px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 1900px) {
+        width: 70px;
+    }
+}
+.blockquote__controls__prev {
+    transform: rotate(180deg);
+}
+.blockquote__path {
+    width: 85%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $color-green-default;
+    position: absolute;
+}
+.blockquote__img {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 11%;
+    right: 0;
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 400px;
+        height: auto;
+        top: 17%;
+        right: 0;
+    }
+
+    @media (min-width: 1900px) {
+        width: 700px;
+        height: auto;
+        top: 12%;
+        right: 0;
+    }
+}
+.blockquote__quote {
+    width: 100px;
+    height: auto;
+    margin-left: 25%;
+
+    @media (min-width: 1900px) {
+        width: 150px;
+        height: auto;
+        margin-left: 20%;
+    }
+}
+.blockquote__slick {
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 1024px) {
+        width: 100%;
+        height: 500px;
+    }
+    @media (min-width: 1900px) {
+    }
+
+}
+.blockquote__slick__item {
+    width: 400px;
+    height: 300px;
+    padding: 0 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ffffff;
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 220px;
+        height: auto;
+        padding: 20px 20px 20px 20px;
+    }
+    
+}
+.blockquote__slick__item__title {
+    font-family: archivo;
+    font-size: 20px;
+    font-weight: 600;
+    color: $color-purple-01;
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        font-size: 12px;
+    }
+}
+.blockquote__slick__item__sub {
+    font-family: $openSans;
+    font-weight: 400;
+    font-size: 16px;
+}
+.blockquote__slick__item__text {
+    font-family: $openSans;
+    font-weight: 400;
+    font-size: 16px;
+    
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        font-size: 12px;
+    }
+}

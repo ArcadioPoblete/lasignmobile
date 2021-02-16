@@ -1,0 +1,573 @@
+.slide-top{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    color: white;
+
+    & .img-bg {
+        width: 100%;
+        height: 500px;
+
+        @media (min-width: 300px) and (max-width: 768px) {
+            width: 1440px;
+            height: 500px;
+            right: 0px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 100%;
+            height: 400px;
+        }
+
+        @media (min-width: 1440px) {
+                width: 100%;
+                height: 600px;
+        }
+    }
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 400px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 100%;
+        height: 600px;
+    }
+}
+.bgArrows{
+    width: 100%;
+    height: 100px;
+    background-color: $color-purple-01;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        margin: 40px 0 40px 0;
+    }
+}
+
+/* blockBeneficios */
+.listTitulo{
+    padding: 0;
+}
+.listTitulo__text{  
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-family: $archivo;
+    font-weight: 600;
+    color: $color-gray-03;
+    text-transform: uppercase;
+
+    @media  (min-width: 300px) and (max-width: 700px) {
+            text-align: center;
+    }
+    
+
+    @media screen and (min-width: 1900px) {
+            font-size: 20px;
+    }
+    
+}
+.listTitulo--border {
+    border-bottom: solid 1px $color-green-default;
+}
+.blockBeneficios{
+    width: 100%;
+    height: 300px;
+    background-image: url('../../../web/img/enr_solar/bgBeneficios@3x.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        padding: 40px 0 40px 0;
+    }
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 500px;
+    }
+    
+}
+.blockBeneficios__img{
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+}
+.blockBeneficios__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 768px)  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+.blockBeneficios__circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blockBeneficios__circle--green{
+    background-color: $color-green-default;
+}
+.blockBeneficios__circle--purple{
+    background-color: $color-purple-01;
+}
+.blockBeneficios__item--center{
+    text-align: center;
+}
+.blockBeneficios__item__text{
+    font-family: $openSans;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+}
+.blockBeneficios__item__img{
+    @media (min-width: 300px) and (max-width: 768px) {
+        margin: 40px 0 40px 0;
+        transform: rotate(90deg);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+        margin: 0;
+        transform: rotate(0);
+    }
+    
+}
+/* End blockBeneficios*/
+
+/* Collage beneficios */
+.collage {
+    width: 100%;
+    height: 600px;
+    position: relative;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        height: 600px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 650px;
+    }
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        height: 500px;
+    }
+    @media (min-width: 1200px){
+        height: 600px;
+    }
+    @media (min-width: 1440px)  {
+        height: 650px;
+    }
+
+    @media (min-width: 1900px)  {
+        height: 750px;
+    }
+}
+.collage__img {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        top: 25%;
+    }
+    @media (min-width: 1024px) {
+        width: 400px;
+        height: auto;
+    }
+
+    @media (min-width: 1200px) {
+        width: 486px;
+        height: auto;
+    }
+    @media (min-width: 1300px) {
+        width: 515px;
+        height: auto;
+    }
+    @media (min-width: 1440px) {
+        width: 550px;
+        height: auto;
+    }
+    @media (min-width: 1900px) {
+        width: 700px;
+        height: auto;
+    }
+}
+.collage__box__icon {
+    width: 50px;
+    height: 50px;
+
+    @media (min-width: 1900px) {
+        width: 80px;
+        height: 80px;
+
+    }
+}
+.collage__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.collage__box__text {
+    margin: 10px 0 0 0;
+    padding: 0 40px 0 40px;
+    text-align: center;
+    color: #ffffff;
+}
+.collage__box--large {
+    width: 240px;
+    height: 220px;
+
+    @media (min-width: 1900px) {
+        width: 340px;
+        height: 300px;
+
+    }
+}
+.collage__box--big {
+    width: 120px;
+    height: 120px;
+    
+    @media (min-width: 1900px) {
+        width: 170px;
+        height: 170px;
+
+    }
+
+}
+.collage__box--medium {
+    width: 40px;
+    height: 40px;
+
+    @media (min-width: 1900px) {
+        width: 50px;
+        height: 50px;
+
+    }
+}
+.collage__box--small {
+    width: 25px;
+    height: 25px;
+}
+.collage__box--xsmall {
+    width: 12px;
+    height: 12px;
+}
+.collage__box--opacity {
+    opacity: 0.4;
+}
+.collage__box--green {
+    background-color: $color-green-default;
+}
+.collage__box--purple {
+    background-color: $color-purple-01;
+}
+.collage__box--conf-01 {
+    top: 6%;
+    left: 17%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        top: 17%;
+        left: 75%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 17%;
+        left: 72%;
+    }
+    @media (min-width: 1024px) {
+        top: 4%;
+        left: 12%;
+    }
+    @media (min-width: 1200px) {
+        top: 8%;
+        left: 15%;
+    }
+    @media (min-width: 1300px) {
+        top: 8%;
+        left: 13%;
+    }
+    @media (min-width: 1400px) {
+        top: 8%;
+        left: 19%;
+    }
+    @media (min-width: 1900px) {
+        top: 16%;
+        left: 20%;
+    }
+}
+.collage__box--conf-02 {
+    top: 9%;
+    left: 21%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        top: 21%;
+        left: 72%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 21%;
+        left: 69%;
+    }
+    @media (min-width: 1024px) {
+        top: 11%;
+        left: 17%;
+    }
+    @media (min-width: 1200px) {
+        top: 12%;
+        left: 19%;
+    }
+    @media (min-width: 1300px) {
+        top: 12%;
+        left: 17%;
+    }
+    @media (min-width: 1400px) {
+        top: 12%;
+        left: 23%;
+    }
+    @media (min-width: 1900px) {
+        top: 22%;
+        left: 24%;
+    }
+}
+.collage__box--conf-03 {
+    top: 17%;
+    left: 5%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        top: 10%;
+        left: 5%;
+    }
+    @media (min-width: 1024px) {
+        top: 16%;
+        left: 3;
+    }
+    @media (min-width: 1900px) {
+        top: 25%;
+        left: 3;
+    }
+}
+.collage__box--conf-04{
+    top: 70%;
+    left: 5%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        top: 80%;
+        left: 5%;
+    }
+
+    @media (min-width: 1280px) {
+        top: 80%;
+        left: 5%;
+    }
+    @media (min-width: 1200px) {
+        top: 55%;
+        left: 10%;
+    }
+    @media (min-width: 1900px) {
+        top: 70%;
+        left: 15%;
+    }
+}
+.collage__box--conf-05 {
+    bottom: 20%;
+    left: 40%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        bottom: 10%;
+        left: 20%;
+    }
+    @media (min-width: 1024px) {
+        bottom: 10%;
+        left: 30%;
+    }
+    @media (min-width: 1200px) {
+        bottom: 15%;
+        left: 30%;
+    }
+    @media (min-width: 1300px) {
+        bottom: 10%;
+        left: 30%;
+    }
+
+    @media (min-width: 1900px) {
+        bottom: 5%;
+        left: 36%;
+    }
+}
+.collage__box--conf-06 {
+    bottom: 24%;
+    left: 59%;
+    
+    @media (min-width: 300px) and (max-width: 768px) {
+        bottom: 15%;
+        left: 54%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        bottom: 17%;
+        left: 51%;
+    }
+    @media (min-width: 1024px) {
+        bottom: 19%;
+        left: 53%;
+    }
+    @media (min-width: 1200px) {
+        bottom: 20%;
+        left: 49%;
+    }
+    @media (min-width: 1300px) {
+        bottom: 15%;
+        left: 48%;
+    }
+    @media (min-width: 1400px) {
+        bottom: 17%;
+        left: 46%;
+    }
+    @media (min-width: 1900px) {
+        bottom: 8%;
+        left: 53%;
+    
+    }
+}
+.collage__box--conf-07 {
+    bottom: 22%;
+    left: 59%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        bottom: 13%;
+        left: 54%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        bottom: 15%;
+        left: 51%;
+    }
+    @media (min-width: 1024px) {
+        bottom: 17%;
+        left: 53%;
+    }
+    @media (min-width: 1200px) {
+        bottom: 18%;
+        left: 49%;
+    }
+    @media (min-width: 1300px) {
+        bottom: 13%;
+        left: 48%;
+    }
+    @media (min-width: 1400px) {
+        bottom: 15%;
+        left: 46%;
+    }
+    @media (min-width: 1900px) {
+        bottom: 7%;
+        left: 53%;
+    }
+}
+.collage__box--conf-08 {
+    bottom: 20%;
+    left: 65%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        bottom: 10%;
+        left: 63%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        bottom: 10%;
+        left: 58%;
+    }
+    @media (min-width: 1024px) {
+        bottom: 13%;
+        left: 59%;
+    }
+    @media (min-width: 1200px) {
+        bottom: 14%;
+        left: 53%;
+    }
+    @media (min-width: 1300px) {
+        bottom: 10%;
+        left: 52%;
+    }
+    @media (min-width: 1400px) {
+        bottom: 10%;
+        left: 50%;
+    }
+    @media (min-width: 1900px) {
+        bottom: 4%;
+        left: 57%;
+    }
+}
+/* End Collage beneficios */
+
+/* Collage Distintivo */
+.collageDistintivo {
+    width: 100%;
+    height: 700px;
+    position: relative;
+
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 800px;
+    }
+}
+.collageDistintivo__img--01 {
+    width: 400px;
+    height: auto;
+    position: absolute;
+
+    @media (min-width: 1900px) {
+        width: 500px;
+        height: auto;
+    }
+} 
+.collageDistintivo__img--02 {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+
+    @media (min-width: 1900px) {
+        width: 700px;
+        height: auto;
+    }
+} 
+/* End Collage Distintivo */
+
+/* Beneficios de arrendar */
+.benArrendar {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.benArrendar__img{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    background-color: $color-green-default;
+    top: 0;
+    right: 0;
+}
+/* End beneficios de arrendar*/

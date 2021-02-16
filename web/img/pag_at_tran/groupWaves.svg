@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="502px" height="502px" viewBox="0 0 502 502" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>groupWaves</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Oval-Copy-2" transform="translate(84.000000, 84.000000)" opacity="0.8" stroke="#62619A" stroke-width="1.5">
+            <g id="Group-7">
+                <circle id="Oval-Copy-2" cx="167.415282" cy="167.584718" r="166.608804"></circle>
+            </g>
+        </g>
+        <g id="Oval-Copy-3" transform="translate(59.000000, 59.000000)" opacity="0.6" stroke="#62619A" stroke-width="1.2">
+            <g id="Group-7">
+                <circle id="Oval-Copy-3" cx="192.232558" cy="192" r="191.4"></circle>
+            </g>
+        </g>
+        <g id="Oval-Copy-4" transform="translate(39.000000, 39.000000)" opacity="0.4" stroke="#62619A">
+            <g id="Group-7">
+                <circle id="Oval-Copy-4" cx="212.44186" cy="212.209302" r="211.709302"></circle>
+            </g>
+        </g>
+        <g id="Oval-Copy-5" transform="translate(1.000000, 1.000000)" opacity="0.2" stroke="#62619A">
+            <g id="Group-7">
+                <circle id="Oval-Copy-5" cx="250" cy="250" r="249.5"></circle>
+            </g>
+        </g>
+        <g id="Oval" transform="translate(107.000000, 107.000000)" stroke="#62619A" stroke-width="2">
+            <circle cx="144.415282" cy="144.584718" r="143.933555"></circle>
+        </g>
+    </g>
+</svg>

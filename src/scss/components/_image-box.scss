@@ -1,0 +1,103 @@
+.imageBox {
+    width: 100%;
+    height: 450px;
+    position: relative;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: auto;
+        height: 500px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100%;
+        height: 350px;
+    }
+
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 700px;
+    }
+}
+.space-top {
+    width: 100%;
+    height: 190px;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 70px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100%;
+        height: 160px;
+    }
+
+
+}
+.imageBox__img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: auto;
+        height: 500px;
+        right: 0;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100%;
+        height: auto;
+    }
+}
+.imageBox__decorator {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.imageBox__decorator--small {
+    width: 20%;
+    height: auto;
+
+    @media (min-width: 1900px) {
+        width: 25%;
+        height: auto;
+    }
+}
+.imageBox__decorator--medium {
+    width: 40%;
+    height: auto;
+}
+.imageBox__container {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 500px;
+    }
+
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 700px;
+    }
+
+}
+.imageBox__title {
+    font-family: $archivo;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffff;
+}
+.imageBox__text {
+    font-family: $openSans;
+    font-weight: 400;
+    color: #ffff;
+}
