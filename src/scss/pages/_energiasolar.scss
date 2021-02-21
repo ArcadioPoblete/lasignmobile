@@ -44,7 +44,10 @@
         margin: 40px 0 40px 0;
     }
 }
-
+.img-leasingSolar {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 /* blockBeneficios */
 .listTitulo{
     padding: 0;
@@ -530,30 +533,36 @@
 
     @media (min-width: 1900px) {
         width: 100%;
-        height: 800px;
+        height: 900px;
     }
 }
 .collageDistintivo__img--01 {
     width: 400px;
-    height: auto;
+    height: 600px;
     position: absolute;
+    bottom: 5%;
 
     @media (min-width: 1900px) {
-        width: 500px;
+        width: 600px;
         height: auto;
+        top: 0;
+        bottom: 0;
     }
 } 
-.collageDistintivo__img--02 {
-    width: 600px;
+.collageDistintivo__panel {
+    width: 500px;
     height: auto;
     position: absolute;
-    bottom: 0;
+    bottom: 1%;
+    left: 10%;
 
     @media (min-width: 1900px) {
-        width: 700px;
+        width: 650px;
         height: auto;
+        left: 20%;
+        bottom: 4%;
     }
-} 
+}
 /* End Collage Distintivo */
 
 /* Beneficios de arrendar */
@@ -562,12 +571,88 @@
     height: 500px;
     position: relative;
 }
-.benArrendar__img{
-    width: 600px;
-    height: 500px;
-    position: absolute;
-    background-color: $color-green-default;
-    top: 0;
-    right: 0;
+.img-sol{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 /* End beneficios de arrendar*/
+
+
+/* Cotizador */
+.calculadora {
+    width: 100%;
+    height: 372px;
+    margin-top: 50px;
+}
+.calculadora__container {
+   width: 100%;
+   height: 372px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.calculadora--grid {
+    display: flex;
+    flex-direction: row;
+}
+.calculadora__fila {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.border--bottom {
+    border-bottom: solid 1px;
+    border-color: $color-green-01;
+}
+.border--left {
+    border-left: solid 1px;
+    border-color: $color-green-01;
+}
+.calculadora__row--l {
+    border: solid;
+    border-width: 1px;
+    border-color: $color-green-01;
+}
+.calculadora__row--r {
+    border: solid;
+    border-width: 1px 1px 1px  0;
+    border-color: $color-green-01;
+}
+.calculadora__input {
+    width: 200px;
+    height: 50px;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+.calculadora__title {
+    font-family: $openSans;
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-gray-02;
+}
+.calculadora__text {
+    font-family: $openSans;
+    font-size: 16px;
+    margin: 0 0 0 40px;
+    color: $color-gray-03;
+}
+.calculadora__text--bold {
+    font-weight: 600;
+}
+.calculadora--border-l {
+    border: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: $color-green-default;
+}
+.calculadora--border-r {
+    border: solid;
+    border-width: 1px 1px 1px 0;
+    border-color: $color-green-default;
+}

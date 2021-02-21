@@ -1,103 +1,67 @@
-.imageBox {
+.image-box {
     width: 100%;
-    height: 450px;
-    position: relative;
-
-    @media (min-width: 300px) and (max-width: 768px) {
-        width: auto;
-        height: 500px;
-    }
-
-    @media (min-width: 1024px) and (max-width: 1200px) {
-        width: 100%;
-        height: 350px;
-    }
-
+    height: 420px;
+    position: relative; 
+    
     @media (min-width: 1900px) {
         width: 100%;
-        height: 700px;
+        height: 670px;
     }
 }
-.space-top {
-    width: 100%;
-    height: 190px;
-
-    @media (min-width: 300px) and (max-width: 768px) {
-        width: 100%;
-        height: 70px;
-    }
-
-    @media (min-width: 1024px) and (max-width: 1200px) {
-        width: 100%;
-        height: 160px;
-    }
-
-
-}
-.imageBox__img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-
-
-    @media (min-width: 300px) and (max-width: 768px) {
-        width: auto;
-        height: 500px;
-        right: 0;
-    }
-
-    @media (min-width: 1024px) and (max-width: 1200px) {
-        width: 100%;
-        height: auto;
-    }
-}
-.imageBox__decorator {
+.image-box__background {
     width: 100%;
     height: auto;
     position: absolute;
 }
-.imageBox__decorator--small {
-    width: 20%;
-    height: auto;
-
-    @media (min-width: 1900px) {
-        width: 25%;
-        height: auto;
-    }
+.image-box__decorator {
+    position: absolute;
 }
-.imageBox__decorator--medium {
-    width: 40%;
-    height: auto;
-}
-.imageBox__container {
-    width: 100%;
+.image-box__container {
+    width: 90%;
     height: 450px;
+    margin: 0 5% 0 5%;
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
-    @media (min-width: 300px) and (max-width: 768px) {
-        width: 100%;
-        height: 500px;
+    @media (min-width: 1900px) {
+        width: 90%;
+        height: 670px;
     }
+}
+.image-box__title {
+    text-transform: uppercase;
+    font-family: $archivo;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffff;
 
     @media (min-width: 1900px) {
-        width: 100%;
-        height: 700px;
+        font-size: 40px;
     }
-
 }
-.imageBox__title {
-    font-family: $archivo;
-    font-weight: 400;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #ffff;
-}
-.imageBox__text {
+.image-box__text {
     font-family: $openSans;
+    font-size: 16px;
     font-weight: 400;
     color: #ffff;
+
+
+    @media (min-width: 1900px) {
+        font-size: 20px;
+    }
+}
+.image-box__decorator--seminuevos {
+    width: 500px;
+    height: auto;
+    right: 20%;
+    bottom: 5%;
+
+
+    @media (min-width: 1900px) {
+        right: 27%;
+        bottom: 25%;
+    }
 }

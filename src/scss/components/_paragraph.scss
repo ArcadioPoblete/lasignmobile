@@ -5,27 +5,39 @@
     color: $color-gray-03;
     text-transform: uppercase;
 }
-.underlined {
+.paragrap__line {
     width: 100%;
     height: 1px;
 }
-.underlined--green {
-    background-color: $color-green-default;
+.paragraph__line--green {
+    background-color: $color-green-01;
+}
+.Paragraph {
+    width: 100%;
+    height: auto;
 }
 .paragraph__title {
+    margin: 0 0 5px 0;
     font-family: $archivo;
-    font-weight: 400;
-    text-align: center;
+    font-weight: 600;
     text-transform: uppercase;
     color: $color-gray-03;
-    padding: 0 0 10px 0;
+}
+.paragraph--center {
+    text-align: center;
+}
+.paragraph__text--center {
+    text-align: center;
 }
 .paragraph__text {
+    margin: 20px 0 0 0;
     font-family: $openSans;
     font-weight: 400;
     font-size: 16px;
     color: $color-gray-03;
-    text-align: center;
+}
+.paragraph__text--semibold {
+    font-weight: 600;
 }
 .paragraph__title--border {
     border-bottom: solid 1px $color-green-default;

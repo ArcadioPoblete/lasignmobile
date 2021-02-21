@@ -18,7 +18,7 @@
         <div class="nav__top">
            <div class="container">
                <div class="row">
-                   <div class="col-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                   <div class="col-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                         <div class="brand">
                             <a href="../html/index.html">
                                 <img src="../../web/img/layout/logo.svg" class="brand__logo" alt="">
@@ -26,19 +26,19 @@
                         </div>
                    </div>
                    <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-5 offset-lg-3 offset-xl-3 offset-xxl-4 d-none d-md-none d-lg-block">
-                        <div class="contact">
-                            <div class="contact__item">
-                                <img src="../../web/img/layout/icons/icon_phone.svg" class="contact__icon" alt="" srcset="">
-                                <p class="contact__text">442-267-8890</p>
+                        <div class="nav-contact">
+                            <div class="nav-contact__item">
+                                <img src="../../web/img/layout/icons/icon_phone.svg" class="nav-contact__icon" alt="" srcset="">
+                                <p class="nav-contact__text">442-267-8890</p>
                             </div>
-        
-                            <div class="contact__item">
-                                <img src="../../web/img/layout/icons/icon_mail.svg" class="contact__icon" alt="" srcset="">
-                                <p class="contact__text">buzon@leasingmobile.mx</p>
+    
+                            <div class="nav-contact__item">
+                                <img src="../../web/img/layout/icons/icon_mail.svg" class="nav-contact__icon" alt="" srcset="">
+                                <p class="nav-contact__text">buzon@leasingmobile.mx</p>
                             </div>
                         </div>
-                   </div>
-                   <div class="col-2 col-md-1 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
+                    </div>
+                   <div class="col-2 col-md-1 offset-6 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
                         <ul class="button-drawer">
                             <li class="button-drawer__line button-drawer__line--small"></li>
                             <li class="button-drawer__line"></li>
@@ -182,17 +182,17 @@
         </div>
     </div>
 
-    <!-- Tabs -->
-    <div class="secc-tabs">
-        <div class="container-fluid">
+<!-- Tabs -->
+<div class="secc-tabs">
+    <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-10 col-lg-10 col-xl-10 col-xxl-8 offset-lg-1 offset-xxl-2">
+                <div class="col-12 col-md-12 col-lg-10 col-xl-10 col-xxl-8 offset-lg-1 offset-xxl-2">
                       <div class="tab-content pb-4" id="pills-tabContent">
                         <!-- Tab 01 -->
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-12 col-md-12 col-xl-12 col-xxl-12">
+                                    <div class="col-12 col-md-6 col-xl-12 col-xxl-12">
                                         <label class="text-gray-07 mb-3">Selecciona una opción:</label>
                                         <div class="col-12 col-lg-5 d-flex justify-content-start">
                                             <div class="form-check">
@@ -214,7 +214,7 @@
                                      <!-- Marca | Modelo | Precio -->
                                     
                                     <!-- Marca -->
-                                    <div class="col-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
                                         <label>Selecciona una marca:</label>
                                         <div class="dropdown mt-1 mt-xl-1">
                                             <button class="button-select py-2 d-flex justify-content-between px-4 text-gray-06" type="button" id="selectMarca" data-bs-toggle="dropdown" aria-expanded="false">
@@ -230,7 +230,7 @@
                                     </div>
                                     
                                     <!-- Modelo -->
-                                    <div class="col-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
                                         <label>Selecciona un modelo:</label>
                                         <div class="dropdown mt-1 mt-xl-1">
                                             <button class="button-select py-2 d-flex justify-content-between px-4 text-gray-06" type="button" id="selectModelo" data-bs-toggle="dropdown" aria-expanded="false">
@@ -246,14 +246,14 @@
                                     </div>
 
                                     <!-- Slider range -->
-                                    <div class="col-12 col-md-4 col-lg-6 col-xl-6 col-xxl-4">
-                                        <div class="col-10  offset-1 mt-2 mt-xl-1">
+                                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4">
+                                        <div class="col-10 col-md-10   offset-1 offset-md-0 mt-2 mt-xl-1">
                                             <input type="text" class="js-range-slider" name="my_range" value="" />
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row mt-2 mt-xl-1">
+                                <div class="row mt-2 mt-md-1 mt-xl-1">
                                     <!-- Date picker Desde -->
                                     <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
                                         <label>Fecha de inicio:</label>
@@ -310,79 +310,85 @@
                       </div>
                 </div>
             </div>
-        </div>
+    </div>
 
-
-        <!-- Secction 02 -->
-        <div class="secc-about  mt-6">
-            <div class="path-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <div class="d-flex align-items-end">
-                        <!-- Img 01 -->
-                        <div class="img-collage-01">
-                            <picture>
-                                <!-- Large -->
-                                <source media="(min-width: 576px)" srcset="../../web/img/pag_at_tran/rectangle-copy-2.jpg">
-                                <!-- Medium -->
-                                <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-2@2x.jpg" >
-                                <!-- fallback -->
-                                <img src="../../web/img/pag_at_tran/rectangle-copy-2@3x.jpg" width="100%" alt="">
-                            </picture>
-                        </div>
-                        
-                        <!-- Img 02 -->
-                        <div class="img-collage-02">
-                            <picture>
-                                <!-- Large -->
-                                <source media="(min-width: 300px)" srcset="../../web/img/pag_at_tran/rectangle-copy-4.jpg">
-                                <!-- Medium -->
-                                <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-4@2x.jpg" >
-                                <!-- fallback -->
-                                <img src="../../web/img/pag_at_tran/rectangle-copy-4@3x.jpg" width="100%" alt="">
-                            </picture>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-start">
-                            <!-- Img 03 -->
-                            <div class="img-collage-03">
+    <!-- Secction 02 -->
+    <div class="secc-about  mt-6">
+        <div class="path-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <div class="d-flex align-items-end">
+                            <!-- Img 01 -->
+                            <div class="img-collage-01">
                                 <picture>
                                     <!-- Large -->
-                                    <source media="(min-width: 922px)" srcset="../../web/img/pag_at_tran/rectangle-copy-3.jpg">            
+                                    <source media="(min-width: 576px)" srcset="../../web/img/pag_at_tran/rectangle-copy-2.jpg">
                                     <!-- Medium -->
-                                    <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-3@2x.jpg" >
+                                    <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-2@2x.jpg" >
                                     <!-- fallback -->
-                                    <img src="../../web/img/pag_at_tran/rectangle-copy-3@3x.jpg" width="100%" alt="">
+                                    <img src="../../web/img/pag_at_tran/rectangle-copy-2@3x.jpg" width="100%" alt="">
                                 </picture>
                             </div>
-
-                            <!-- Img 04 -->
-                            <div class="img-collage-04">
+                            
+                            <!-- Img 02 -->
+                            <div class="img-collage-02">
                                 <picture>
                                     <!-- Large -->
-                                    <source media="(min-width: 922px)" srcset="../../web/img/pag_at_tran/boxService02.jpg">
+                                    <source media="(min-width: 300px)" srcset="../../web/img/pag_at_tran/rectangle-copy-4.jpg">
                                     <!-- Medium -->
-                                    <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/boxService02@2x.jpg" >
+                                    <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-4@2x.jpg" >
                                     <!-- fallback -->
-                                    <img src="../../web/img/pag_at_tran/boxService02@3x.jpg" width="100%" alt="">
+                                    <img src="../../web/img/pag_at_tran/rectangle-copy-4@3x.jpg" width="100%" alt="">
                                 </picture>
                             </div>
+                        </div>
+
+                        <div class="d-flex align-items-start">
+                                <!-- Img 03 -->
+                                <div class="img-collage-03">
+                                    <picture>
+                                        <!-- Large -->
+                                        <source media="(min-width: 922px)" srcset="../../web/img/pag_at_tran/rectangle-copy-3.jpg">            
+                                        <!-- Medium -->
+                                        <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/rectangle-copy-3@2x.jpg" >
+                                        <!-- fallback -->
+                                        <img src="../../web/img/pag_at_tran/rectangle-copy-3@3x.jpg" width="100%" alt="">
+                                    </picture>
+                                </div>
+
+                                <!-- Img 04 -->
+                                <div class="img-collage-04">
+                                    <picture>
+                                        <!-- Large -->
+                                        <source media="(min-width: 922px)" srcset="../../web/img/pag_at_tran/boxService02.jpg">
+                                        <!-- Medium -->
+                                        <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/boxService02@2x.jpg" >
+                                        <!-- fallback -->
+                                        <img src="../../web/img/pag_at_tran/boxService02@3x.jpg" width="100%" alt="">
+                                    </picture>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5 mt-5 mt-md-0 mt-lg-0 mt-xl-1">
+                        <p class="col-12 col-lg-7 text-gray-03 font-archivo font-regular border-b-1 border-green-01 pb-4">
+                            ¿Quiénes somos?
+                        </p>
+                        <p class="col-12 col-lg-9 text-gray-02 font-archivo font-semibold">
+                            Contamos con servicios de arrendamiento puro y múltiples beneficios para tu empresa
+                        </p>
+                        <p class="font-openSans font-regular">
+                            Leasing Mobile te ofrece arrendamiento en energía, transporte, 
+                            maquinaria y equipos de cómputo para tu negocio.
+                        </p>
+                        <p class="font-openSans font-regular">
+                            Al tener un esquema de arrendamiento puro bien diseñado, 
+                            las empresas pueden hacer grandes inversiones en activos cada cierto tiempo, manteniendo 
+                            el flujo de efectivo estable pues se evita una descapitalización y genera una mejor 
+                            administración de flujo de efectivo.
+                        </p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5 mt-5 mt-md-0 mt-lg-0 mt-xl-1">
-                    <p class="col-12 col-lg-7 text-gray-03 font-archivo font-regular border-b-1 border-green-01 pb-4">¿Quiénes somos?</p>
-                    <p class="col-12 col-lg-9 text-gray-02 font-archivo font-semibold">
-                    Contamos con servicios de arrendamiento puro y múltiples beneficios para tu empresa</p>
-                    <p class="font-openSans font-regular">Leasing Mobile te ofrece arrendamiento en energía, transporte, 
-                    maquinaria y equipos de cómputo para tu negocio.</p>
-                    <p class="font-openSans font-regular">Al tener un esquema de arrendamiento puro bien diseñado, 
-                    las empresas pueden hacer grandes inversiones en activos cada cierto tiempo, manteniendo 
-                    el flujo de efectivo estable pues se evita una descapitalización y genera una mejor 
-                    administración de flujo de efectivo.</p>
-                </div>
-            </div>
 
                 <!-- ¿Qué ofrecemos?  -->
                 <div class="row mt-6">
@@ -393,7 +399,7 @@
                                     ¿Qué ofrecemos?
                                 </p>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-8 col-lg-6 col-xxl-6 offset-md-3 offset-xl-2 text-center">
+                            <div class="col-12 col-md-6 col-xl-8 col-lg-6 col-xxl-6 offset-md-3 offset-xl-2 offset-xxl-3 text-center">
                                 <p class="font-openSans font-regular text-gray-03">
                                 Somos una empresa de arrendamiento puro, lista para generar 
                                 soluciones <br> flexibles y a la medida de tus necesidades.</p>
@@ -411,132 +417,118 @@
     <img src="../../web/img/pag_at_tran/imgAutoCentrado.png" class="blk-auto__img" alt="" srcset="">
     <div class="container blk-container">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                <div class="column-list">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="column-list column-list--reverse">
                     <!-- Pointer 1 -->
-                    <div class="col-12 col-xxl-12 mt-3">
-                        <div class="col-8 col-xxl-7 offset-4 box-point">
-                           <div class="col-10 offset-1 box-selector-rigth">
-                                <div class="box-circle">
-                                    <img src="../../web/img/icons/iconAtencion.svg" alt="">
+                    <div class="col-12 col-xl-12 col-xxl-12">
+                        <div class="point point--end">
+                            <div class="point__item">
+                                <div class="point__circle">
+                                    <img src="../../web/img/icons/iconAtencion.svg" class="point__icon" alt="">
                                 </div>
-                                <div class="path">
-                                    <div class="line"></div>
-                                    <div class="circle"></div>
+                                <div class="point__arrow">
+                                    <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
                                 </div>
-                           </div>
-                            <div class="box-desc mt-1">
-                                <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">01</h4>
-                                <p class="p-0 font-archivo font-semibold text-gray-03">
-                                    Atención <br> personalizada</p>
+                            </div>
+                            <div class="desc desc--rigth">
+                                <h3 class="desc__number">01</h3>
+                                <p class="desc__text">Atención <br class="d-none d-md-none d-xl-block"> personalizada</p>
                             </div>
                         </div>
                     </div>
-                
-                    <!-- Pointer 2 -->
-                    <div class="col-12 mt-3">
-                        <div class="box-point">
-                           <div class="col-7 col-xxl-6 offset-1 box-selector-rigth">
-                                <div class="box-circle">
-                                    <img src="../../web/img/icons/iconCotizaacion.svg" alt="">
-                                </div>
-                                <div class="path">
-                                    <div class="line"></div>
-                                    <div class="circle"></div>
-                                </div>
-                           </div>
-                            <div class="col-12 box-desc mt-1">
-                                <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">02</h4>
-                                <p class="p-0 font-archivo font-semibold text-gray-03">
-                                    Cotizaciones competitivas <br> de acuerdo a las necesidades</p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <!-- Pointer 3 -->
-                    <div class="col-12 mt-2">
-                        <div class="col-7 col-xxl-6 offset-4 box-point">
-                           <div class="box-selector-rigth">
-                                <div class="box-circle">
-                                    <img src="../../web/img/icons/iconEsquema.svg" alt="">
-                                </div>
-                                <div class="path">
-                                    <div class="line"></div>
-                                    <div class="circle"></div>
-                                </div>
-                           </div>
-                            <div class="col-12 box-desc mt-1">
-                                <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">03</h4>
-                                <p class="p-0 font-archivo font-semibold text-gray-03">Esquemas <br> creativos</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
+                    <!-- Pointer 2 -->
+                    <div class="col-12 col-xl-12 col-xxl-12">
+                        <div class="point">
+                            <div class="point__item">
+                                <div class="point__circle">
+                                    <img src="../../web/img/icons/iconCotizaacion.svg"  class="point__icon" alt="">
+                                </div>
+                                <div class="point__arrow">
+                                    <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <h3 class="desc__number">02</h3>
+                                <p class="desc__text">Cotizaciones competitivas <br> bde acuerdo a las necesidades</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pointer 3 -->
+                    <div class="col-12 col-xl-12 col-xxl-12">
+                        <div class="point point--end">
+                            <div class="point__item">
+                                <div class="point__circle">
+                                    <img src="../../web/img/icons/iconEsquema.svg" class="point__icon" alt="">
+                                </div>
+                                <div class="point__arrow">
+                                    <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="desc desc--rigth">
+                                <h3 class="desc__number">03</h3>
+                                <p class="desc__text">Esquemas <br class="d-none d-lg-block"> creativos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
     
              <!-- Columna 2 -->
-             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-none d-md-block p-0 d-flex blk-auto__column">
-                <picture>
-                   
-                </picture>
+             <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-none d-md-none d-lg-block p-0 d-flex blk-auto__column">
+
             </div>
     
             <!-- Columna 3 -->
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-                 <!-- Pointer 4 -->
-                <div class="col-10 offset-1 mt-2">
-                    <div class=" box-point">
-                        <div class="box-selector-left">
-                                <div class="box-circle">
-                                    <img src="../../web/img/icons/iconAutorizacion.svg" alt="">
-                                </div>
-                                <div class="path">
-                                    <div class="line"></div>
-                                    <div class="circle"></div>
-                                </div>
-                        </div>
-                        <div class="col-6 offset-4 box-desc mt-1">
-                            <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">04</h4>
-                            <p class="p-0 font-archivo font-semibold text-gray-03">Autorización <br> oportuna</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pointer 5 -->
-                <div class="col-6 offset-3 mt-3">
-                    <div class="box-point">
-                    <div class="box-selector-left">
-                            <div class="box-circle">
-                                <img src="../../web/img/icons/iconFlexible.svg" alt="">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="column-list">
+                     <!-- Pointer 4 -->
+                     <div class="point point--start">
+                        <div class="point__item point__item--rigth">
+                            <div class="point__circle">
+                                <img src="../../web/img/icons/iconAutorizacion.svg" class="point__icon" alt="">
                             </div>
-                            <div class="path">
-                                <div class="line"></div>
-                                <div class="circle"></div>
+                            <div class="point__arrow point__arrow--rigth">
+                                <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
                             </div>
-                    </div>
-                        <div class="col-6 offset-5 box-desc mt-1">
-                            <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">05</h4>
-                            <p class="p-0 font-archivo font-semibold text-gray-03">Flexibles en <br> autorización</p>
+                        </div>
+                        <div class="desc desc--left">
+                            <h3 class="desc__number">04</h3>
+                            <p class="desc__text">Autorización <br class="d-none d-lg-block"> oportuna</p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Pointer 6 -->
-                <div class="col-12 mt-3">
-                    <div class="col-7 col-xxl-6 box-point">
-                    <div class="box-selector-left">
-                        <div class="box-circle">
-                            <img src="../../web/img/icons/iconConvenio.svg" alt="">
+                    <!-- Pointer 5 -->
+                    <div class="point">
+                        <div class="point__item point__item--rigth">
+                            <div class="point__circle">
+                                <img src="../../web/img/icons/iconFlexible.svg" class="point__icon" alt="">
+                            </div>
+                            <div class="point__arrow point__arrow--rigth">
+                                <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                            </div>
                         </div>
-                        <div class="path">
-                            <div class="line"></div>
-                            <div class="circle"></div>
+                        <div class="desc desc--end">
+                            <h3 class="desc__number">05</h3>
+                            <p class="desc__text">Flexibles en <br class="d-none d-lg-block"> autorización</p>
                         </div>
                     </div>
-                        <div class="col-10 offset-2 box-desc mt-1">
-                            <h4 class="font-archivo font-bold fs-2 text-gray-01 m-0">06</h4>
-                            <p class="p-0 font-archivo font-semibold text-gray-03">Convenios y <br> precios de flotilla</p>
+
+                    <!-- Pointer 6 -->
+                    <div class="point point--start">
+                        <div class="point__item point__item--rigth">
+                            <div class="point__circle">
+                                <img src="../../web/img/icons/iconConvenio.svg" class="point__icon" alt="">
+                            </div>
+                            <div class="point__arrow point__arrow--rigth">
+                                <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="desc desc--left">
+                            <h3 class="desc__number">06</h3>
+                            <p class="desc__text">Convenios y <br class="d-none d-lg-block"> precios de flotilla</p>
                         </div>
                     </div>
                 </div>
@@ -545,12 +537,10 @@
     </div>
 </div>
 
-
-
-
-<div class="container mt-4">
+<!-- Boton cotización -->
+<div class="container mt-2">
     <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 offset-xl-4 px-5">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 offset-md-3 offset-lg-4 offset-xl-4 px-5">
             <button class="btn-clean border bh-1 border-green-01 b-radius-100 p-0  w-100 d-flex justify-content-between align-items-center">
                 <img src="../../web/img/pag_at_tran/iconAvatar@3x.png" width="50px" alt="">
                 <p class="m-0 font-openSans font-regular w-100">Solicita una cotización</p>
@@ -560,7 +550,7 @@
 </div>
 
 <!-- Green Box -->
-<div class="slickCarousel slickCarousel--green mt-4 ">
+<div class="slickCarousel slickCarousel--green mt-2 ">
    <div class="container slick  slickCartousel__container slickCarousel__container--szLarge">
     <img src="../../web/img/pag_at_tran/iconHyundai.svg" height="40px" alt="" srcset="">
     <img src="../../web/img/pag_at_tran/iconMazda.svg" height="40px" alt="" srcset="">
@@ -574,130 +564,72 @@
    </div>
 </div>
 
-<!-- Sec Arendamiento puro -->
+<!-- Panel Benficios -->
 <div class="container-fluid p-0 mt-5 mt-xl-2 path-slice">
     <div class="row g-0">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-4 col-xxl-3 offset-xl-1 offset-xxl-2 p-0 mb-5">
-            <!-- Text header -->
-            <p class="font-archivo font-regular text-gray-03">Arrendamiento puro</p>
-            <h3 class="uppercase fs-6">Invierte en tu empresa, <br> nosotros nos encargamos del equipo.</h3>
-            <div class="col-6">
-                <div class="line-space bh-1  border-green-01"></div>
-            </div>
-            
-            <!-- Controls -->
-            <ul class="nav nav-pills mb-3 board-control mt-5 mt-xl-1" id="pills-tab" role="tablist"> 
-                <li class="nav-item btn-board" role="presentation">
-                    <a class="nav-link" id="tab-01" data-bs-toggle="pill" href="#tab-aren-01" role="tab" aria-controls="tab-aren-01" aria-selected="false">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">01</h3>
-                            <img src="../../web/img/pag_at_tran/icons/iconArren-01.svg" class="d-none d-lg-block icon-board" alt="">
-                        </div>
-                        <small class="w-100  text-left">Financiamiento flexible</small>
-                    </a>
-                </li>
-
-                <li class="nav-item btn-board" role="presentation">
-                    <a class="nav-link active" id="tab-02" data-bs-toggle="pill" href="#tab-aren-02" role="tab" aria-controls="tab-aren-02" aria-selected="true">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">02</h3>
-                            <img src="../../web/img/pag_at_tran/icons/iconArren-02.svg" class="d-none d-lg-block icon-board" alt="">
-                        </div>
-                        <small class="w-100  text-left">Múltiples beneficios fiscales</small>
-                    </a>
-                </li>
-
-                <li class="nav-item btn-board" role="presentation">
-                    <a class="nav-link" id="tab-03" data-bs-toggle="pill" href="#tab-aren-03" role="tab" aria-controls="tab-aren-03" aria-selected="false">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">03</h3>
-                            <img src="../../web/img/pag_at_tran/icons/iconArren-03.svg" class="d-none d-lg-block icon-board" alt="">
-                        </div>
-                        <small class="w-100  text-left">Contamos con especialistas que te llevarán de la mano.</small>
-                    </a>
-                </li>
-
-                <li class="nav-item btn-board" role="presentation">
-                    <a class="nav-link" id="tab-04" data-bs-toggle="pill" href="#tab-aren-04" role="tab" aria-controls="tab-aren-04" aria-selected="false">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">04</h3>
-                            <img src="../../web/img/pag_at_tran/icons/iconArren-04.svg" class="d-none d-lg-block icon-board" alt="">
-                        </div>
-                        <small class="w-100  text-left">Te brindamos <br> atención personalizada.</small>
-                    </a>
-                </li>
-
-                <li class="nav-item btn-board" role="presentation">
-                    <a class="nav-link" id="tab-05" data-bs-toggle="pill" href="#tab-aren-05" role="tab" aria-controls="tab-aren-05" aria-selected="false">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">05</h3>
-                            <img src="../../web/img/pag_at_tran/icons/iconArren-05.svg" class="d-none d-lg-block icon-board" alt="">
-                        </div>
-                        <small class="w-100  text-left">Optimizamos la deducibilidad en utilización de activos productivos.</small>
-                    </a>
-                </li>
-
-                <li class="nav-item btn-board" role="presentation">
-                    <a class="nav-link" id="tab-06" data-bs-toggle="pill" href="#tab-aren-06" role="tab" aria-controls="tab-aren-06" aria-selected="false">
-                        <div class="w-100 d-flex justify-content-between align-items-center">
-                            <h3 class="m-0 p-0 font-archivo font-semibold text-gray-05">06</h3>
-                            <img src="../../web/img/pag_at_tran/icons/iconArren-06.svg" class="d-none d-lg-block icon-board" alt="">
-                        </div>
-                        <small class="w-100  text-left">Resolvemos procesos con mínima inversión.</small>
-                    </a>
-                </li>
-
-            </ul>
+        <div class="col-12 p-2 d-md-none">
+             <!-- Text header -->
+             <p class="font-archivo font-regular text-gray-03">Arrendamiento puro</p>
+             <h3 class="uppercase fs-6">Invierte en tu empresa, <br> nosotros nos encargamos del equipo.</h3>
+             <div class="col-6">
+                 <div class="line-space bh-1  border-green-01"></div>
+             </div>
         </div>
-
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 offset-xl-1  offset-xxl-1 p-0">
-            <div class="tab-content" id="pills-tabContent">    
-                <div class="tab-pane board-content fade " id="tab-aren-01" role="tabpanel" aria-labelledby="tab-01">
-                    <div class="d-flex align-items-end">
-                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">01</h3>
-                        <p class="font-archivo font-semibold">Financiamiento <br> flexible</p>
+        <!-- Panel Contenido --> 
+        <div class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-xl-1  offset-xxl-1 p-0 order-md-2 order-xl-2">
+            <div class="tab-content board__desc" id="pills-tabContent"> 
+                <!-- Contenido 01 -->   
+                <div class="tab-pane board__tab fade" id="tab-aren-01" role="tabpanel" aria-labelledby="tab-01">
+                    <div class="content">
+                        <h3 class="content__number">01</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
                     </div>
-                    <p class="col-xl-8 col-xxl-5 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br class="d-none d-md-block"> de inversión y liquidez.</p>
                 </div>
 
-                <div class="tab-pane board-content fade show active" id="tab-aren-02" role="tabpanel" aria-labelledby="tab-02">
-                    <div class="d-flex align-items-end">
-                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">02</h3>
-                        <p class="font-archivo font-semibold">Múltiples <br> beneficios fiscales</p>
+                 <!-- Contenido 02 --> 
+                <div class="tab-pane board__tab fade show active" id="tab-aren-02" role="tabpanel" aria-labelledby="tab-02">
+                    <div class="content">
+                        <h3 class="content__number">02</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
                     </div>
-                    <p class="col-xl-8 col-xxl-5 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br class="d-none d-md-block">  de inversión y liquidez.</p>
                 </div>
 
-                <div class="tab-pane board-content fade" id="tab-aren-03" role="tabpanel" aria-labelledby="tab-03">
-                    <div class="d-flex align-items-end">
-                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">03</h3>
-                        <p class="font-archivo font-semibold">Contamos con especialistas <br> que te llevarán de la mano.</p>
+                 <!-- Contenido 03 --> 
+                <div class="tab-pane board__tab fade" id="tab-aren-03" role="tabpanel" aria-labelledby="tab-03">
+                    <div class="content">
+                        <h3 class="content__number">03</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
                     </div>
-                    <p class="col-xl-6 col-xxl-5 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos de inversión y liquidez.</p>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br class="d-none d-md-block">  de inversión y liquidez.</p>
+                </div>
+                
+                <!-- Contenido 04 --> 
+                <div class="tab-pane board__tab fade" id="tab-aren-04" role="tabpanel" aria-labelledby="tab-04">
+                    <div class="content">
+                        <h3 class="content__number">04</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
                 </div>
 
-                <div class="tab-pane board-content fade" id="tab-aren-04" role="tabpanel" aria-labelledby="tab-04">
-                    <div class="d-flex align-items-end">
-                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">04</h3>
-                        <p class="font-archivo font-semibold">Te brindamos <br> atención personalizada.</p>
+                 <!-- Contenido 05 --> 
+                <div class="tab-pane board__tab fade" id="tab-aren-05" role="tabpanel" aria-labelledby="tab-05">
+                    <div class="content">
+                        <h3 class="content__number">05</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
                     </div>
-                    <p class="col-xl-6 col-xxl-5 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos de inversión y liquidez.</p>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
                 </div>
 
-                <div class="tab-pane board-content fade" id="tab-aren-05" role="tabpanel" aria-labelledby="tab-05">
-                    <div class="d-flex align-items-end">
-                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">05</h3>
-                        <p class="font-archivo font-semibold">Optimizamos la deducibilidad <br> en utilización de activos productivos.</p>
+                 <!-- Contenido 06 --> 
+                <div class="tab-pane board__tab fade" id="tab-aren-06" role="tabpanel" aria-labelledby="tab-06">
+                    <div class="content">
+                        <h3 class="content__number">06</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
                     </div>
-                    <p class="col-xl-6 col-xxl-5 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos de inversión y liquidez.</p>
-                </div>
-
-                <div class="tab-pane board-content fade" id="tab-aren-06" role="tabpanel" aria-labelledby="tab-06">
-                    <div class="d-flex align-items-end">
-                        <h3 class="text-gray-05 m-0 font-archivo font-semibold">06</h3>
-                        <p class="font-archivo font-semibold">Resolvemos procesos <br> con mínima inversión.</p>
-                    </div>
-                    <p class="col-xl-6 col-xxl-5 p-0 m-0">Obtén deducibilidad de impuestos, bajos montos de inversión y liquidez.</p>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
                 </div>
 
               </div>
@@ -707,108 +639,195 @@
                         <!-- Medium -->
                         <source media="(min-width: 750px)"srcset="../../web/img/pag_at_tran/arrows-left@2x.jpg" >
                         <!-- fallback -->
-                  <img src="../../web/img/pag_at_tran/arrows-left@3x.jpg" width="100%" class="img-auto-tabs" alt="" srcset="">
+                  <img src="../../web/img/pag_at_tran/arrows-left@3x.jpg" width="100%" class="board__auto" alt="" srcset="">
               </picture>
+        </div> <!--End Panel Contenido --> 
+
+        <!--  Panel control -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-4 col-xxl-3 offset-xl-1 offset-xxl-2 p-0 order-md-1 order-xl-1">
+            <!-- Text header -->
+            <div class="board d-none d-md-block">
+                <p class="font-archivo font-regular text-gray-03">Arrendamiento puro</p>
+                <h3 class="uppercase fs-6">Invierte en tu empresa, <br> nosotros nos encargamos del equipo.</h3>
+                <div class="col-6">
+                    <div class="line-space bh-1  border-green-01"></div>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <ul class="nav nav-pills board mt-1" id="pills-tab" role="tablist">
+                <!-- Button 01 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-01" data-bs-toggle="pill" href="#tab-aren-01" role="tab" aria-controls="tab-aren-01" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">01</h3>
+                                <img src="../../web/img/board/iconBoardDefault-01.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-01.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Financiamiento flexible</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Button 02 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container  active" id="tab-02" data-bs-toggle="pill" href="#tab-aren-02" role="tab" aria-controls="tab-aren-02" aria-selected="true">
+                      <div class="board__item">
+                        <div class="board__group">
+                            <h3 class="board__number">02</h3>
+                            <img src="../../web/img/board/iconBoardDefault-02.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-02.svg" class="board__icon board__icon--active" alt="">
+                        </div>
+                        <p class="board__title">Múltiples beneficios fiscales</p>
+                      </div>
+                    </a>
+                </li>
+
+                <!-- Button 03 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-03" data-bs-toggle="pill" href="#tab-aren-03" role="tab" aria-controls="tab-aren-03" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">03</h3>
+                                <img src="../../web/img/board/iconBoardDefault-03.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-03.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Contamos con especialistas que te llevarán de la mano.</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Button 04 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-04" data-bs-toggle="pill" href="#tab-aren-04" role="tab" aria-controls="tab-aren-04" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">04</h3>
+                                <img src="../../web/img/board/iconBoardDefault-04.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-04.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Te brindamos <br> atención personalizada.</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Button 05 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-05" data-bs-toggle="pill" href="#tab-aren-05" role="tab" aria-controls="tab-aren-05" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">05</h3>
+                                <img src="../../web/img/board/iconBoardDefault-05.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-05.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Optimizamos la deducibilidad en utilización de activos productivos.</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Button 06 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-06" data-bs-toggle="pill" href="#tab-aren-06" role="tab" aria-controls="tab-aren-06" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">06</h3>
+                                <img src="../../web/img/board/iconBoardDefault-06.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-06.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Resolvemos procesos con mínima inversión.</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
         </div>
     </div>
 </div>
 
 <!-- Footer -->    
-<footer>
-    <div class="footer-newsletter">
-        <div class="bg-box">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-7 col-xxl-6 d-none d-sm-none d-md-none bg-car d-lg-block">
-                        <img src="../../web/img/my-20-mazda-6-sport-snowflake-white-car-ds-front-3-q@3x.png" class="img-auto" alt="">
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-4 col-xxl-6">
-                        <div class="container-form box-column center-center">
-                            <p class="uppercase font-archivo font-regular m-0">No te pierdas nuestras actualizaciones</p>
-                            <p class="font-openSans font-regular mt-1">Suscríbete a nuestro newsletter</p>
-                            
-                            <!-- Input newsletter -->
-                            <form action="" class="mt-1">
-                                <div class="input-group">
-                                    <input  type="mail"  name="" placeholder="Ingresa tu correo electrónico">
-                                    <button type="submit" class="btn-submit"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+<footer class="mt-3">
+    <div class="newsletter newsletter--bg bg-success">
+        <div class="newsletter__container">
+            <img src="../../web/img/layout/group-9.svg" class="newsletter__decorator" alt="" srcset="">
+            <img src="../../web/img/layout/my-20-mazda-6-sport-snowflake-white-car-ds-front-3-q@3x.png" class="newsletter__img" alt="" srcset="">
+            <form action="" class="newsletter__form">
+                <p class="newsleter__title">No te pierdas nuestras actualizaciones</p>
+                <p class="newsleter__text">Suscríbete a nuestro newsletter</p>
+                <div class="newsletter__group">
+                    <input type="text" class="newsletter__input" name="" placeholder="Ingresa tu correo electrónico">
+                    <button class="newsletter__button">
+                        <img src="../../web/img/icons/icon-arrow.svg"  alt="" srcset="">
+                    </button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
     <!-- Footer nav -->
-    <div class="footer-nav">
+    <div class="nav-footer">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <ul>
-                        <li><a href="">Autos y Equipos <br class="d-none d-md-block d-lg-none"> de Transporte</a></li>
-                        <li><a href="">Maquinaria y Equipos <br class="d-none d-md-block d-lg-none"> de Computo</a></li>
-                        <li><a href="">Sistemas <br class="d-none d-md-block d-lg-none"> de Energía Solar</a></li>
-                        <li><a href="">Nuestra <br class="d-none d-md-block d-lg-none"> Empresa</a></li>
-                        <li><a href="">Blog</a></li>
+                    <ul class="nav-footer__list">
+                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Autos y Equipos de Transporte</a></li>
+                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Maquinaria y Equipos de Computo</a></li>
+                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Sistemas  de Energía Solar</a></li>
+                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Nuestra  Empresa</a></li>
+                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Blog</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Fotter info -->
+    <!-- Footer Contact | Terms -->
     <div class="footer-info">
-        <div class="footer-contact">
+        <img src="../../web/img/layout/logoFooter.png" class="footer-info__logo" alt="" srcset="">
+        <!-- Footer Contac -->
+        <div class="footer-info__container">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-12 col-lg-2 col-xl-2  offset-lg-1 offset-xl-1">
-                        <div class="box-footer">
-                            <div class="icon-phone"></div>
-                            <p>442-267-8890</p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-md-12 col-lg-3 col-xl-3">
-                        <div class="box-footer">
-                            <div class="icon-mail"></div>
-                            <p>contacto@leasingmobile.com</p>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-12 col-lg-3 col-xl-3">
-                        <div class="box-footer">
-                            <div class="icon-mapa"></div>
-                            <p>Ver dirección en mapa</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-2 col-xl-2">
-                        <div class="box-footer">
-                            <a href=""><div class="icon-faceboock"></div></a>
-                            <a href=""><div class="icon-instagram"></div></a>
-                            <a href=""><div class="icon-twitter"></div></a>
-                        </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-12 col-md-12 col-lg-10 col-xl-9 col-xxl-12">
+                        <ul class="contact">
+                            <li class="contact__item">
+                                <img src="../../web/img/layout/icons/icon_phone.svg" alt="" srcset="">
+                                <p class="contact__text">442-267-8890</p>
+                            </li>
+                            <li class="contact__item">
+                                <img src="../../web/img/layout/icons/icon_mail.svg" alt="" srcset="">
+                                <p class="contact__text">contacto@leasingmobile.com</p>
+                            </li>
+                            <li class="contact__item">
+                                <img src="../../web/img/layout/icons/icon_map.svg" alt="" srcset="">
+                                <p class="contact__text">Ver dirección en mapa</p>
+                            </li>
+                            <li class="contact__item contact__item--social">
+                                <a href=""><img src="../../web/img/layout/icons/icon_faceboock.svg" alt="" srcset=""></a>
+                                <a href=""><img src="../../web/img/layout/icons/icon_instagram.svg" alt="" srcset=""></a>
+                                <a href=""><img src="../../web/img/layout/icons/icon_twitter.svg" alt="" srcset=""></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Footer author -->
-    <div class="footer-author">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 box-author">
-                    <p>© 2020 Leasing Mobile. Derechos Reservados.</p>
-                    <a href="privacidad.html">Aviso de privacidad</a>
+        <div class="terms">
+           <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-lg-3 offset-xl-3">
+                        <div class="terms__container">
+                            <p class="terms__rigths">© 2020 Leasing Mobile. Derechos Reservados.</p>
+                            <a href="privacidad.html" class="terms__privacy">Aviso de privacidad</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
+           </div>
         </div>
     </div>
 </footer>
 
-
-    <script type="module" src="../js/app.js"></script>
+ <!--<script type="module" src="../js/app.js"></script>-->
+ <script src="../../web/js/app.js"></script>
 </body>
 </html>

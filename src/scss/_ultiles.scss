@@ -1,3 +1,5 @@
+
+
 input{
     outline: none; 
 }
@@ -16,7 +18,7 @@ button:focus{
 /* Páginado */
 .page-link{
     &:hover{
-        background-color: $color-green-hover !important;
+        background-color: $color-green-02 !important;
         color: white !important;
     }
 }
@@ -145,7 +147,7 @@ button:focus{
     border-color: $color-green-default;
 }
 .border-green-02{
-    border-color: $color-green-hover;
+    border-color: $color-green-02;
 }
 .border-green-03{
     border-color: $color-green-03;
@@ -436,7 +438,7 @@ button:focus{
     font-weight: 400;
 
     &:hover{
-        background-color: $color-green-hover;
+        background-color: $color-green-02;
     }
 
     @media (min-width: 300px) {
@@ -455,7 +457,7 @@ button:focus{
     border-color: $color-green-default;
 
     &:hover{
-        background-color: $color-green-hover;
+        background-color: $color-green-02;
     }
 }
 .button-select{
@@ -602,7 +604,7 @@ button:focus{
     border-color: $color-green-default !important;
 }
 .border-green-02{
-    border-color: $color-green-hover !important;
+    border-color: $color-green-02 !important;
 }
 
 .border-heigth-01 {

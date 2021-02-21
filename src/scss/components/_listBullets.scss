@@ -1,10 +1,10 @@
-.listBullets {
+.list {
     width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
 }
-.listBullets__item{
+.list__item{
     width: 100%;
     height: auto;
     padding: 0;
@@ -18,54 +18,58 @@
         margin: 40px 0 0 0;
     }
 }
-.listBullets__item--center {
+.list__item--center {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 }
-.listBullets__item__container {
+.list__item__container {
     width: 90%;
     height: auto;
 }
-.listBullets__circle{
+.list__circle{
     width: 40px;
     height: 40px;
+    border-radius: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.listBullets__circle--purple{
+.list__circle--purple{
     background-color: $color-purple-01;
 }
-.listBullets__circle--green{
+.list__circle--green{
     background-color: $color-green-default;
 }
-.listBullets__circle--rounded{
+.list__circle--rounded{
     border-radius: 100px;
 }
-.listBullets__icon{
+.list__icon{
     width: 17px;
     height: 14px;
 }
-.listBullets__icon--left{
+.list__icon--left{
     transform: rotate(180deg);
 }
-.listBullets__icon--rigth{
+.list__icon--rigth{
     transform: rotate(360deg);
 }
-.listBullets__icon--flat {
+.list__icon--flat {
     margin-right: 10px;
 }
-.listBullets__item__title {
+.list__item__title {
     margin: 0 0 10px 17px;
     font-family: $openSans;
     font-weight: 600;
     font-size: 1rem;
     color: $color-gray-02;
 }
-.listBullets__text{
+.list__text{
+    font-family: $openSans;
+    font-size: 16px;
+    font-weight: 400;
     margin: 0 0 0 17px;
     color: $color-gray-02;
 
@@ -74,7 +78,23 @@
         height: auto;
         padding: 0 10px 0 10px;
     }
-    @media screen and (min-width: 1900px) {
-        font-size: 20px;
 }
+
+.list-title {
+    margin: 0;
+    font-family: $archivo;
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-gray-03;
+    text-transform: uppercase;
+}
+.list-title__title {
+    margin: 0 0 5px 0;
+}
+.list-line {
+    width: 100%;
+    height: 1px;
+}
+.list-line--green {
+    background-color: $color-green-01;
 }

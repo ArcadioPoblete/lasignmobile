@@ -4,16 +4,15 @@
     font-family: $openSans;
     font-weight: 400;
     padding: 0;
-    background-color: transparent;
 }
-.button--sz-medium {
+.button--small {
+    height: 40px;
+}
+.button--medium {
     height: 50px;
 }
 .button--center{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    margin: 0 50% 0 50%;
 }
 .button--start {
     display: flex;
@@ -33,6 +32,20 @@
 .button--border-2 {
     border: solid 2px;
 }
+.button--transparent {
+    background-color: transparent;
+}
+.button--transparent:hover {
+    background-color: $color-green-01;
+    
+    & .button__text {
+        color: #ffff;
+    }
+    
+    & .button__link {
+        color: #ffff;
+    }
+}
 .button--border-green {
     border-color: $color-green-default;
 }
@@ -51,6 +64,13 @@
     background-color: $color-green-default;
     color: #ffff;
 }
+.button--hover-green:hover {
+    background-color: $color-green-02;
+    color: #ffff;
+}
+.button--bg-green:hover {
+    background-color: $color-green-02;
+}
 .button__text {
     width: 100%;
     font-family: $openSans;
@@ -64,16 +84,11 @@
 .button__text--center {
     padding: 0 17px 0 10px;
 }
-.button--hover-green {
-    &:hover{
-        background-color: $color-green-default;
-
-        & p {
-            color: #ffff;
-        }
-    }
-}
 .button__avatar {
     width: 50px;
     height: 50px;
+}
+.button__link {
+    color: $color-gray-03;
+    text-decoration: none;
 }

@@ -1,11 +1,14 @@
 import './_navmenu.js';
 import './_slick.js';
+import './_lazyLoad.js';
 import './_selectButton.js';
 import './_boxServices.js';
 import './_rangeSlider.js';
-import './_carousel-block.js';
 import './_datepicker-full.js';
 import './local_date/_es.js';
 import './_datePicker.js';
-import '../components/_navigation.js';
-import '../components/_cotizador.js';
+import './_navigation.js';
+import './_cotizador.js';
+import './_mapa.js';
+import './_calculadora.js';
+import './_select.js';

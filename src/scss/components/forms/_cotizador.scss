@@ -9,6 +9,9 @@
         background-color: $color-purple-01;
     }
 }
+.cotizador--m-top {
+    margin: 20px 0 0 0;
+}
 .cotizador__container {
     width: 100%;
     height: auto;
@@ -48,8 +51,8 @@
     width: 100%;
     height: 750px;
 
-    @media (min-width: 300px) and (max-width: 700px) {
-        height: auto;
+    @media (min-width: 300px) and (max-width: 768px) {
+        display: none;
     }
     @media (min-width: 1024px) and (max-width: 1200px) {
         width: 100%;
@@ -88,7 +91,7 @@
     width: 100%;
     height: 60px;
     padding: 20px 30px 20px 50px;
-    margin: 30px 0 0 0;
+    margin: 13px 0 13px 0;
     border: none;
     font-family: $openSans;
     font-weight: 400;
@@ -101,22 +104,116 @@
 .checkbox {
     display: flex;
     flex-direction: row;
-    padding: 40px 0 40px 40px;
+    padding: 30px 0 30px 40px;
 
     @media (min-width: 300px) and (max-width: 768px) {
+        margin: 20px 0 20px 0;
         flex-direction: column;
         padding: 0;
     }
-
 }
 .checkbox__text {
     font-family: $openSans;
     color: #ffff;
     padding: 0 20px 0 0;
 }
+.checkbox__group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.checkbox__input {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.checkbox__input:checked + .checkbox__radio {
+    background-color: #B4B4D0;
+}
+.checkbox__radio {
+    width:  15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 100px;
+    background-color: #ffff;
+}
+.checkbos__text {
+    margin: 0;
+    padding: 0;
+}
+.checkbox__label {
+    margin: 0 0 5px 2px;
+    font-family: $openSans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .checkbox__inputs {
     font-family: $openSans;
     color: #ffff;
+}
+.chk-button {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.chk__container {
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 300px) and (max-width: 1024px) {
+        margin: 0 0 20px 0;
+        flex-wrap: wrap;
+    }
+}
+.chk-button__container {
+    width: 100px;
+    height: 65px;
+    background-color: $color-purple-01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.chk-button__icon {
+    width: 50px;
+    height: auto;
+}
+.chk-button__text {
+    margin: 2px 0 0 0;
+    padding: 0;
+    font-family: $openSans;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffff;
+}
+.chk-button:checked + .chk-button__container {
+    background-color: #ffff;
+
+    & .chk-button__text {
+        color: $color-purple-01;
+    }
+    
+    & .chk-button--active {
+        display: block;
+    }
+
+    & .chk-button--default {
+        display: none;
+    }
+}
+.chk-button--active {
+    display: none;
+}
+.chk-button--default {
+    display: block;
 }
 .vehicles {
     width: 100%;
@@ -174,4 +271,42 @@
 }
 .zindex-1 {
     z-index: 1;
+}
+.select {
+    width: 100%;
+    height: 60px;
+    border: none;
+    padding: 0 20px 0 50px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.select__text {
+    font-family: $openSans;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-gray-03;
+}
+.select__icon {
+    color: $color-gray-03;
+}
+.options {
+    border: solid 1px;
+    border-color: $color-gray-04;
+    border-radius: 0;
+}
+.options__item{
+    width: 100%;
+    height: 60px;
+    background-color: #ffff;
+}
+.options__item:hover {
+    background-color: $color-green-01 !important;
+}
+.cotizador__decorator--energia {
+    width: 800px;
+    height: auto;
+    right: 6%;
 }

@@ -1,0 +1,125 @@
+.board {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin: 0 0 0 30px;
+    }
+}
+.board__button {
+    width: 50%;
+    height: 150px;
+
+    & a {
+        background-color: $color-gray-03;
+    }
+    
+    & .active {
+        & .board__item {
+            background-color: $color-green-01;
+            border-color: $color-green-01;
+        }
+        & .board__number {
+            color: #ffff;
+        }
+        & .board__title {
+            color: #ffff;
+        }
+        & .board__icon--default {
+            display: none;
+        }
+        & .board__icon--active {
+            display: block;
+        }
+    }
+    
+}
+.board__item {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    border: solid 1px;
+    border-color: $color-gray-01;
+    background-color: #ffff;
+}
+.board__number {
+    font-family: $archivo;
+    font-weight: 600;
+    font-size: 50px;
+    color: $color-purple-01;
+    opacity: 0.2;
+}
+.board__title {
+    font-family: $openSans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    color: $color-gray-03;
+}
+.board__link {
+    color: $color-gray-03 !important;
+}
+.board__container {
+    width: auto;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+.board__group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.board__icon--default {
+    display: block;
+}
+.board__icon--active {
+    display: none;
+}
+.board__desc {
+    border: none !important;
+}
+.content {
+    width: 300px;
+    height: auto;
+    padding: 0 0 10px 0;
+    margin: 0 0 40px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid 1px;
+    border-color: $color-purple-01;
+}
+.content__number {
+    font-family: $archivo;
+    font-weight: 600;
+    font-size: 60px;
+    margin: 0;
+    color: $color-gray-04;
+}
+.content__title {
+    font-family: $archivo;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 0 0 20px;
+    color: $color-gray-03;
+}
+.content__text {
+    font-family: $openSans;
+    font-weight: 400;
+    color: $color-gray-02;
+}
+.board__auto {
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        display: none;
+    }
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
