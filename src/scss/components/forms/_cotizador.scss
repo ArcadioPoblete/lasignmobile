@@ -1,4 +1,7 @@
 
+.cotizador-parrafo {
+    margin-bottom: 20px;
+}
 .cotizador--absolute {
     position: absolute;
     z-index: 1;
@@ -30,21 +33,22 @@
         height: 800px;
     }
 }
+.cotizador-parrafo {
+    margin-bottom: 100px;
+}
 .cotizador__decorator {
-    width: 650px;
+    width: 300px;
     height: auto;
     position: absolute;
     right: 5%;
     bottom: 0;
     
-    @media (min-width: 300px) and (max-width: 700px) {
+    @media (min-width: 300px) and (max-width: 600px) {
         display: none;
     }
-    @media (min-width: 1024px) and (max-width: 1200px) {
-        width: 600px;
-    }
+    
     @media (min-width: 1440px){
-        width: 720px;
+        width: 600px;
     }
 }
 .cotizador__cover {
@@ -66,7 +70,6 @@
     
 }
 .cotizador__form {
-    width: 100%;
     height: 750px;
     padding: 0 40px 0 40px;
     display: flex;
@@ -86,6 +89,13 @@
         height: 800px;
     }
 
+}
+.cotizador__autos {
+    width: 800px !important;
+    height: auto;
+    position: absolute;
+    right: 5%;
+    bottom: 0;
 }
 .cotizador__input {
     width: 100%;

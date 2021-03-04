@@ -1,0 +1,24 @@
+.irs-bar {
+    background-color: $color-green-01 !important;
+}
+.irs-handle {
+    width: 15px !important;
+    height: 15px !important;
+    margin-top: 5px !important;
+    background-color: $color-green-01 !important;
+    border-color: $color-green-01 !important;
+}
+.irs-to {
+    background-color: $color-gray-04 !important;
+    color: $color-gray-03 !important;
+}
+.irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
+    border-top-color: $color-gray-04 !important;
+}
+.irs-from {
+    background-color: $color-gray-04 !important;
+    color: $color-gray-03 !important;
+}
+.irs-max {
+    display: none !important;
+}

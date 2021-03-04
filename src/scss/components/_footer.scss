@@ -1,46 +1,108 @@
 .newsletter{
     width: 100%;
-    height: auto;
-}
-.newsletter__container {
-    width: 100%;
-    height: 270px;
+    height: 400px;
     position: relative;
 
     @media (min-width: 300px) and (max-width: 768px) {
         width: 100%;
-        height: 500px;
+        height: 300px;
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
         width: 100%;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    @media (min-width: 1900px) {
-        width: 100%;
-        height: 400px;
+        height: 300px;
     }
 }
-.newsletter__decorator {
-    width: 730px;
-    height: auto;
+.newsletter__background {
+    width: 100%;
+    height: 271px;
+    position: absolute;
+    background: rgba(98,97,154,1);
+    background: -moz-linear-gradient(top, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(98,97,154,1)), color-stop(100%, rgba(67,66,107,1)));
+    background: -webkit-linear-gradient(top, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
+    background: -o-linear-gradient(top, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
+    background: -ms-linear-gradient(top, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
+    background: linear-gradient(to bottom, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62619a', endColorstr='#43426b', GradientType=0 );
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: 300px;
+    }
+}
+.newsletter__container {
+    width: 100%;
+    height: 400px;
     position: absolute;
 
 
     @media (min-width: 300px) and (max-width: 768px) {
         width: 100%;
-        height: auto;
+        height: 300px;
     }
-    
-    @media (min-width: 1900px) {
-        width: 1100px;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: 300px;
+    }
+}
+.newsletter__left {
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+    }
+}
+.newsletter__rigth {
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.newsletter__arrows {
+    width: 100%;
+    height: 271px;
+    position: absolute;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
         height: auto;
     }
 }
+.newsletter__auto {
+    width: 650px;
+    height: auto;
+    position: absolute;
+    top: 25%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .newsletter__img {
     width: 750px;
     height: auto;
@@ -52,12 +114,16 @@
         height: auto;
         top: 10%;
     }
-
-    @media (min-width: 768px) and (max-width: 1024px) {
+   
+    @media (min-width: 768px) {
         width: 600px;
         height: auto;
         top: 10%;
         left: 5%;
+    }
+    @media (min-width: 1024px) {
+        width: 400px;
+        height: auto;
     }
 
     @media (min-width: 1900px) {
@@ -66,49 +132,28 @@
         top: 30%;
     }
 }
-.newsletter--bg{
-    background: rgba(98,97,154,1);
-    background: -moz-linear-gradient(top, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(98,97,154,1)), color-stop(100%, rgba(67,66,107,1)));
-    background: -webkit-linear-gradient(top, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
-    background: -o-linear-gradient(top, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
-    background: -ms-linear-gradient(top, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
-    background: linear-gradient(to bottom, rgba(98,97,154,1) 0%, rgba(67,66,107,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62619a', endColorstr='#43426b', GradientType=0 );
-}
+
 .newsletter__form {
-    width: 500px;
+    width: 100%;
     height: 271px;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    right: 0;
 
     @media (min-width: 300px) and (max-width: 768px) {
         width: 100%;
-        height: 400px;
-        text-align: center;
-        padding: 0 30px 0 30px;
-        bottom: 0;
-    }
-
-    @media (min-width: 700px) and (max-width: 1024px) {
-        width: 100%;
         height: 300px;
-        text-align: center;
-        padding: 0 30px 0 30px;
-        bottom: 0;
-    }
 
-    @media (min-width: 1900px) {
-        width: 700px;
-        height: 400px;
-    }
+     }
+     @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: 200px;
 
+     }
 }
-.newsleter__title {
+.newsletter__title {
     font-family: $archivo;
     font-weight: 400;
     font-size: 16px;
@@ -117,9 +162,10 @@
 
     @media (min-width: 300px) and (max-width: 768px) {
        font-size: 20px;
+       text-align: center;;
     }
 }
-.newsleter__text {
+.newsletter__text {
     font-family: $openSans;
     font-weight: 400;
     font-size: 16px;
@@ -127,100 +173,124 @@
 
     @media (min-width: 300px) and (max-width: 768px) {
         font-size: 20px;
+        text-align: center;
     }
 }
 .newsletter__group {
-    width: 100%;
+    width: auto;
     height: auto;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 
 }
 .newsletter__input {
-    width: 300px;
+    width:  300px;
     height: 48px;
     border: none;
+    margin: 0;
     font-family: $openSans;
     font-weight: 400;
     padding: 0 0 0 30px;
 
     @media (min-width: 300px) and (max-width: 768px) {
+        width: 260px;
+        height: 48px;
         padding: 0 0 0 20px;
     }
-
-    @media (min-width: 1900px) {
-        width: 400px;
-        height: 48px;
-    }
+    
 }
 .newsletter__button {
     width:  70px;
     height: 48px;
     margin: 0;
     border: none;
+    border: 0;
     background-color: $color-green-01;
+}
+.footer-container {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
 
-    @media (min-width: 1900px) {
-        width: 100px;
-        height: 48px;
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 600px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: 340px;
     }
 }
 .nav-footer {
-    margin-top: 150px;
+    width: 100%;
+    height: 100px;
+    background-color: #ffff;
     border: solid;
     border-width: 1px 0 1px 0;
-    border-color: $color-gray-01;
+    border-color: $color-gray-04;
 
-    @media (min-width: 300px) and (max-width: 1024px) {
-        margin-top: 0;
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+        background-color: transparent;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: auto;
+        background-color: transparent;
     }
 }
 .nav-footer__list {
     width: 100%;
-    height: 80px;
-    padding: 0;
+    height: 100px;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @media (min-width: 300px) and (max-width: 768px) {
         width: 100%;
-        height: 250px;
-        padding: 20px 0 20px 0;
+        height: 300px;
+        padding: 0 0 0 30px;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-around;
-
-    }
-}
-.nav-footer__item {
-    list-style: none;
-    text-align: center;
-}
-.nav-footer__link {
-    font-family: $openSans;
-    font-weight: 400;
-    text-decoration: none;
-    color: $color-purple-01;
-
-    @media (min-width: 300px) and (max-width: 768px) {
-        
     }
 
     @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: 12px;
+        width: 100%;
+        height: 400px;
     }
 
-    @media (min-width: 1024px) and (max-width: 1200px) {
-        
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: 200px;
+        padding: 20px 0 0 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
     }
 }
-.nav-footer__link:hover {
+.nav-footer__item {
+   list-style: none;
+   padding: 0;
+   text-decoration: none;
+}
+.nav-footer__link {
+    color: $color-gray-03;
     text-decoration: none;
+}
+.nav-footer__link:hover {
+    color: $color-purple-01;
 }
 .footer-info {
     width: 100%;
@@ -230,30 +300,57 @@
 
     @media (min-width: 300px) and (max-width: 768px) {
         width: 100%;
-        height: 300px;
+        height: 400px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: 200px;
     }
 }
 .footer-info__container {
     width: 100%;
-    height: 130px;
+    height: 100px;
+    padding: 0 15% 0 15%;
     border-bottom: solid 1px;
     border-color: $color-gray-01;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     @media (min-width: 300px) and (max-width: 768px) {
         width: 100%;
+        height: 100px;
+        padding: 10px 0 10px 30px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
         height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
     }
 }
 .footer-info__logo {
     width: 220px;
     height: auto;
     position: absolute;
-    bottom: 0;
+    top: 35%;
+    z-index: -1;
+
+    
+
+    @media (min-width: 1900px) {
+        width: 450px;
+        height: auto;
+    }
 }
 .contact { 
-    width: 100%;
-    height: 130px;
+    width: 90%;
+    height: 100px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -263,18 +360,28 @@
 
     @media (min-width: 300px) and (max-width: 768px) {
         width: 100%;
-        height: 200px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
     }
-    
+
     @media (min-width: 768px) and (max-width: 1024px) {
-        flex-wrap: wrap;
-        align-items: center;
+        width: 100%;
+        height: 200px;
+        padding: 10px 0 0 0;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: space-around;
     }
 
+   
+
+    @media (min-width: 1900px) {
+        width: 70%;
+        height: 100px;
+    }
 }
 .contact__item {
     display: flex;
@@ -283,14 +390,25 @@
     justify-content: flex-start;
 }
 .contact__item--social {
-    @media (min-width: 300px) and (max-width: 1024px) {
-        width: 150px;
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100px;
         height: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
-
+        justify-content: center;
+    }
+}
+.contact__icon {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin: 0 8px 0 8px;
     }
 }
 .contact__text {
@@ -298,6 +416,10 @@
     font-weight: 400;
     font-size: 16px;
     color: $color-purple-01;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 10px;
+    }
 }
 .terms {
     width: 100%;
@@ -308,6 +430,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+       width: 100%;
+       height: 100px;
+    }
 }
 .terms__container {
     width: 100%;

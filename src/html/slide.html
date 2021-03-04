@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <!-- Styles -->
+     <link rel="stylesheet" type="text/css" href="../../../web/css/app.css">
+
+</head>
+<body>
+    <div class="col-xl-10">
+        <div class="slide-nav">
+            <img src="../../web/img/pag_seminuevo/img-vehicle-01@3x.jpg" class="slick-nav__thumbnail" alt="" srcset="">
+            <img src="../../web/img/pag_seminuevo/img-vehicle-01@3x.jpg" class="slick-nav__thumbnail" alt="" srcset="">
+            <img src="../../web/img/pag_seminuevo/img-vehicle-01@3x.jpg" class="slick-nav__thumbnail" alt="" srcset="">
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../node_modules/slick-carousel/slick/slick.js"></script>
+    <script>
+        $('.slide-nav').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    </script>
+</body>
+</html>

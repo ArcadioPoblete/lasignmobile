@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leasign mobile</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
+    <link rel="stylesheet" href="../../web/css/datepicker.css">
+    <link rel="stylesheet" href="../../web/css/ion.rangeSlider.css"/>
+</head>
+<body>
+
+        <!-- Navigation -->
+<header id="header" class="">
+    <div class="nav nav--position">
+        <div class="nav__top">
+            <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="brand">
+                            <a href="../html/index.html">
+                                <img src="../../../web/img/layout/logo.svg" class="brand__logo" alt="">
+                            </a>
+                        </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-5 offset-lg-3 offset-xl-3 offset-xxl-4 d-none d-md-none d-lg-block">
+                        <div class="nav-contact">
+                            <div class="nav-contact__item">
+                                <img src="../../../web/img/layout/icons/icon_phone.svg" class="nav-contact__icon" alt="" srcset="">
+                                <p class="nav-contact__text">442-267-8890</p>
+                            </div>
+    
+                            <div class="nav-contact__item">
+                                <img src="../../../web/img/layout/icons/icon_mail.svg" class="nav-contact__icon" alt="" srcset="">
+                                <p class="nav-contact__text">buzon@leasingmobile.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-2 col-md-1 offset-5 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
+                        <ul id="menu-mobile" class="button-drawer">
+                            <li class="button-drawer__line button-drawer__line--small"></li>
+                            <li class="button-drawer__line"></li>
+                            <li class="button-drawer__line"></li>
+                        </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="menu" class="nav__bottom close">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-xl-12 col-xxl-12 p-0 p-md-none">
+                        <ul  class="menu">
+                            <li class="menu__item menu__item--active" data-menu="menu-auto" >
+                                <div class="dropdown">
+                                   <a href="autos-equipos.html">
+                                        <button  class="btn-dropdown" type="button" aria-expanded="false">
+                                            <p class="p-0 m-0">Autos y Equipos de Transporte</p>
+                                        </button>
+                                   </a>
+                                    <ul id="menu-auto" class="dropdown-menu button-main__options">
+                                        <a href="autos-transporte.html" class="button-main__link"><li>Autos y transporte</li></a>
+                                        <a href="seminuevos.html" class="button-main__link"><li>Seminuevos</li></a>
+                                        <a href="admin-flotillas.html" class="button-main__link"><li>Admin flotillas</li></a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="maquinas-computo.html" class="menu__link">Maquinaria y Equipos de Computo</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="energia-solar.html" class="menu__link">Sistemas de Energía Solar</a>
+                            </li>
+                            <li class="menu__item" data-menu="menu-empresa" >
+                                <div class="dropdown menu_item--dropdown">
+                                    <a href="empresa.html" class="menu__link">
+                                        <button  class="btn-dropdown" type="button" aria-expanded="false">
+                                            <p class="p-0 m-0">Nuestar empresa</p>
+                                        </button>
+                                    </a>
+                                    <ul id="menu-empresa" class="dropdown-menu button-main__options">
+                                        <a href="servicios.html" class="button-main__link"><li>Servicioss</li></a>
+                                        <a href="quienes-somos.html" class="button-main__link"><li>¿Quiénes somos?</li></a>
+                                        <a href="admin-flotillas.html" class="button-main__link"><li>Preguntas frecuentes</li></a>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="../html/blog/index.html" class="menu__link">Blog</a>
+                            </li>
+                            <li id="close-menu" class="menu__close">
+                                <img src="../../../web/img/icons/icon-arrow.svg" class="menu__arrow" alt="" srcset="">
+                                Cerrar
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!-- End Navigation -->
+
+
+    <!-- Image box -->
+    <div class="space-top"></div>
+    <section class="main-picture">
+        <div class="main-picture__container">
+            <picture>
+                <!-- Mobile -->
+                <source media="(min-width: 300px) and (max-width: 600px)" srcset="../../web/img/empresa/img4.png">
+               <!-- Medium -->
+               <source media="(min-width: 768px) and (max-width: 900px)" srcset="../../web/img/autos-transporte/imgBox-autos-transporte.jpg">
+               <!-- Large -->
+               <source media="(min-width: 1024px)"srcset="../../web/img/autos-transporte/imgBox-autos-transporte@2x.jpg">
+               <!-- fallback -->
+              <img src="../../web/img/autos-transporte/imgBox-autos-transporte@3x.jpg" class="image-top__background" alt="">
+            </picture>
+            <img src="../../web/img/autos-transporte/arrow-box.svg" class="main-picture__autos-transporte" alt="" srcset="">
+             <!-- Descripción -->
+            <div class="main-picture__group">
+                <div class="row g-0">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <h1 class="main-picture__title">autos y transporte</h1>
+                            <p class="main-picture__text">
+                                Arrenda tu vehículo con nosotros y obtén <br>
+                                los mejores servicios dentro de la industria.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parrafo 01 -->
+    <div class="col-12 col-md-4 col-lg-4 col-xl-8 offset-md-4 offset-xl-2 px-5 mt-xl-5">
+        <div class="paragraph paragraph--center">
+            <p class="paragraph__title paragraph__title--center">
+                Servicios
+            </p>
+            <div class="col-xl-4 offset-xl-4">
+                <div class="paragraph__line paragraph__line--green"></div>
+            </div>
+            <p class="paragraph__text">
+                Arrenda tu vehículo con nosotros y obtén los mejores servicios dentro de <br> 
+                la industria. Contamos con autorización oportuna y flexible, cotizamos de <br> 
+                acuerdo a tus oportunidades y muchos otros beneficios.
+            </p>
+        </div>
+    </div>
+
+
+ <div class="container mt-xl-5">
+    <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="servicesBox">
+                <picture>
+                    <!-- Large -->
+                    <source media="(min-width: 922px)" srcset="../../web/img/maq_comp/rectangleServ01.jpg">
+                    <!-- Medium -->
+                    <source media="(min-width: 750px)"srcset="../../web/img/maq_comp/rectangleServ01@2x.jpg" >
+                    <!-- fallback -->
+                    <img src="../../web/img/maq_comp/rectangleServ01@3x.jpg" class="servicesBox__img" alt="" srcset="">
+              </picture>
+              <div class="servicesBox__container">
+                    <img src="../../web/img/admin-flotillas/groupCircle.svg" class="servicesBox__waves" alt="" srcset="">
+                    <div class="servicesBox__circle servicesBox__circle--green">
+                        <img src="../../web/img/admin-flotillas/icons/iconFlexible.svg" class="serviciosBox__img" alt="" srcset="">
+                    </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="servicesBox">
+                <picture>
+                    <!-- Large -->
+                    <source media="(min-width: 922px)" srcset="../../web/img/autos-transporte/servAutos-02.jpg">
+                    <!-- Medium -->
+                    <source media="(min-width: 750px)"srcset="../../web/img/autos-transporte/servAutos-02@2x.jpg">
+                    <!-- fallback -->
+                    <img src="../../web/img/autos-transporte/servAutos-02@3x.jpg" class="servicesBox__img" alt="" srcset="">
+              </picture>
+              <div class="servicesBox__container">
+                  <img src="../../web/img/admin-flotillas/groupCircle.svg" class="servicesBox__waves" alt="" srcset="">
+                    <div class="servicesBox__circle servicesBox__circle--purple">
+                        <img src="../../web/img/admin-flotillas/icons/iconEsquema.svg" class="serviciosBox__img" alt="" srcset="">
+                    </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="servicesBox">
+                <picture>
+                    <!-- Large -->
+                    <source media="(min-width: 922px)" srcset="../../web/img/autos-transporte/servAutos-03.jpg">
+                    <!-- Medium -->
+                    <source media="(min-width: 750px)"srcset="../../web/img/autos-transporte/servAutos-02@3x.jpg" >
+                    <!-- fallback -->
+                    <img src="../../web/img/autos-transporte/servAutos-03@3x.jpg" class="servicesBox__img" alt="" srcset="">
+              </picture>
+              <div class="servicesBox__container">
+                  <img src="../../web/img/admin-flotillas/groupCircle.svg" class="servicesBox__waves" alt="" srcset="">
+                    <div class="servicesBox__circle servicesBox__circle--green">
+                        <img src="../../web/img/admin-flotillas/icons/iconConvenio.svg" class="serviciosBox__img" alt="" srcset="">
+                    </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+<!-- Parrafo 01 -->
+<div class="col-12 col-md-4 col-lg-4 col-xl-8 offset-md-4 offset-xl-2 mt-xl-6">
+    <div class="paragraph paragraph--center">
+        <p class="paragraph__title paragraph__title--center">
+            ¿Qué ofrecemos?
+        </p>
+        <div class="col-xl-4 offset-xl-4">
+            <div class="paragraph__line paragraph__line--green"></div>
+        </div>
+        <p class="paragraph__text">
+            Somos una empresa de arrendamiento puro, lista para generar soluciones <br>
+            flexibles y a la medida de tus necesidades.
+        </p>
+    </div>
+</div>
+
+    <!-- Auto -->
+    <div class="blk-auto blk-auto--center mt-xl-5">
+        <img src="../../web/img/pag_at_tran/groupWaves.svg" class="blk-auto__waves" alt="" srcset="">
+        <img src="../../web/img/pag_at_tran/imgAutoCentrado.png" class="blk-auto__img" alt="" srcset="">
+        <div class="container blk-container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="column-list column-list--reverse">
+                        <!-- Pointer 1 -->
+                        <div class="col-12 col-xl-12 col-xxl-12">
+                            <div class="point point--end">
+                                <div class="point__item">
+                                    <div class="point__circle">
+                                        <img src="../../web/img/icons/iconAtencion.svg" class="point__icon" alt="">
+                                    </div>
+                                    <div class="point__arrow">
+                                        <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <div class="desc desc--rigth">
+                                    <h3 class="desc__number">01</h3>
+                                    <p class="desc__text">Atención <br class="d-none d-md-none d-xl-block"> personalizada</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pointer 2 -->
+                        <div class="col-12 col-xl-12 col-xxl-12">
+                            <div class="point">
+                                <div class="point__item">
+                                    <div class="point__circle">
+                                        <img src="../../web/img/icons/iconCotizaacion.svg"  class="point__icon" alt="">
+                                    </div>
+                                    <div class="point__arrow">
+                                        <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <h3 class="desc__number">02</h3>
+                                    <p class="desc__text">Cotizaciones competitivas <br> bde acuerdo a las necesidades</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pointer 3 -->
+                        <div class="col-12 col-xl-12 col-xxl-12">
+                            <div class="point point--end">
+                                <div class="point__item">
+                                    <div class="point__circle">
+                                        <img src="../../web/img/icons/iconEsquema.svg" class="point__icon" alt="">
+                                    </div>
+                                    <div class="point__arrow">
+                                        <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                                    </div>
+                                </div>
+                                <div class="desc desc--rigth">
+                                    <h3 class="desc__number">03</h3>
+                                    <p class="desc__text">Esquemas <br class="d-none d-lg-block"> creativos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        
+                <!-- Columna 2 -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 d-none d-md-none d-lg-block p-0 d-flex blk-auto__column">
+
+                </div>
+        
+                <!-- Columna 3 -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="column-list">
+                        <!-- Pointer 4 -->
+                        <div class="point point--start">
+                            <div class="point__item point__item--rigth">
+                                <div class="point__circle">
+                                    <img src="../../web/img/icons/iconAutorizacion.svg" class="point__icon" alt="">
+                                </div>
+                                <div class="point__arrow point__arrow--rigth">
+                                    <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="desc desc--left">
+                                <h3 class="desc__number">04</h3>
+                                <p class="desc__text">Autorización <br class="d-none d-lg-block"> oportuna</p>
+                            </div>
+                        </div>
+
+                        <!-- Pointer 5 -->
+                        <div class="point">
+                            <div class="point__item point__item--rigth">
+                                <div class="point__circle">
+                                    <img src="../../web/img/icons/iconFlexible.svg" class="point__icon" alt="">
+                                </div>
+                                <div class="point__arrow point__arrow--rigth">
+                                    <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="desc desc--end">
+                                <h3 class="desc__number">05</h3>
+                                <p class="desc__text">Flexibles en <br class="d-none d-lg-block"> autorización</p>
+                            </div>
+                        </div>
+
+                        <!-- Pointer 6 -->
+                        <div class="point point--start">
+                            <div class="point__item point__item--rigth">
+                                <div class="point__circle">
+                                    <img src="../../web/img/icons/iconConvenio.svg" class="point__icon" alt="">
+                                </div>
+                                <div class="point__arrow point__arrow--rigth">
+                                    <img src="../../web/img/pag_at_tran/arrowPoint.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="desc desc--left">
+                                <h3 class="desc__number">06</h3>
+                                <p class="desc__text">Convenios y <br class="d-none d-lg-block"> precios de flotilla</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Boton cotización -->
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 offset-md-3 offset-lg-4 offset-xl-4 px-5">
+            <button class="button button--rounded button--transparent button--avatar button--border-1 button--border-green button--hover-green">
+                <img src="../../web/img/pag_at_tran/iconAvatar@3x.png" width="50px" alt="">
+                <p class="m-0 font-openSans font-regular w-100">Solicita una cotización</p>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Panel Benficios -->
+<div class="container-fluid p-0 mt-5 mt-xl-2 path-slice">
+    <div class="row g-0">
+        <div class="col-12 p-2 d-md-none">
+             <!-- Text header -->
+             <p class="font-archivo font-regular text-gray-03">Beneficios de alquilar</p>
+             <h3 class="uppercase fs-6">Invierte en tu empresa, <br> nosotros nos encargamos del equipo.</h3>
+             <div class="col-6">
+                 <div class="line-space bh-1  border-green-01"></div>
+             </div>
+        </div>
+        <!-- Panel Contenido --> 
+        <div class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-xl-1  offset-xxl-1 p-0 order-md-2 order-xl-2">
+            <div class="tab-content board__desc" id="pills-tabContent"> 
+                <!-- Contenido 01 -->   
+                <div class="tab-pane board__tab fade" id="tab-aren-01" role="tabpanel" aria-labelledby="tab-01">
+                    <div class="content">
+                        <h3 class="content__number">01</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br class="d-none d-md-block"> de inversión y liquidez.</p>
+                </div>
+
+                 <!-- Contenido 02 --> 
+                <div class="tab-pane board__tab fade show active" id="tab-aren-02" role="tabpanel" aria-labelledby="tab-02">
+                    <div class="content">
+                        <h3 class="content__number">02</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br class="d-none d-md-block">  de inversión y liquidez.</p>
+                </div>
+
+                 <!-- Contenido 03 --> 
+                <div class="tab-pane board__tab fade" id="tab-aren-03" role="tabpanel" aria-labelledby="tab-03">
+                    <div class="content">
+                        <h3 class="content__number">03</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br class="d-none d-md-block">  de inversión y liquidez.</p>
+                </div>
+                
+                <!-- Contenido 04 --> 
+                <div class="tab-pane board__tab fade" id="tab-aren-04" role="tabpanel" aria-labelledby="tab-04">
+                    <div class="content">
+                        <h3 class="content__number">04</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
+                </div>
+
+                 <!-- Contenido 05 --> 
+                <div class="tab-pane board__tab fade" id="tab-aren-05" role="tabpanel" aria-labelledby="tab-05">
+                    <div class="content">
+                        <h3 class="content__number">05</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
+                </div>
+
+                 <!-- Contenido 06 --> 
+                <div class="tab-pane board__tab fade" id="tab-aren-06" role="tabpanel" aria-labelledby="tab-06">
+                    <div class="content">
+                        <h3 class="content__number">06</h3>
+                        <p class="content__title">Múltiples <br> beneficios fiscales</p>
+                    </div>
+                    <p class="content__text">Obtén deducibilidad de impuestos, bajos montos <br> de inversión y liquidez.</p>
+                </div>
+
+              </div>
+              <img src="../../web/img/autos-transporte/iris@3x.png" width="100%" alt="" srcset="">
+        </div> <!--End Panel Contenido --> 
+
+        <!--  Panel control -->
+        <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-4 col-xxl-3 offset-xl-1 offset-xxl-2 p-0 order-md-1 order-xl-1">
+            <!-- Text header -->
+            <div class="board d-none d-md-block">
+                <p class="font-archivo font-regular text-gray-03">Arrendamiento puro</p>
+                <h3 class="uppercase fs-6">Invierte en tu empresa, <br> nosotros nos encargamos del equipo.</h3>
+                <div class="col-6">
+                    <div class="line-space bh-1  border-green-01"></div>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <ul class="nav nav-pills board mt-1" id="pills-tab" role="tablist">
+                <!-- Button 01 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-01" data-bs-toggle="pill" href="#tab-aren-01" role="tab" aria-controls="tab-aren-01" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">01</h3>
+                                <img src="../../web/img/board/iconBoardDefault-01.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-01.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Financiamiento flexible</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Button 02 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container  active" id="tab-02" data-bs-toggle="pill" href="#tab-aren-02" role="tab" aria-controls="tab-aren-02" aria-selected="true">
+                      <div class="board__item">
+                        <div class="board__group">
+                            <h3 class="board__number">02</h3>
+                            <img src="../../web/img/board/iconBoardDefault-02.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-02.svg" class="board__icon board__icon--active" alt="">
+                        </div>
+                        <p class="board__title">Múltiples beneficios fiscales</p>
+                      </div>
+                    </a>
+                </li>
+
+                <!-- Button 03 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-03" data-bs-toggle="pill" href="#tab-aren-03" role="tab" aria-controls="tab-aren-03" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">03</h3>
+                                <img src="../../web/img/board/iconBoardDefault-03.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-03.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Contamos con especialistas que te llevarán de la mano.</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Button 04 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-04" data-bs-toggle="pill" href="#tab-aren-04" role="tab" aria-controls="tab-aren-04" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">04</h3>
+                                <img src="../../web/img/board/iconBoardDefault-04.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-04.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Te brindamos <br> atención personalizada.</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Button 05 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-05" data-bs-toggle="pill" href="#tab-aren-05" role="tab" aria-controls="tab-aren-05" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">05</h3>
+                                <img src="../../web/img/board/iconBoardDefault-05.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-05.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Optimizamos la deducibilidad en utilización de activos productivos.</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Button 06 --> 
+                <li class="nav-item board__button" role="presentation">
+                    <a class="nav-link board__container" id="tab-06" data-bs-toggle="pill" href="#tab-aren-06" role="tab" aria-controls="tab-aren-06" aria-selected="false">
+                        <div class="board__item">
+                            <div class="board__group">
+                                <h3 class="board__number">06</h3>
+                                <img src="../../web/img/board/iconBoardDefault-06.svg" class="board__icon board__icon--default" alt="">
+                                <img src="../../web/img/board/iconBoardActive-06.svg" class="board__icon board__icon--active" alt="">
+                            </div>
+                            <p class="board__title">Resolvemos procesos con mínima inversión.</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->    
+<footer class="mt-3 mt-md-3 mt-lg-4 mt-xl-2">
+    <!-- Newsletter -->
+    <div class="newsletter">
+        <div class="newsletter__background"></div>
+        <div class="newsletter__container">
+            <div class="row g-0">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-7 col-xxl-6 d-none d-md-none d-lg-block">
+                    <div class="newsletter__left">
+                        <img src="../../../web/img/layout/arrows-footer.svg" class="newsletter__arrows" alt="" srcset="">
+                        <img src="../../../web/img/layout/my-20-mazda-6-sport-snowflake-white-car-ds-front-3-q@3x.png" class="newsletter__auto" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 col-xl-5 col-xxl-6">
+                    <div class="newsletter__rigth">
+                        <form action="" class="newsletter__form">
+                            <p class="newsletter__title">No te pierdas nuestras actualizaciones</p>
+                            <p class="newsletter__text">Suscríbete a nuestro newsletter</p>
+                            <div class="newsletter__group">
+                                <input type="text" class="newsletter__input" placeholder="Ingresa tu correo electrónico">
+                                <button class="newsletter__button">
+                                    <img src="../../../web/img/icons/icon-arrow.svg" class="" alt="" srcset="">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0 footer-container">
+        <img src="../../../web/img/layout/logoFooter.png" class="footer-info__logo" alt="" srcset="">
+        <div class="row g-0">
+            <div class="col-12 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="nav-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav-footer__list">
+                                    <li class="nav-footer__item"><a href="index.html" class="nav-footer__link">Autos y Equipos de Transporte</a></li>
+                                    <li class="nav-footer__item"><a href="maquinas-computp.html" class="nav-footer__link">Maquinaria y Equipos de Computo</a></li>
+                                    <li class="nav-footer__item"><a href="energia-solar.html" class="nav-footer__link">Sistemas  de Energía Solar</a></li>
+                                    <li class="nav-footer__item"><a href="empresa.html" class="nav-footer__link">Nuestra  Empresa</a></li>
+                                    <li class="nav-footer__item"><a href="./blog/index.html" class="nav-footer__link">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="footer-info__container">
+                    <ul class="contact">
+                        <li class="contact__item">
+                            <img src="../../../web/img/layout/icons/icon_phone.svg" alt="" srcset="">
+                            <p class="contact__text">442-267-8890</p>
+                        </li>
+                        <li class="contact__item">
+                            <img src="../../../web/img/layout/icons/icon_mail.svg" alt="" srcset="">
+                            <p class="contact__text">contacto@leasingmobile.com</p>
+                        </li>
+                        <li class="contact__item">
+                            <img src="../../../web/img/layout/icons/icon_map.svg" alt="" srcset="">
+                            <p class="contact__text">Ver dirección en mapa</p>
+                        </li>
+                        <li class="contact__item contact__item--social">
+                            <a href=""><img src="../../../web/img/layout/icons/icon_faceboock.svg" class="contact__icon" alt="" srcset=""></a>
+                            <a href=""><img src="../../../web/img/layout/icons/icon_instagram.svg" class="contact__icon" alt="" srcset=""></a>
+                            <a href=""><img src="../../../web/img/layout/icons/icon_twitter.svg" class="contact__icon" alt="" srcset=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="terms">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-lg-3 offset-xl-3">
+                                <div class="terms__container">
+                                    <p class="terms__rigths">© 2020 Leasing Mobile. Derechos Reservados.</p>
+                                    <a href="privacidad.html" class="terms__privacy">Aviso de privacidad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
+    <script src="../js/menu.headroom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../js/slick-slides.js"></script>
+    <script src="../js/menu-dropdown.js"></script>
+</body>
+</html>

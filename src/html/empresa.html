@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leasign mobile</title>
-    
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leasign mobile</title>
+        
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
+    </head>
 <body>
-    
-<!-- Navigation -->
-<header>
-    <div class="nav nav--position headroom">
+ 
+          <!-- Navigation -->
+<header id="header" class="">
+    <div class="nav nav--position">
         <div class="nav__top">
-           <div class="container">
-               <div class="row">
-                   <div class="col-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+            <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                         <div class="brand">
-                            <a href="../html/index.html">
-                                <img src="../../web/img/layout/logo.svg" class="brand__logo" alt="">
+                            <a href="index.html">
+                                <img src="../../../web/img/layout/logo.svg" class="brand__logo" alt="">
                             </a>
                         </div>
-                   </div>
-                   <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-5 offset-lg-3 offset-xl-3 offset-xxl-4 d-none d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-5 offset-lg-3 offset-xl-3 offset-xxl-4 d-none d-md-none d-lg-block">
                         <div class="nav-contact">
                             <div class="nav-contact__item">
-                                <img src="../../web/img/layout/icons/icon_phone.svg" class="nav-contact__icon" alt="" srcset="">
+                                <img src="../../../web/img/layout/icons/icon_phone.svg" class="nav-contact__icon" alt="" srcset="">
                                 <p class="nav-contact__text">442-267-8890</p>
                             </div>
-
+    
                             <div class="nav-contact__item">
-                                <img src="../../web/img/layout/icons/icon_mail.svg" class="nav-contact__icon" alt="" srcset="">
+                                <img src="../../../web/img/layout/icons/icon_mail.svg" class="nav-contact__icon" alt="" srcset="">
                                 <p class="nav-contact__text">buzon@leasingmobile.mx</p>
                             </div>
                         </div>
                     </div>
-                   <div class="col-2 col-md-1 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
-                        <ul class="button-drawer">
+                <div class="col-2 col-md-1 offset-5 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
+                        <ul id="menu-mobile" class="button-drawer">
                             <li class="button-drawer__line button-drawer__line--small"></li>
                             <li class="button-drawer__line"></li>
                             <li class="button-drawer__line"></li>
                         </ul>
-                   </div>
-               </div>
-           </div>
+                </div>
+            </div>
+            </div>
         </div>
-        
-        <div class="nav__bottom">
+        <div id="menu" class="nav__bottom close">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-xl-12 col-xxl-12">
-                        <ul class="menu">
-                            <li class="menu__item">
-                                <a href="../html/index.html" class="menu__link">Autos y Equipos de Transporte</a>
+                    <div class="col-12 col-md-12 col-xl-12 col-xxl-12 p-0 p-md-none">
+                        <ul  class="menu">
+                            <li class="menu__item " data-menu="menu-auto" >
+                                <div class="dropdown">
+                                   <a href="autos-equipos.html">
+                                        <button  class="btn-dropdown" type="button" aria-expanded="false">
+                                            <p class="p-0 m-0">Autos y Equipos de Transporte</p>
+                                        </button>
+                                   </a>
+                                    <ul id="menu-auto" class="dropdown-menu button-main__options">
+                                        <a href="autos-transporte.html" class="button-main__link"><li>Autos y transportes</li></a>
+                                        <a href="seminuevos.html" class="button-main__link"><li>Seminuevos</li></a>
+                                        <a href="admin-flotillas.html" class="button-main__link"><li>Admin flotillas</li></a>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="menu__item">
                                 <a href="maquinas-computo.html" class="menu__link">Maquinaria y Equipos de Computo</a>
@@ -61,11 +71,26 @@
                             <li class="menu__item">
                                 <a href="energia-solar.html" class="menu__link">Sistemas de Energía Solar</a>
                             </li>
-                            <li class="menu__item menu__item--active">
-                                <a href="empresa.html" class="menu__link menu__link--active">Nuestra Empresa</a>
+                            <li class="menu__item menu__item--active" data-menu="menu-empresa" >
+                                <div class="dropdown menu_item--dropdown">
+                                    <a href="empresa.html" class="menu__link">
+                                        <button  class="btn-dropdown" type="button" aria-expanded="false">
+                                            <p class="p-0 m-0">Nuestar empresa</p>
+                                        </button>
+                                    </a>
+                                    <ul id="menu-empresa" class="dropdown-menu button-main__options">
+                                        <a href="servicios.html" class="button-main__link"><li>Servicioss</li></a>
+                                        <a href="quienes-somos.html" class="button-main__link"><li>¿Quiénes somos?</li></a>
+                                        <a href="faq.html" class="button-main__link"><li>Preguntas frecuentes</li></a>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="menu__item">
                                 <a href="../html/blog/index.html" class="menu__link">Blog</a>
+                            </li>
+                            <li id="close-menu" class="menu__close">
+                                <img src="../../../web/img/icons/icon-arrow.svg" class="menu__arrow" alt="" srcset="">
+                                Cerrar
                             </li>
                         </ul>
                     </div>
@@ -74,282 +99,351 @@
         </div>
     </div>
 </header><!-- End Navigation -->
-    
+
     <!-- Slide main -->
     <div class="space-top"></div>
-    <div class="slideHeader">
-        <picture>
-            <!-- Large -->
-            <source media="(min-width: 922px)" srcset="../../web/img/empresa/imgServ01.jpg">
-            <!-- Medium -->
-            <source media="(min-width: 768px)"srcset="../../web/img/empresa/imgServ01@2x.jpg">
-            <!-- fallback -->
-           <img src="../../web/img/empresa/imgServ01@3x.jpg" class="slideHeader__img" alt="">
-        </picture>
-        <div class="slideHeader__container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-7 col-lg-8 col-xl-5 col-xxl-8">
-                        <h4 class="font-archivo font-regular fs-2 uppercase">
-                            nuestra empresa
-                        </h4>
-                        <p class="font-openSans font-regular">
-                            Conoce nuestros diferentes servicios y todos los <br> beneficios que Leasing Mobile tiene para ti.
-                        </p>
+    <section class="main-picture">
+        <div class="main-picture__container">
+            <picture>
+                <!-- Mobile -->
+                <source media="(min-width: 300px) and (max-width: 600px)" srcset="../../web/img/empresa/img8.png">
+               <!-- Medium -->
+               <source media="(min-width: 768px) and (max-width: 900px)" srcset="../../web/img/empresa/imgServ01@3x.jpg">
+               <!-- Large -->
+               <source media="(min-width: 1024px)"srcset="../../web/img/empresa/imgServ01@3x.jpg">
+               <!-- fallback -->
+              <img src="../../web/img/empresa/imgServ01@3x.jpg" class="image-top__background" alt="">
+           </picture>
+
+             <!-- Descripción -->
+            <div class="main-picture__group">
+                <div class="row g-0">
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <h1 class="main-picture__title">Nuestra empresa</h1>
+                            <p class="main-picture__text">
+                                Conoce nuestros diferentes servicios y todos los <br> 
+                                beneficios que Leasing Mobile tiene para ti.
+                            </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Container -->
-    <div class="contaqiner mt-3 mt-xxl-8">
-        <!-- Servicios -->
-        <div class="row g-0">
-            <!-- Collage de images -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-7 col-xxl-6">
-                <div class="seccEmpresa ">
-                    <!-- Img background -->
-                    <picture>
-                        <!-- Large -->
-                        <source media="(min-width: 922px)" srcset="../../web/img/empresa/imgEmpresa01.jpg">
-                        <!-- Medium -->
-                        <source media="(min-width: 768px)"srcset="../../web/img/empresa/imgEmpresa01@2x.jpg">
-                        <!-- fallback -->
-                       <img src="../../web/img/empresa/imgEmpresa01@3x.jpg" class="seccEmpresa__img seccEmpresa__img--left" alt="">
-                    </picture>
-
-                    <!-- Elementos -->
-                    <div class="seccEmpresa__elements seccEmpresa__elements--rigth ">
-                        <div class="seccEmpresa__top seccEmpresa__top--rigth">
-                            <img src="../../web/img/empresa/groupBoxEmp01.svg" class="seccEmpresa__boxs" alt="" srcset="">
+    <section class="section-servicios">
+        <!-- Serviciso -->
+        <div class="row g-0"> 
+            <!-- Servicios-left -->
+            <div class="col-12 col-md-4 col-lg-7 col-xl-7 col-xxl-7 offset-md-1 offset-lg-o offset-xl-0">
+                <div class="serv-collage">
+                    <div class="serv-collage__back d-none d-lg-block">
+                        <div class="row g-0">
+                            <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-7">
+                                <picture>
+                                    <!-- Large -->
+                                    <source media="(min-width: 922px)" srcset="../../web/img/empresa/imgEmpresa01.jpg">
+                                    <!-- Medium -->
+                                    <source media="(min-width: 768px)"srcset="../../web/img/empresa/imgEmpresa01@2x.jpg">
+                                    <!-- fallback -->
+                                <img src="../../web/img/empresa/imgEmpresa01@3x.jpg" class="servicios__img" alt="">
+                                </picture>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="serv-collage__espace">
+                                    <img src="../../web/img/empresa/groupBoxEmp01.svg" class="servicios__icon-box" alt="" srcset="">
+                                    <div class="servicios__box">
+                                    </div>
+                                    <img src="../../web/img/empresa/groupBoxEmp02.svg" class="servicios__icon-arrows" alt="" srcset="">
+                            </div>
+                            </div>
                         </div>
-                        <div class="boxEmpresa boxEmpresa--green">
-                            <img src="../../web/img/empresa/icons/group-18.svg" class="boxEmpresa__icon" alt="" srcset="">
-                            <p class="boxEmpresa__text">servicios</p>
-                        </div>
-                        <div class="seccEmpresa__bottom seccEmpresa__bottom--rigth">
-                            <img src="../../web/img/empresa/groupBoxEmp02.svg" class="seccEmpresa__arrows" alt="" srcset="">
+                    </div>
+                    <div class="serv-collage__front">
+                        <div class="container">
+                            <div class="row g-0">
+                                <div class="col-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 offset-lg-6 offset-xl-6 offset-xxl-6">
+                                <div class="serv-collage__obj">
+                                        <div class="servicios__box servicios__box--green">
+                                            <img src="../../web/img/empresa/icons/group-18.svg" class="boxEmpresa__icon" alt="" srcset="">
+                                            <p class="boxEmpresa__text">servicios</p>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Listado de servicios -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 offset-xl-1">
+
+            <!-- Servicios-rigth -->
+            <div class="col-11 col-md-6 col-lg-4 col-xl-4 col-xxl-4 offset-md-1 offset-xl-0">
                 <div class="services">
-                    <ul class="listServices">
-                        <li class="listSrvices__item">
-                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="listServices__icon" alt="" srcset="">
-                            <p class="listServices__text">Autos y equipos de transporte</p>
+                    <ul class="list">
+                        <li class="list__item">
+                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="list__icon" alt="" srcset="">
+                            <a href="autosytransportes.html" class="list__link"><p class="list__text">Autos y equipos <br class="d-block d-md-none d-lg-none"> de transporte</p></a>
                         </li>
-                        <li class="listSrvices__item">
-                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="listServices__icon" alt="" srcset="">
-                            <p class="listServices__text">Maquinaria y  equipos de cómputo</p>
+                        <li class="list__item mt-1">
+                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="list__icon" alt="" srcset="">
+                            <a href="maquinas-computo.html" class="list__link"> <p class="list__text">Maquinaria y  equipos <br class="d-block d-md-none d-lg-none"> de cómputo</p></a>
                         </li>
-                        <li class="listSrvices__item">
-                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="listServices__icon" alt="" srcset="">
-                            <p class="listServices__text">Arrendamiento de sistemas de energía solar</p>
+                        <li class="list__item mt-1">
+                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="list__icon" alt="" srcset="">
+                            <a href="energia-solar.html" class="list__link"><p class="list__text">Arrendamiento de sistemas <br class="d-block d-lg-none"> de energía solar</p></a>
                         </li>
                     </ul>
-                     <!-- Boton Conoce más -->
-                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-xl-5">
-                        <button class="button button--border-2 button--border-green button--hover-green py-2">Conoce más</button>
+                    <!-- Boton Conoce más -->
+                    <div class="col-6 col-md-4 col-lg-6 col-xl-4 mt-1 mt-md-1 mt-lg-1 mt-xl-5 offset-3 offset-md-0 offset-lg-0 offset-xl-0">
+                       <a href="servicios.html"> 
+                           <button class="button button--transparent button--border-2 button--border-green button--hover-green button--small">
+                                Conoce más
+                            </button></a>
                     </div>
                 </div>
             </div>
         </div> <!-- End Servicios -->
-
-
-        <!-- Listado ¿Quienes somos? -->
-        <div class="row g-0 mt-6">
-             <!-- Listado de servicios -->
-             <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 offset-xl-1 offset-xxl-3">
+    </section>
+          
+    <section class="section-somos">
+         <!-- ¿Quienes somos? -->
+         <div class="row g-0"> 
+            <!-- ¿Quienes somos? left -->
+            <div class="col-11 col-md-6 col-lg-3 col-xl-4 col-xxl-3 offset-md-1 offset-lg-1 offset-xl-1 offset-xxl-2 order-md-2 order-lg-1">
                 <div class="services">
-                    <ul class="listServices">
-                        <li class="listSrvices__item">
-                            <img src="../../web/img/empresa/icons/arrowGreen.svg" class="listServices__icon" alt="" srcset="">
-                            <p class="listServices__text">Acerca de nosotros</p>
+                    <ul class="list">
+                        <li class="list__item">
+                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="list__icon" alt="" srcset="">
+                            <a href="autos-transporte.html" class="list__link"><p class="list__text">Autos y equipos <br class="d-block d-lg-none"> de transporte</p></a>
                         </li>
-                        <li class="listSrvices__item">
-                            <img src="../../web/img/empresa/icons/arrowGreen.svg" class="listServices__icon" alt="" srcset="">
-                            <p class="listServices__text">Sucursales</p>
+                        <li class="list__item mt-1">
+                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="list__icon" alt="" srcset="">
+                            <a href="maquinas-computo.html" class="list__link"> <p class="list__text">Maquinaria y  equipos <br class="d-block d-lg-none"> de cómputo</p></a>
                         </li>
-                        <li class="listSrvices__item">
-                            <img src="../../web/img/empresa/icons/arrowGreen.svg" class="listServices__icon" alt="" srcset="">
-                            <p class="listServices__text">Contacto</p>
+                        <li class="list__item mt-1">
+                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="list__icon" alt="" srcset="">
+                            <a href="" class="list__link"><p class="list__text">Arrendamiento de sistemas <br class="d-block d-lg-none"> de energía solar</p></a>
                         </li>
                     </ul>
                      <!-- Boton Conoce más -->
-                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-xl-5">
-                        <button class="button button--border-2 button--border-green button--hover-green py-2">Conoce más</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-7 col-xxl-6">
-                <div class="seccEmpresa seccEmpresa--rigth">
-                    <!-- Img background -->
-                    <picture>
-                        <!-- Large -->
-                        <source media="(min-width: 922px)" srcset="../../web/img/empresa/imgEmpresa02.jpg">
-                        <!-- Medium -->
-                        <source media="(min-width: 768px)"srcset="../../web/img/empresa/imgEmpresa02@2x.jpg">
-                        <!-- fallback -->
-                       <img src="../../web/img/empresa/imgEmpresa02@3x.jpg" class="seccEmpresa__img seccEmpresa__img--rigth" alt="">
-                    </picture>
-
-                    <!-- Elementos -->
-                    <div class="seccEmpresa__elements seccEmpresa__elements--left">
-                        <div class="seccEmpresa__top seccEmpresa__top--left">
-                            <img src="../../web/img/empresa/groupBoxEmp03.svg" class="seccEmpresa__boxs" alt="" srcset="">
-                        </div>
-                        <div class="boxEmpresa boxEmpresa--purple">
-                            <img src="../../web/img/empresa/icons/information-1.svg" class="boxEmpresa__icon" alt="" srcset="">
-                            <p class="boxEmpresa__text">¿Quiénes <br> somos?</p>
-                        </div>
-                        <div class="seccEmpresa__bottom seccEmpresa__bottom--left">
-                            <img src="../../web/img/empresa/groupBoxEmp04.svg" class="seccEmpresa__arrows" alt="" srcset="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End ¿Quienes somos?  -->
-
-        <!-- Preguntas frecuentes -->
-        <div class="row g-0 mt-5">
-            <!-- Collage -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-7 col-xxl-6">
-                <div class="seccEmpresa ">
-                    <!-- Img background -->
-                    <picture>
-                        <!-- Large -->
-                        <source media="(min-width: 922px)" srcset="../../web/img/empresa/imgEmpresa03.jpg">
-                        <!-- Medium -->
-                        <source media="(min-width: 768px)"srcset="../../web/img/empresa/imgEmpresa03@2x.jpg">
-                        <!-- fallback -->
-                       <img src="../../web/img/empresa/imgEmpresa03@3x.jpg" media="(min-width: 1024px)"  class="seccEmpresa__img seccEmpresa__img--left" alt="">
-                    </picture>
-
-                    <!-- Elementos -->
-                    <div class="seccEmpresa__elements seccEmpresa__elements--rigth">
-                        <div class="seccEmpresa__top seccEmpresa__top--rigth">
-                            <img src="../../web/img/empresa/groupBoxEmp01.svg" class="seccEmpresa__boxs" alt="" srcset="">
-                        </div>
-                        <div class="boxEmpresa boxEmpresa--green">
-                            <img src="../../web/img/empresa/icons/help.svg" class="boxEmpresa__icon" alt="" srcset="">
-                            <p class="boxEmpresa__text">Preguntas <br> frecuentes</p>
-                        </div>
-                        <div class="seccEmpresa__bottom seccEmpresa__bottom--rigth">
-                            <img src="../../web/img/empresa/groupBoxEmp02.svg" class="seccEmpresa__arrows" alt="" srcset="">
-                        </div>
+                    <div class="col-6 col-md-4 col-lg-6 col-xl-5 mt-1 mt-md-1 mt-lg-1 mt-xl-5 offset-3  offset-md-0 offset-lg-0 offset-xl-0">
+                        <button class="button button--transparent button--border-2 button--border-green button--hover-green button--small">
+                            Conoce más
+                        </button>
                     </div>
                 </div>
             </div>
 
-             <!-- Listado de servicios -->
-             <div class="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-4 offset-xl-1">
+            <!-- ¿Quienes somos? rigth -->
+            <div class="col-12 col-md-4 col-lg-7 col-x-7 col-xxl-7 offset-md-1 offset-lg-1 offset-xl-0 order-md-1 order-lg-2">
+                <div class="serv-collage">
+                    <div class="serv-collage__back d-none d-lg-block">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-5">
+                                <div class="serv-collage__espace-left">
+                                    <img src="../../web/img/empresa/groupBoxEmp03.svg" class="servicios__icon-box" alt="" srcset="">
+                                    <div class="servicios__box"></div>
+                                    <img src="../../web/img/empresa/groupBoxEmp04.svg" class="servicios__icon-arrows" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8 col-xl-8 col-xxl-7">
+                                <picture>
+                                    <!-- Large -->
+                                    <source media="(min-width: 922px)" srcset="../../web/img/empresa/imgEmpresa02.jpg">
+                                    <!-- Medium -->
+                                    <source media="(min-width: 768px)"srcset="../../web/img/empresa/imgEmpresa02@2x.jpg">
+                                    <!-- fallback -->
+                                   <img src="../../web/img/empresa/imgEmpresa02@3x.jpg" class="servicios__img" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="serv-collage__front">
+                        <div class="container">
+                            <div class="row g-0">
+                                <div class="col-md-12 col-lg-4 col-xl-4 col-xxl-4 offset-lg-2 offset-xl-2 offset-xxl-3">
+                                    <div class="serv-collage__obj">
+                                        <div class="servicios__box servicios__box--purple">
+                                            <img src="../../web/img/empresa/icons/information-1.svg" class="boxEmpresa__icon" alt="" srcset="">
+                                            <p class="boxEmpresa__text">¿Quiénes <br> somos?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Servicios -->
+    </section>
+    
+    <section class="section-preguntas">
+        <!-- ¿Preguntas frecuentes? -->
+        <div class="row g-0"> 
+            <!-- ¿Preguntas frecuentes? Left -->
+            <div class="col-12 col-md-4 col-lg-6 col-xl-7 col-xxl-7 offset-md-1 offset-lg-0 offset-xl-0">
+                <div class="serv-collage">
+                    <div class="serv-collage__back d-none d-md-none d-lg-block">
+                        <div class="row g-0">
+                            <div class="col-lg-9 col-xl-8 col-xxl-7">
+                                <picture>
+                                    <!-- Large -->
+                                    <source media="(min-width: 922px)" srcset="../../web/img/empresa/imgEmpresa03.jpg">
+                                    <!-- Medium -->
+                                    <source media="(min-width: 768px)"srcset="../../web/img/empresa/imgEmpresa03@2x.jpg">
+                                    <!-- fallback -->
+                                   <img src="../../web/img/empresa/imgEmpresa03@3x.jpg" class="servicios__img" alt="">
+                                </picture>
+                            </div>
+                            <div class="col-lg-2 col-xl-4 col-xxl-4 d-none d-lg-block">
+                                <div class="serv-collage__espace">
+                                    <img src="../../web/img/empresa/groupBoxEmp01.svg" class="servicios__icon-box" alt="" srcset="">
+                                    <div class="servicios__box"></div>
+                                    <img src="../../web/img/empresa/groupBoxEmp02.svg" class="servicios__icon-arrows" alt="" srcset="">
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serv-collage__front">
+                        <div class="container">
+                            <div class="row g-0">
+                                <div class="col-lg-6 col-md-12 col-xl-4 col-xxl-4 offset-lg-4 offset-xl-6 offset-xxl-6">
+                                   <div class="serv-collage__obj">
+                                        <div class="servicios__box servicios__box--green">
+                                            <img src="../../web/img/empresa/icons/help.svg" class="boxEmpresa__icon" alt="" srcset="">
+                                            <p class="boxEmpresa__text">Preguntas <br> frecuentes</p>
+                                        </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- ¿Preguntas frecuentes? Rigth -->
+            <div class="col-11 col-md-6 col-lg-3 col-xl-4 col-xxl-4 offset-lg-1 offset-md-1 offset-xl-0">
                 <div class="services">
-                    <ul class="listServices">
-                        <li class="listSrvices__item">
-                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="listServices__icon" alt="" srcset="">
-                            <p class="listServices__text">Preguntas frecuentes</p>
+                    <ul class="list">
+                        <li class="list__item">
+                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="list__icon" alt="" srcset="">
+                            <a href="faq.html" class="list__link"><p class="list__text">Preguntas frecuentes</p></a>
                         </li>
-                        <li class="listSrvices__item">
-                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="listServices__icon" alt="" srcset="">
-                            <p class="listServices__text">Contacta a un asesor</p>
+                        <li class="list__item mt-1">
+                            <img src="../../web/img/empresa/icons/arrowPurple.svg" class="list__icon" alt="" srcset="">
+                            <a href="" class="list__link"> <p class="list__text">Contacta a un asesor</p></a>
                         </li>
                     </ul>
-                    <!-- Boton Conoce más -->
-                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 mt-xl-5">
-                        <button class="button button--border-2 button--border-green button--hover-green py-2">Conoce más</button>
+                     <!-- Boton Conoce más -->
+                    <div class="col-6 col-md-4 col-lg-6 col-xl-4 mt-1 mt-md-1 mt-lg-1 mt-xl-5 offset-0 offset-lg-0 offset-xl-0">
+                       <a href="faq.html">
+                            <button class="button button--transparent button--border-2 button--border-green button--hover-green button--small">
+                                Conoce más
+                            </button>
+                       </a>
                     </div>
                 </div>
             </div>
-        </div> <!-- End preguntas frecuentes -->
-    </div><!-- End container-->
+        </div> <!-- ¿Preguntas frecuentes? -->
+    </section>
 
-<!-- Footer -->    
-<footer class="mt-3">
-    <div class="newsletter newsletter--bg bg-success">
-        <div class="newsletter__container">
-            <img src="../../web/img/layout/group-9.svg" class="newsletter__decorator" alt="" srcset="">
-            <img src="../../web/img/layout/my-20-mazda-6-sport-snowflake-white-car-ds-front-3-q@3x.png" class="newsletter__img" alt="" srcset="">
-            <form action="" class="newsletter__form">
-                <p class="newsleter__title">No te pierdas nuestras actualizaciones</p>
-                <p class="newsleter__text">Suscríbete a nuestro newsletter</p>
-                <div class="newsletter__group">
-                    <input type="text" class="newsletter__input" name="" placeholder="Ingresa tu correo electrónico">
-                    <button class="newsletter__button">
-                        <img src="../../web/img/icons/icon-arrow.svg"  alt="" srcset="">
-                    </button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Footer nav -->
-    <div class="nav-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="nav-footer__list">
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Autos y Equipos de Transporte</a></li>
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Maquinaria y Equipos de Computo</a></li>
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Sistemas  de Energía Solar</a></li>
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Nuestra  Empresa</a></li>
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Blog</a></li>
-                    </ul>
+      
+    <!-- Footer -->    
+    <footer class="mt-3 mt-md-3 mt-lg-4 mt-xl-2">
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <div class="newsletter__background"></div>
+            <div class="newsletter__container">
+                <div class="row g-0">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-7 col-xxl-6 d-none d-md-none d-lg-block">
+                        <div class="newsletter__left">
+                            <img src="../../../web/img/layout/arrows-footer.svg" class="newsletter__arrows" alt="" srcset="">
+                            <img src="../../../web/img/layout/my-20-mazda-6-sport-snowflake-white-car-ds-front-3-q@3x.png" class="newsletter__auto" alt="" srcset="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-5 col-xxl-6">
+                        <div class="newsletter__rigth">
+                            <form action="" class="newsletter__form">
+                                <p class="newsletter__title">No te pierdas nuestras actualizaciones</p>
+                                <p class="newsletter__text">Suscríbete a nuestro newsletter</p>
+                                <div class="newsletter__group">
+                                    <input type="text" class="newsletter__input" placeholder="Ingresa tu correo electrónico">
+                                    <button class="newsletter__button">
+                                        <img src="../../../web/img/icons/icon-arrow.svg" class="" alt="" srcset="">
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Footer Contact | Terms -->
-    <div class="footer-info">
-        <img src="../../web/img/layout/logoFooter.png" class="footer-info__logo" alt="" srcset="">
-        <!-- Footer Contac -->
-        <div class="footer-info__container">
-            <div class="container">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-md-12 col-lg-10 col-xl-9 col-xxl-12">
+        <div class="container-fluid p-0 footer-container">
+            <img src="../../../web/img/layout/logoFooter.png" class="footer-info__logo" alt="" srcset="">
+            <div class="row g-0">
+                <div class="col-12 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="nav-footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="nav-footer__list">
+                                        <li class="nav-footer__item"><a href="index.html" class="nav-footer__link">Autos y Equipos de Transporte</a></li>
+                                        <li class="nav-footer__item"><a href="maquinas-computp.html" class="nav-footer__link">Maquinaria y Equipos de Computo</a></li>
+                                        <li class="nav-footer__item"><a href="energia-solar.html" class="nav-footer__link">Sistemas  de Energía Solar</a></li>
+                                        <li class="nav-footer__item"><a href="empresa.html" class="nav-footer__link">Nuestra  Empresa</a></li>
+                                        <li class="nav-footer__item"><a href="./blog/index.html" class="nav-footer__link">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="footer-info__container">
                         <ul class="contact">
                             <li class="contact__item">
-                                <img src="../../web/img/layout/icons/icon_phone.svg" alt="" srcset="">
+                                <img src="../../../web/img/layout/icons/icon_phone.svg" alt="" srcset="">
                                 <p class="contact__text">442-267-8890</p>
                             </li>
                             <li class="contact__item">
-                                <img src="../../web/img/layout/icons/icon_mail.svg" alt="" srcset="">
+                                <img src="../../../web/img/layout/icons/icon_mail.svg" alt="" srcset="">
                                 <p class="contact__text">contacto@leasingmobile.com</p>
                             </li>
                             <li class="contact__item">
-                                <img src="../../web/img/layout/icons/icon_map.svg" alt="" srcset="">
+                                <img src="../../../web/img/layout/icons/icon_map.svg" alt="" srcset="">
                                 <p class="contact__text">Ver dirección en mapa</p>
                             </li>
                             <li class="contact__item contact__item--social">
-                                <a href=""><img src="../../web/img/layout/icons/icon_faceboock.svg" alt="" srcset=""></a>
-                                <a href=""><img src="../../web/img/layout/icons/icon_instagram.svg" alt="" srcset=""></a>
-                                <a href=""><img src="../../web/img/layout/icons/icon_twitter.svg" alt="" srcset=""></a>
+                                <a href=""><img src="../../../web/img/layout/icons/icon_faceboock.svg" class="contact__icon" alt="" srcset=""></a>
+                                <a href=""><img src="../../../web/img/layout/icons/icon_instagram.svg" class="contact__icon" alt="" srcset=""></a>
+                                <a href=""><img src="../../../web/img/layout/icons/icon_twitter.svg" class="contact__icon" alt="" srcset=""></a>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="terms">
-           <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-lg-3 offset-xl-3">
-                        <div class="terms__container">
-                            <p class="terms__rigths">© 2020 Leasing Mobile. Derechos Reservados.</p>
-                            <a href="privacidad.html" class="terms__privacy">Aviso de privacidad</a>
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="terms">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-lg-3 offset-xl-3">
+                                    <div class="terms__container">
+                                        <p class="terms__rigths">© 2020 Leasing Mobile. Derechos Reservados.</p>
+                                        <a href="privacidad.html" class="terms__privacy">Aviso de privacidad</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-           </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script type="module" src="../js/app.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
+    <script src="../js/menu.headroom.js"></script>
+    <script src="../js/menu-dropdown.js"></script>
 </html>

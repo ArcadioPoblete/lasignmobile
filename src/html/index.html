@@ -8,53 +8,66 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
     <link rel="stylesheet" href="../../web/css/datepicker.css">
-    <link rel="stylesheet" href="../../web/css/ion.rangeSlider.css"/>
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="nav nav--position headroom">
+    <!-- Navigation -->
+<header id="header" class="">
+    <div class="nav nav--position">
         <div class="nav__top">
-           <div class="container">
-               <div class="row">
-                   <div class="col-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
                         <div class="brand">
                             <a href="../html/index.html">
-                                <img src="../../web/img/layout/logo.svg" class="brand__logo" alt="">
+                                <img src="../../../web/img/layout/logo.svg" class="brand__logo" alt="">
                             </a>
                         </div>
-                   </div>
-                   <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-5 offset-lg-3 offset-xl-3 offset-xxl-4 d-none d-md-none d-lg-block">
+                </div>
+                <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-5 offset-lg-3 offset-xl-3 offset-xxl-4 d-none d-md-none d-lg-block">
                         <div class="nav-contact">
                             <div class="nav-contact__item">
-                                <img src="../../web/img/layout/icons/icon_phone.svg" class="nav-contact__icon" alt="" srcset="">
+                                <img src="../../../web/img/layout/icons/icon_phone.svg" class="nav-contact__icon" alt="" srcset="">
                                 <p class="nav-contact__text">442-267-8890</p>
                             </div>
     
                             <div class="nav-contact__item">
-                                <img src="../../web/img/layout/icons/icon_mail.svg" class="nav-contact__icon" alt="" srcset="">
+                                <img src="../../../web/img/layout/icons/icon_mail.svg" class="nav-contact__icon" alt="" srcset="">
                                 <p class="nav-contact__text">buzon@leasingmobile.mx</p>
                             </div>
                         </div>
                     </div>
-                   <div class="col-2 col-md-1 offset-6 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
-                        <ul class="button-drawer">
+                <div class="col-2 col-md-1 offset-5 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
+                        <ul id="menu-mobile" class="button-drawer">
                             <li class="button-drawer__line button-drawer__line--small"></li>
                             <li class="button-drawer__line"></li>
                             <li class="button-drawer__line"></li>
                         </ul>
-                   </div>
-               </div>
-           </div>
+                </div>
+            </div>
         </div>
-        <div class="nav__bottom">
+        </div>
+        <div id="menu" class="nav__bottom close">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-xl-12 col-xxl-12">
-                        <ul class="menu">
-                            <li class="menu__item menu__item--active">
-                                <a href="../html/index.html" class="menu__link menu__link--active">Autos y Equipos de Transporte</a>
+                    <div class="col-12 col-md-12 col-xl-12 col-xxl-12 p-0 p-md-none">
+                        <ul  class="menu">
+                            <li class="menu__item" data-menu="menu-auto" >
+                                <div class="dropdown">
+                                   <a href="autos-equipos.html">
+                                        <button  class="btn-dropdown" type="button" aria-expanded="false">
+                                            <p class="p-0 m-0">Autos y Equipos de Transporte</p>
+                                        </button>
+                                   </a>
+                                    <ul id="menu-auto" class="dropdown-menu button-main__options">
+                                        <a href="autos-transporte.html" class="button-main__link"><li>Autos y transporte</li></a>
+                                        <a href="seminuevos.html" class="button-main__link"><li>Seminuevos</li></a>
+                                        <a href="admin-flotillas.html" class="button-main__link"><li>Admin flotillas</li></a>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="menu__item">
                                 <a href="maquinas-computo.html" class="menu__link">Maquinaria y Equipos de Computo</a>
@@ -62,11 +75,26 @@
                             <li class="menu__item">
                                 <a href="energia-solar.html" class="menu__link">Sistemas de Energía Solar</a>
                             </li>
-                            <li class="menu__item">
-                                <a href="empresa.html" class="menu__link">Nuestra Empresa</a>
+                            <li class="menu__item" data-menu="menu-empresa" >
+                                <div class="dropdown menu_item--dropdown">
+                                   <a href="empresa.html">
+                                        <button  class="btn-dropdown" type="button" aria-expanded="false">
+                                            <p class="p-0 m-0">Nuestar empresa</p>
+                                        </button>
+                                   </a>
+                                    <ul id="menu-empresa" class="dropdown-menu button-main__options">
+                                        <a href="servicios.html" class="button-main__link"><li>Servicioss</li></a>
+                                        <a href="quienes-somos.html" class="button-main__link"><li>¿Quiénes somos?</li></a>
+                                        <a href="faq.html" class="button-main__link"><li>Preguntas frecuentes</li></a>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="menu__item">
                                 <a href="../html/blog/index.html" class="menu__link">Blog</a>
+                            </li>
+                            <li id="close-menu" class="menu__close">
+                                <img src="../../../web/img/icons/icon-arrow.svg" class="menu__arrow" alt="" srcset="">
+                                Cerrar
                             </li>
                         </ul>
                     </div>
@@ -75,7 +103,6 @@
         </div>
     </div>
 </header><!-- End Navigation -->
-
 
     <div class="space-top"></div>
     <div class="header-carousel">
@@ -187,127 +214,236 @@
     <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-10 col-xl-10 col-xxl-8 offset-lg-1 offset-xxl-2">
-                      <div class="tab-content pb-4" id="pills-tabContent">
+                      <div class="tab-content" id="pills-tabContent">
                         <!-- Tab 01 -->
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 col-xl-12 col-xxl-12">
-                                        <label class="text-gray-07 mb-3">Selecciona una opción:</label>
-                                        <div class="col-12 col-lg-5 d-flex justify-content-start">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                    Renta de autos
-                                                </label>
+                            <div class="tab__container">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-xl-6 col-xxl-12 mt-xl-1">
+                                            <label class="tab__label">Selecciona una opción:</label>
+                                            <div class="tab__group">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                    <label class="form-check-label" for="flexRadioDefault1">
+                                                        Renta de autos
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                                    <label class="form-check-label" for="flexRadioDefault2">
+                                                        Venta de seminuevos
+                                                    </label>
+                                                </div>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    Venta de seminuevos
-                                                </label>
+                                        </div>
+                                    </div>
+    
+                                    <div class="row">
+                                        <!-- Marca -->
+                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                            <label class="tab__label">Selecciona una marca:</label>
+                                            <div class="dropdown tab__select">
+                                                <button class="tab__button" type="button" id="selectMarca" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <p class="p-0 m-0">Marca</p>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu font-openSans" aria-labelledby="selectMarca">
+                                                  <li>Optiion 1</li>
+                                                  <li>Optiion 2</li>
+                                                  <li>Optiion 3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Modelo -->
+                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                            <label class="tab__label">Selecciona una modelo:</label>
+                                            <div class="dropdown tab__select">
+                                                <button class="tab__button" type="button" id="selectMarca" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <p class="p-0 m-0">Modelo</p>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </button>
+                                                <ul class="dropdown-menu font-openSans" aria-labelledby="selectMarca">
+                                                  <li>Optiion 1</li>
+                                                  <li>Optiion 2</li>
+                                                  <li>Optiion 3</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+    
+                                        <!-- Slider range -->
+                                        <div class="col-12 col-md-12 col-lg-6 col-xl-4 col-xxl-4">
+                                            <div class="tab__range">
+                                                <input type="text" class="js-range-slider " name="my_range" value="" />
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row mt-2 mt-xl-1">
-                                     <!-- Marca | Modelo | Precio -->
-                                    
-                                    <!-- Marca -->
-                                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                                        <label>Selecciona una marca:</label>
-                                        <div class="dropdown mt-1 mt-xl-1">
-                                            <button class="button-select py-2 d-flex justify-content-between px-4 text-gray-06" type="button" id="selectMarca" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <p class="p-0 m-0">Marca</p>
-                                                <i class="fas fa-chevron-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu font-openSans" aria-labelledby="selectMarca">
-                                              <li>Optiion 1</li>
-                                              <li>Optiion 2</li>
-                                              <li>Optiion 3</li>
-                                            </ul>
-                                          </div>
-                                    </div>
-                                    
-                                    <!-- Modelo -->
-                                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                                        <label>Selecciona un modelo:</label>
-                                        <div class="dropdown mt-1 mt-xl-1">
-                                            <button class="button-select py-2 d-flex justify-content-between px-4 text-gray-06" type="button" id="selectModelo" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <p class="p-0 m-0">Modelo</p>
-                                                <i class="fas fa-chevron-down"></i>
-                                            </button>
-                                            <ul class="dropdown-menu font-openSans" aria-labelledby="selectModelo">
-                                              <li>Optiion 1</li>
-                                              <li>Optiion 2</li>
-                                              <li>Optiion 3</li>
-                                            </ul>
-                                          </div>
-                                    </div>
-
-                                    <!-- Slider range -->
-                                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-xxl-4">
-                                        <div class="col-10 col-md-10   offset-1 offset-md-0 mt-2 mt-xl-1">
-                                            <input type="text" class="js-range-slider" name="my_range" value="" />
+    
+                                    <div class="row mt-xl-4">
+                                        <!-- Date picker Desde -->
+                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                            <label class="tab__label">Fecha de inicio:</label>
+                                            <div class="tab__group tab__group--border tab__group--around">
+                                                <input type="text" class="datePicker tab__input" name="" placeholder="Desde">
+                                                <img src="../../web/img/icons/calendar-3.svg" alt="" srcset="">
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="row mt-2 mt-md-1 mt-xl-1">
-                                    <!-- Date picker Desde -->
-                                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                                        <label>Fecha de inicio:</label>
-                                        <div class="border d-flex justify-content-between align-items-center mt-1 mt-xl-1 px-2 py-2">
-                                            <input type="text" class="datePicker border-0 text-gray-02" name="" placeholder="Desde">
-                                            <div class="icon-calendario" ></div>
+    
+                                        <!-- Date picker Hasta -->
+                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                            <label class="tab__label">Fecha de entrega:</label>
+                                            <div class="tab__group tab__group--border tab__group--around">
+                                                <input type="text" class="datePicker tab__input" name="" placeholder="Hasta">
+                                                <img src="../../web/img/icons/calendar-3.svg" alt="" srcset="">
+                                            </div>
                                         </div>
-                                    </div>
-
-                                    <!-- Date picker Hasta -->
-                                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                                        <label>Fecha de entrega:</label>
-                                        <div class="border d-flex justify-content-between align-items-center mt-1 px-2 py-2">
-                                            <input type="text" class="datePicker border-0 text-gray-02" name="" placeholder="Hasta">
-                                            <div class="icon-calendario" ></div>
+                                        <div class="col-12 col-md-4 col-lg-3 col-lx-3 col-xxl-2 d-flex align-items-end">
+                                            <button class="border-0 btn-default">Buscar auto</button>
                                         </div>
-                                    </div>
-                                    <div class="col-12 col-md-4 col-lg-3 col-lx-3 col-xxl-2 d-flex align-items-end">
-                                        <button class="border-0 btn-default">Buscar auto</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                         <!-- Tab 02 -->
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere porro 
-                                sequi labore, quaerat ipsam optio aspernatur, soluta quos fugiat incidunt iste 
-                                rem eveniet a nulla temporibus adipisci doloribus provident harum.Lorem ipsum dolor, 
-                                sit amet consectetur adipisicing elit. Facere porro sequi labore, quaerat ipsam 
-                                optio aspernatur, soluta quos fugiat incidunt iste rem eveniet a nulla temporibus 
-                                adipisci doloribus provident harum.Lorem ipsum dolor, sit amet consectetur adipisicing 
-                                elit. Facere porro sequi labore, quaerat ipsam optio aspernatur, soluta quos fugiat incidunt iste 
-                                rem eveniet a nulla temporibus adipisci doloribus provident harum.
-                            </p>
+                            <div class="tab__container">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-xl-4">
+                                                <form action="#">
+                                                    <div class="row">
+                                                        <div class="col-xl-4">
+                                                            <input type="text" class="cotizador__input cotizador__input--border" name="" placeholder="Nombre completo">
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <input type="email" class="cotizador__input cotizador__input--border" name="" placeholder="Correo de la empresa">
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <input type="text" class="cotizador__input cotizador__input--border" name="" placeholder="Teléfono / Extensión">
+                                                        </div>
+                                                        <div class="col-xl-4">
+                                                            <input type="text" class="cotizador__input cotizador__input--border" name="" placeholder="Teléfono móvil">
+                                                        </div>
+                                                        <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                                            <div class="dropdown p-0">
+                                                                <button class="select select__maquinaria" type="button" id="selectAuto" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <p class="p-0 m-0 select__text">Servicio de interés a arrendar</p>
+                                                                    <i class="fas fa-chevron-down select__icon"></i>
+                                                                </button>
+                                                                <ul class="dropdown-menu options" aria-labelledby="selectAuto">
+                                                                  <li class="options__item">Optiion 1</li>
+                                                                  <li class="options__item">Optiion 2</li>
+                                                                  <li class="options__item">Optiion 3</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
 
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere porro 
-                                sequi labore, quaerat ipsam optio aspernatur, soluta quos fugiat incidunt iste 
-                                rem eveniet a nulla temporibus adipisci doloribus provident harum.Lorem ipsum dolor, 
-                                sit amet consectetur adipisicing elit. Facere porro sequi labore, quaerat ipsam 
-                                optio aspernatur, soluta quos fugiat incidunt iste rem eveniet a nulla temporibus 
-                                adipisci doloribus provident harum.Lorem ipsum dolor, sit amet consectetur adipisicing 
-                                elit. Facere porro sequi labore, quaerat ipsam optio aspernatur, soluta quos fugiat incidunt iste 
-                                rem eveniet a nulla temporibus adipisci doloribus provident harum.
-                            </p>
+
+                                                        <div class="col-xl-6">
+                                                            <div class="checkbox">
+                                                                <p class="checkbox__text checkbox--text-gray">Soy:</p>
+                                                                <div class="checkbox__container">
+                                                                    <div class="checkbox__group">
+                                                                        <label class="checkbox__label" for="radioMaq01">
+                                                                            <input class="checkbox__radio" type="radio" name="flexRadioDefault" value="" id="radioMaq01" checked>
+                                                                           <div class="checkbox__buttons">
+                                                                                <div class="checkbox__radio-circle radio-default"></div>
+                                                                                <div class="checkbox__radio-fill radio-active"></div>
+                                                                           </div>
+                                                                            <p class="checkbos__text checkbox--text-gray">Empresa</p>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox__group">
+                                                                        <label class="checkbox__label" for="radioMaq02">
+                                                                            <input class="checkbox__radio" type="radio" name="flexRadioDefault" value="" id="radioMaq02">
+                                                                            <div class="checkbox__buttons">
+                                                                                <div class="checkbox__radio-circle radio-default"></div>
+                                                                                <div class="checkbox__radio-fill radio-active"></div>
+                                                                            </div>
+                                                                            <p class="checkbos__text checkbox--text-gray"> Persona física <br class="d-block d-md-none"> con actividad empresarial</p>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-xl-4">
+                                                            <div class="col-12 col-md-4 col-lg-6 col-xl-6 col-xxl-4 mt-1">
+                                                                <button type="button" class="button button--border-0 button--bg-green button--medium">
+                                                                    Enviar cotización
+                                                                </button>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                         <!-- Tab 03 -->
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quos beatae officia debitis 
-                            eveniet excepturi ad dicta reiciendis laudantium. Culpa qui excepturi eveniet voluptatum non 
-                            ipsa veritatis, possimus id dignissimos.
+                            <div class="tab__container">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mt-2">
+                                            <input id="monto" type="text" class="input-calculadora" placeholder="$1,000,00">
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-12 col-xl-2 col-xxl-2 mt-2">
+                                            <button id="cal-index" type="button" class="button button--border-0 button--bg-green button--small">
+                                                Calcular
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-1">
+                                        <div class="col-xl-5">
+                                            <div class="tabla__group">
+                                                <p class="tabla__text">Tamaño de sistema sugerido</p>
+                                                <p class="tabla__result">7,044 kW</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <div class="tabla__group">
+                                                <p class="tabla__text">Número de paneles solares</p>
+                                                <p class="tabla__result">8</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-5">
+                                            <div class="tabla__group">
+                                                <p class="tabla__text">Costo del sistema</p>
+                                                <p class="tabla__result">$216,000.00</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-5">
+                                            <div class="tabla__group">
+                                                <p class="tabla__text">Adquierelo con un anticipo de</p>
+                                                <p class="tabla__result">$64,800.00</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-5">
+                                            <div class="tabla__group">
+                                                <p class="tabla__text">Y 60 rentas de</p>
+                                                <p class="tabla__result">$3,600.00</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-5">
+                                            <div class="tabla__group">
+                                                <p class="tabla__text">Ahorro bimestral</p>
+                                                <p class="tabla__result">28%</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
     </div>
@@ -541,7 +677,7 @@
 <div class="container mt-2">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 offset-md-3 offset-lg-4 offset-xl-4 px-5">
-            <button class="btn-clean border bh-1 border-green-01 b-radius-100 p-0  w-100 d-flex justify-content-between align-items-center">
+            <button class="button button--avatar button--transparent button--border-1 button--rounded button--border-green button--hover-green">
                 <img src="../../web/img/pag_at_tran/iconAvatar@3x.png" width="50px" alt="">
                 <p class="m-0 font-openSans font-regular w-100">Solicita una cotización</p>
             </button>
@@ -550,17 +686,35 @@
 </div>
 
 <!-- Green Box -->
-<div class="slickCarousel slickCarousel--green mt-2 ">
-   <div class="container slick  slickCartousel__container slickCarousel__container--szLarge">
-    <img src="../../web/img/pag_at_tran/iconHyundai.svg" height="40px" alt="" srcset="">
-    <img src="../../web/img/pag_at_tran/iconMazda.svg" height="40px" alt="" srcset="">
-    <img src="../../web/img/pag_at_tran/iconMitsubishi.svg" height="40px" alt="" srcset="">
-    <img src="../../web/img/pag_at_tran/iconNissan.svg" height="40px" alt="" srcset="">
-    <img src="../../web/img/pag_at_tran/iconJeep.svg" height="40px" alt="" srcset="">
-    <img src="../../web/img/pag_at_tran/iconToyota.svg" height="40px" alt="" srcset="">
-    <img src="../../web/img/pag_at_tran/iconKia.svg" height="40px" alt="" srcset="">
-    <img src="../../web/img/pag_at_tran/iconVolkswagen-w.svg" height="40px" alt="" srcset="">
-    <img src="../../web/img/pag_at_tran/iconFord.svg" height="40px" alt="" srcset="">
+<div class="slickBox-green">
+   <div class="container slick slick__center">
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconHyundai.svg"  alt="">
+        </div>
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconMazda.svg"alt="">
+        </div>
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconMitsubishi.svg"  alt="">
+        </div>
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconNissan.svg" alt="">
+        </div>
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconJeep.svg"  alt="">
+        </div>
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconToyota.svg"  alt="">
+        </div>
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconKia.svg" alt="">
+        </div>
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconVolkswagen-w.svg"  alt="">
+        </div>
+        <div class="slick__icon">
+            <img src="../../web/img/pag_at_tran/iconFord.svg"  alt="">
+        </div>
    </div>
 </div>
 
@@ -746,88 +900,107 @@
 </div>
 
 <!-- Footer -->    
-<footer class="mt-3">
-    <div class="newsletter newsletter--bg bg-success">
+<footer class="mt-3 mt-md-3 mt-lg-4 mt-xl-2">
+    <!-- Newsletter -->
+    <div class="newsletter">
+        <div class="newsletter__background"></div>
         <div class="newsletter__container">
-            <img src="../../web/img/layout/group-9.svg" class="newsletter__decorator" alt="" srcset="">
-            <img src="../../web/img/layout/my-20-mazda-6-sport-snowflake-white-car-ds-front-3-q@3x.png" class="newsletter__img" alt="" srcset="">
-            <form action="" class="newsletter__form">
-                <p class="newsleter__title">No te pierdas nuestras actualizaciones</p>
-                <p class="newsleter__text">Suscríbete a nuestro newsletter</p>
-                <div class="newsletter__group">
-                    <input type="text" class="newsletter__input" name="" placeholder="Ingresa tu correo electrónico">
-                    <button class="newsletter__button">
-                        <img src="../../web/img/icons/icon-arrow.svg"  alt="" srcset="">
-                    </button>
+            <div class="row g-0">
+                <div class="col-12 col-md-12 col-lg-6 col-xl-7 col-xxl-6 d-none d-md-none d-lg-block">
+                    <div class="newsletter__left">
+                        <img src="../../../web/img/layout/arrows-footer.svg" class="newsletter__arrows" alt="" srcset="">
+                        <img src="../../../web/img/layout/my-20-mazda-6-sport-snowflake-white-car-ds-front-3-q@3x.png" class="newsletter__auto" alt="" srcset="">
+                    </div>
                 </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Footer nav -->
-    <div class="nav-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="nav-footer__list">
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Autos y Equipos de Transporte</a></li>
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Maquinaria y Equipos de Computo</a></li>
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Sistemas  de Energía Solar</a></li>
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Nuestra  Empresa</a></li>
-                        <li class="nav-footer__item"><a href="" class="nav-footer__link">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer Contact | Terms -->
-    <div class="footer-info">
-        <img src="../../web/img/layout/logoFooter.png" class="footer-info__logo" alt="" srcset="">
-        <!-- Footer Contac -->
-        <div class="footer-info__container">
-            <div class="container">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-12 col-md-12 col-lg-10 col-xl-9 col-xxl-12">
-                        <ul class="contact">
-                            <li class="contact__item">
-                                <img src="../../web/img/layout/icons/icon_phone.svg" alt="" srcset="">
-                                <p class="contact__text">442-267-8890</p>
-                            </li>
-                            <li class="contact__item">
-                                <img src="../../web/img/layout/icons/icon_mail.svg" alt="" srcset="">
-                                <p class="contact__text">contacto@leasingmobile.com</p>
-                            </li>
-                            <li class="contact__item">
-                                <img src="../../web/img/layout/icons/icon_map.svg" alt="" srcset="">
-                                <p class="contact__text">Ver dirección en mapa</p>
-                            </li>
-                            <li class="contact__item contact__item--social">
-                                <a href=""><img src="../../web/img/layout/icons/icon_faceboock.svg" alt="" srcset=""></a>
-                                <a href=""><img src="../../web/img/layout/icons/icon_instagram.svg" alt="" srcset=""></a>
-                                <a href=""><img src="../../web/img/layout/icons/icon_twitter.svg" alt="" srcset=""></a>
-                            </li>
-                        </ul>
+                <div class="col-12 col-md-12 col-lg-6 col-xl-5 col-xxl-6">
+                    <div class="newsletter__rigth">
+                        <form action="" class="newsletter__form">
+                            <p class="newsletter__title">No te pierdas nuestras actualizaciones</p>
+                            <p class="newsletter__text">Suscríbete a nuestro newsletter</p>
+                            <div class="newsletter__group">
+                                <input type="text" class="newsletter__input" placeholder="Ingresa tu correo electrónico">
+                                <button class="newsletter__button">
+                                    <img src="../../../web/img/icons/icon-arrow.svg" class="" alt="" srcset="">
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="terms">
-           <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-lg-3 offset-xl-3">
-                        <div class="terms__container">
-                            <p class="terms__rigths">© 2020 Leasing Mobile. Derechos Reservados.</p>
-                            <a href="privacidad.html" class="terms__privacy">Aviso de privacidad</a>
+    </div>
+
+    <div class="container-fluid p-0 footer-container">
+        <img src="../../../web/img/layout/logoFooter.png" class="footer-info__logo" alt="" srcset="">
+        <div class="row g-0">
+            <div class="col-12 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="nav-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="nav-footer__list">
+                                    <li class="nav-footer__item"><a href="index.html" class="nav-footer__link">Autos y Equipos de Transporte</a></li>
+                                    <li class="nav-footer__item"><a href="maquinas-computp.html" class="nav-footer__link">Maquinaria y Equipos de Computo</a></li>
+                                    <li class="nav-footer__item"><a href="energia-solar.html" class="nav-footer__link">Sistemas  de Energía Solar</a></li>
+                                    <li class="nav-footer__item"><a href="empresa.html" class="nav-footer__link">Nuestra  Empresa</a></li>
+                                    <li class="nav-footer__item"><a href="./blog/index.html" class="nav-footer__link">Blog</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-           </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="footer-info__container">
+                    <ul class="contact">
+                        <li class="contact__item">
+                            <img src="../../../web/img/layout/icons/icon_phone.svg" alt="" srcset="">
+                            <p class="contact__text">442-267-8890</p>
+                        </li>
+                        <li class="contact__item">
+                            <img src="../../../web/img/layout/icons/icon_mail.svg" alt="" srcset="">
+                            <p class="contact__text">contacto@leasingmobile.com</p>
+                        </li>
+                        <li class="contact__item">
+                            <img src="../../../web/img/layout/icons/icon_map.svg" alt="" srcset="">
+                            <p class="contact__text">Ver dirección en mapa</p>
+                        </li>
+                        <li class="contact__item contact__item--social">
+                            <a href=""><img src="../../../web/img/layout/icons/icon_faceboock.svg" class="contact__icon" alt="" srcset=""></a>
+                            <a href=""><img src="../../../web/img/layout/icons/icon_instagram.svg" class="contact__icon" alt="" srcset=""></a>
+                            <a href=""><img src="../../../web/img/layout/icons/icon_twitter.svg" class="contact__icon" alt="" srcset=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="terms">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-lg-3 offset-xl-3">
+                                <div class="terms__container">
+                                    <p class="terms__rigths">© 2020 Leasing Mobile. Derechos Reservados.</p>
+                                    <a href="privacidad.html" class="terms__privacy">Aviso de privacidad</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
 
- <!--<script type="module" src="../js/app.js"></script>-->
- <script src="../../web/js/app.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
+    <script src="../js/menu.headroom.js"></script>
+    <script src="../js/slick-slides.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="../js/ranger.js"></script>
+    <script src="../js/menu-dropdown.js"></script>
+    <script src="../js/calculadora.js"></script>
 </body>
 </html>

@@ -1,11 +1,29 @@
-const services = document.querySelectorAll('.img-service');
-const btnService = document.querySelectorAll('.btn-service');
+const buttons = document.querySelectorAll('.btn-service');
 
 
-btnService.forEach((btn) => {
-    btn.addEventListener('mouseover', () => {
-        services.forEach((item) => {
-           const id = btn.id
-        })
+if (buttons) {
+    buttons.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            var boxId = item.dataset.box;
+            const box = document.getElementById(boxId);
+    
+            box.classList.remove('img-service');
+           
+        });
+    
+    
+        item.addEventListener('mouseout', () => {
+            var boxId = item.dataset.box;
+            const box = document.getElementById(boxId);
+    
+            box.classList.add('img-service');
+           
+        });
     });
-});
+} 
+
+
+
+
+
+

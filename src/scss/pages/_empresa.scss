@@ -1,26 +1,189 @@
-.slideHeader {
+.section-servicios {
     width: 100%;
-    height: 500px;
-    position: relative;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    @media (min-width: 1400px) {
+        margin-bottom: 200px;
+    }
 }
-.slideHeader__img {
+.section-somos {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+
+    @media (min-width: 1400px) {
+        margin-bottom: 200px;
+    }
+}
+.servicios__img {
+    width: 100%;
+    height: auto;
+}
+.servicios__decorator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.serv-collage {
+    width: 100%;
+    height: 450px;
+    position: relative;
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 550px;
+    }
+}
+.serv-collage__back {
     width: 100%;
     height: auto;
     position: absolute;
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 550px;
+    }
 }
-.slideHeader__container {
+.serv-collage__front {
     width: 100%;
     height: 100%;
     position: absolute;
-    color: #ffffff;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 550px;
+    }
+}
+.serv-collage__espace {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 550px;
+    }
+}
+.serv-collage__espace-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 550px;
+    }
+}
+.serv-collage__obj {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 560px;
+    }
+}
+.servicios__icon-box {
+    width: auto;
+    height: 50px;
+    margin-top: 40px;
+
+    @media (min-width: 1400px) {
+        width: auto;
+        height: 70px;
+        margin-top: 30px;
+    }
+}
+.servicios__box--purple {
+    background-color: $color-purple-01;
+}
+.servicios__icon-arrows {
+    width: auto;
+    height: 70px;
+
+    @media (min-width: 1400px) {
+        width: auto;
+        height: 100px;
+    }
+}
+.servicios__main{
+    width: 100%;
+    height: 450px;
+    position: relative;
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+.servicios__boxContainer {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+}
+
+
+.servicios__box {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1400px) {
+        width: 300px;
+        height: 300px;
+    }
+}
+.servicios__box--01 {
+    top: 0;
+}
+.servicios__box--green {
+    background-color: $color-green-01;
+}
+.servicios__box--absolute {
+    position: absolute;
 }
 .seccEmpresa {
     width: 100%;
     height: 500px;
     position: relative;
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 1024px) {
+        width: 100%;
+        height: 400px;
+    }
 
     @media (min-width: 1200px) {
         width: auto;
@@ -36,13 +199,25 @@
     height: 500px;
     position: absolute;
 
-    @media (min-width: 1200px) {
-        width: auto;
-        height: 500px;
+    @media (min-width: 300px) and (max-width: 900px) {
+       display: none;
     }
 
-    @media (min-width: 1900px) {
-        height: 600px;
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 400px;
+        height: auto;
+        top: 10%;
+    }
+
+    @media (min-width: 1280px) and (max-width: 1400px) {
+        width: 530px;
+        height: auto;
+        top: 6%;
+    }
+
+    @media (min-width: 1440px) {
+        width: 690px;
+        height: auto;
     }
 }
 .seccEmpresa__img--left {
@@ -50,11 +225,23 @@
 }
 .seccEmpresa__img--rigth {
     right: 0;
+
 }
 .seccEmpresa__elements {
     width: 100%;    
     height: 500px;
     position: absolute;
+
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        width: 100%;    
+        height: auto;
+        position: initial;
+    }
+    @media (min-width: 1024px) {
+        width: 100%;    
+        height: auto;
+    }
     
     @media (min-width: 1900px) {
         height: 600px;
@@ -81,6 +268,21 @@
     align-items: flex-start;
     justify-content: flex-end;
 
+    @media (min-width: 300px) and (max-width: 600px) {
+        display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 900px) {
+        width: 100%;
+        height: 150px;
+    }
+    
+    @media (min-width: 1024px) {
+        width: 111px;
+        height: 135px;
+    }
+
+
     @media (min-width: 1900px) {
         width: 265px;
         height: 135px;
@@ -93,6 +295,21 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 900px) {
+        width: 100%;
+        height: 150px;
+    }
+
+
+    @media (min-width: 1024px) {
+        width: 100px;
+        height: 135px;
+    }
 
     @media (min-width: 1900px) {
         width: 265px;
@@ -107,6 +324,20 @@
     align-items: flex-end;
     justify-content: flex-end;
 
+    @media (min-width: 300px) and (max-width: 600px) {
+        display:  none;
+    }
+
+    @media (min-width: 768px) and (max-width: 900px) {
+        width: 100%;
+        height: 135px;
+    }
+
+    @media (min-width: 1024px) {
+        width: 100px;
+        height: 135px;
+    }
+
     @media (min-width: 1900px) {
         width: 265px;
         height: 135px;
@@ -119,6 +350,15 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
+    
+    @media (min-width: 300px) and (max-width: 600px) {
+        display:  none;
+    }
+
+    @media (min-width: 768px) and (max-width: 900px) {
+        width: 100%;
+        height: 135px;
+    }
 
     @media (min-width: 1900px) {
         width: 265px;
@@ -132,6 +372,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        width: 100%;
+        height: auto;
+        padding: 10px 0 10px 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    @media (min-width: 768px) and (max-width: 900px) {
+        width: 100%;
+        height: 400px;   
+    }
+
+    @media (min-width: 1024px) {
+        width: 170px;
+        height: 170px;
+    }
 
     @media (min-width: 1200px) {
         width: 230px;
@@ -152,7 +411,7 @@
     text-transform: uppercase;
 }
 .boxEmpresa--green {
-    background-color: $color-green-default;
+    background-color: $color-green-default;    
 }
 .boxEmpresa--purple {
     background-color: $color-purple-01;
@@ -160,6 +419,10 @@
 .seccEmpresa__boxs {
     width: 84px;
     height: auto;
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        display: none;
+    }
 
     @media (min-width: 1200px) {
         width: 80px;
@@ -172,17 +435,27 @@
     }
 }
 .boxEmpresa__icon {
+
+    @media (min-width: 300px) and (max-width: 600px) {
+        margin: 0 20px 0 0;
+    }
+
     @media (min-width: 1900px) {
        width: 70px;
        height: 70px;
     }
 }
 .seccEmpresa__arrows {
-    width: 200px;
+    width: 130px;
     height: auto;
 
-    @media (min-width: 1200px) {
-        width:  150px;
+    @media (min-width: 768px) and (max-width: 900px) {
+       width: 150px;
+       height: auto;
+    }
+
+    @media (max-width: 1024px) {
+        width:  100px;
         height: auto;
     }
 

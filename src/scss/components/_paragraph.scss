@@ -5,7 +5,7 @@
     color: $color-gray-03;
     text-transform: uppercase;
 }
-.paragrap__line {
+.paragraph__line {
     width: 100%;
     height: 1px;
 }
@@ -14,7 +14,6 @@
 }
 .Paragraph {
     width: 100%;
-    height: auto;
 }
 .paragraph__title {
     margin: 0 0 5px 0;
@@ -28,6 +27,12 @@
 }
 .paragraph__text--center {
     text-align: center;
+}
+.paragraph__text--justify {
+    text-align: justify;
+}
+.paragraph__text--bold {
+    font-weight: 600;
 }
 .paragraph__text {
     margin: 20px 0 0 0;

@@ -41,12 +41,33 @@
 }
 .box-services{
     width: 100%;
+    height: 400px;
+    position: relative;
     background-color: $color-purple-01;
 }
-
-.img_opacity{
-    opacity: 0.3;
+.box-services__img {
+    position: absolute;
 }
-
+.img-service {
+    opacity: 0.5;
+}
+.box-service__container {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-service__text {
+    margin-top: 10px;
+    font-family: $openSans;
+    color: #ffff;
+}
+.btn-service {
+    position: absolute;
+    bottom: 0;
+}
 
 

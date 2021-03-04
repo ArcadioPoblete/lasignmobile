@@ -8,8 +8,9 @@
 }
 .filters {
     width: 100%;
-    height: 500px;
-    margin-top: 50px;
+    height: auto;
+    margin-top: 100px;
+    padding: 60px;
     background-color: $color-gray-04;
     display: flex;
     flex-direction: column;
@@ -149,29 +150,122 @@
 .vehicle {
     padding: 20px;
 }
-.vehicle__slick {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.slick-nav {
-    width: 200px;
-    height: auto;
-}
 .slick-nav__thumbnail {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
-.slick-show {
+.features {
     width: 100%;
-    height: auto;
-    margin: 0  20px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
-.slick-vehicle__img {
+.features__item {
+    width: 100%;
+    height: 81px;
+    border: solid 1px;
+    border-color: $color-gray-03;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.feature__icon {
+    width: 20px;
+    height: auto;
+}
+.feature__text {
+    margin: 0 0 0 20px;
+    color: $color-gray-03;
+}
+.description__title {
+    margin: 0 0 5px 0;
+    font-family: $openSans;
+    font-size: 12px;
+    font-weight: 400;
+    color: $color-gray-02;
+}
+.description__group {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.description__subtitle {
+    font-family: $archivo;
+    font-size: 25px;
+    font-weight: 600;
+    color: $color-gray-03;
+}
+
+.slide-nav {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    & .slick-slide {
+        width: 100% !important;
+    }
+}
+.slide-show {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.lorem__img {
+    width: 100%;
+    height: 400px;
+    background-color: $color-gray-03;
+    color: #ffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.tab_range__title {
+    margin-top: 50px;
+}
+.button--range {
+    margin-top: 120px;
+}
+.modal__container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.slide-seminuevos__show {
+    width: 100%;
+    height: auto;
+}
+.vehicle__details {
+    margin-top: 50px;
+}
+.slide--item {
+    width: 100% !important;
+    height: 190px !important;
+    margin: 0 0 25px 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+.slide--show {
+    width: 100% !important;
+    height: 620px !important;
+}
+.slide--img-show {
+    width: 100%;
+    height: auto;
+}
+.slide--item__thumbnail {
+    width: 100%;
+    height: auto;
+    transform: scale(1.5);
 }

@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
   
   $('.slick').slick({
@@ -18,7 +20,6 @@ $(document).ready(function(){
     slidesToScroll: 3
   });
   
-  
   $('.slickBlock').slick({
     infinite: true,
     arrows: true,
@@ -28,6 +29,20 @@ $(document).ready(function(){
     slidesToShow: 2,
     slidesToScroll: 3
   });
+
+
+  $('.blog-slide').slick({
+    dots: false,
+    infinite: true,
+    arrows: true,
+    prevArrow: $('.section-slide-blog__arrow-prev'),
+    nextArrow: $('.section-slide-blog__arrow-next'),
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+
+  
 });
 
 

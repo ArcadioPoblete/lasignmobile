@@ -1,0 +1,464 @@
+.secc-transporte {
+    width: 100%;
+    height: 600px;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: 600px;    
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100%;
+        height: 400px;
+    }
+    
+}
+.transporte__img {
+    width: auto;
+    height: 500px;
+    position: absolute;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: auto;
+        height: 300px;
+        top: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 400px;    
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: auto;
+        height: 320px;
+    }
+
+    @media (min-width: 1900px) {
+        width: auto;
+        height: 600px;
+    }
+}
+.secc__container {
+    width: auto;
+    height: 600px;
+    position: relative;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 400px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: 400px;    
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: auto;
+        height: 400px;
+    }
+}
+.secc-transporte__text--top {
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: auto;
+        margin-top: 0;    
+        text-align: left;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        margin-top: 50px;
+    }
+}
+.transporte__arrows {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 8%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 460px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 1900px) {
+        width: 720px;
+        height: auto;
+    }
+}
+.transporte__auto {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    bottom: 30%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        top: 20%;
+    }
+
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 570px;
+        height: auto;
+        top: 30%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 1900px) {
+        width: 800px;
+
+        height: auto;
+        bottom: 10%;
+    }
+}
+.secc-seminuevos {
+    width: 100%;
+    height: 500px;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+    
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 600px;
+    }
+}
+.secc-seminuevos__container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 700px;
+    }
+}
+.secc-seminuevos__text {
+    width: 100%;
+    height: 500px;
+    margin-top: 140px;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        height: auto;
+        text-align: left;    
+    }
+
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 700px;
+        margin-top: 250px;
+    }
+}
+.secc-seminuevos__background {
+    width: auto;
+    height: 500px;
+    position: absolute;
+    right: 0;
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: auto;
+        height: 400px;
+    }
+
+    @media (min-width: 1900px) {
+        width: auto;
+        height: 700px;
+    }
+}
+.secc-seminuevos__arrows {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 6%;
+    right: 0;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 500px;
+        height: auto;
+        top: 10%;
+    }
+
+    @media (min-width: 1900px) {
+        width: 750px;
+        height: auto;
+        top: 15%;
+    }
+
+}
+.secc-seminuevos__auto {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    right: 0;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 500px;
+        height: auto;
+    }
+
+    @media (min-width: 1900px) {
+        width: 800px;
+        height: auto;
+        top: 38%;
+    }
+}
+.secc-flotillas__container {
+    width: 100%;
+    height: 800px;
+    position: relative;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: auto;
+        height: 700px;
+        overflow: hidden;
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: auto;
+        height: 500px;
+    }
+
+    @media (min-width: 1900px) {
+        width: 100%;
+        height: 900px;
+    }
+}
+.secc-flotillas__background {
+    width: auto;
+    height: 600px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: auto;
+        height: 700px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: auto;
+        height: 500px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: auto;
+        height: 400px;
+    }
+
+    @media (min-width: 1900px) {
+        width: auto;
+        height: 900px;
+    }
+}
+.secc-flotillas__text {
+    margin-top: 350px;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: 300px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        text-align: left;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        margin-top: 100px;
+    }
+    
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        margin-top: 170px;
+
+    }
+}
+.secc-flotillas__arrows {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        top: 5%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        width: 600px;
+        height: auto;
+        top: 20%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 450px;
+        height: auto;
+    }
+
+    @media (min-width: 1900px) {
+        width: 800px;
+        height: auto;
+        top: 15%;
+    }
+}
+.secc-flotillas__auto01 {
+    width: auto;
+    height: 220px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        top: 20%;
+    }
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 30%;
+        right: 18%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: auto;
+        height: 150px;
+        top: 45%;
+        right: 10%;
+    }
+
+    @media (min-width: 1900px) {
+        width: 500px;
+        height: auto;
+        top: 30%;
+    }
+}
+.secc-flotillas__auto02 {
+    width: auto;
+    height: 180px;
+    position: absolute;
+    top: 58%;
+    left: 0;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+            top: 70%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 42%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: auto;
+        height: 140px;
+        top: 52%;
+
+    }
+
+    @media (min-width: 1900px) {
+        width: 585px;
+        height: auto;
+        top: 40%;
+    }
+}
+.secc-flotillas__icon01 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        top: 60%;
+        left: 35%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 30%;
+        left: 20%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        top: 38%;
+
+    }
+
+    @media (min-width: 1900px) {
+        top: 33%;
+    }
+}
+.secc-flotillas__icon02 {
+    position: absolute;
+    top: 41%;
+    left: 65%;
+
+    @media (min-width: 300px) and (max-width: 768px) {
+        top: 8%;
+        left: 60%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        top: 16%;
+        left: 45%;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        top: 30%;
+        left: 55%;
+
+    }
+
+    @media (min-width: 1900px) {
+        top: 22%;
+    }
+}

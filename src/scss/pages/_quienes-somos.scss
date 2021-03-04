@@ -4,20 +4,38 @@
     position: relative;
 }
 .collageSomos__collage01 {
+    width: 100%;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content:center;
+
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 700px;
+    }
 }
 .collageSomos__img01{
     width: 570px;
     height: auto;
     position: absolute;
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: auto;
+    }
 }
 .collageSomos__path01 {
     width: auto;
     height: 600px;
     position: absolute;
+
+    @media (min-width: 1400px) {
+        width: auto;
+        height: 700px;
+    }
 }
 .collageSomos__img--top {
     top: 0;
@@ -27,4 +45,126 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+}
+.somos-collage__block-02 {
+    width: 100%;
+    height: 700px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media (min-width: 1400px) {
+        width: 100%;
+        height: 800px;
+    }
+}
+.somos-img__path-02 {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 5%;
+
+    @media (min-width: 1400px) {
+        width: auto;
+        height: 700px;
+    }
+}
+.section-somos__paragraph {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    @media (min-width: 1400px) {
+        width:  100%;
+        height: 800px;
+    }
+}
+.somos-img__destiladora {
+    width: 480px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @media (min-width: 1400px) {
+        width:  650px;
+        height: auto;
+    }
+}
+.objetivos__title {
+    font-family: $archivo;
+    font-weight: 600;
+    font-size: 16px;
+}   
+.objetivos__list {
+    padding: 0;
+    margin: 0;
+}
+.objetivos__item {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 30px 0 ;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.objetivos__circle {
+    width: 10px;
+    height: 10px;
+    margin: 5px 10px 0 0;
+    border-radius: 100%;
+    background-color: $color-purple-01;
+}
+.objetivos__text {
+    margin: 0;
+    font-family: $openSans;
+    font-weight: 600;
+    color: $color-purple-01;
+}
+.sucursal {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sucursal--matriz {
+    background-color: #f2f7ec;
+}
+.sucursal--dos {
+    background-color: #efeff4;
+}
+.sucursal__list {
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+.sucursal__title {
+    padding: 0;
+    margin: 0 0 5px 0;
+    font-family: $archivo;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.sucursal__line {
+    border-bottom: solid 1px;
+    border-color: $color-green-01;
+}
+.sucursal__item {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+}
+.sucursal__icon {
+    margin: 0 10px 0 0;
 }

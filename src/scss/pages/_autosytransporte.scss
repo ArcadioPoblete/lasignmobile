@@ -1,5 +1,7 @@
 .slide-item {
     height: 612px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @media (min-width: 300px) {
         height: 400px;
@@ -44,15 +46,115 @@
         }
     }
 }
+.tab__container {
+   width: 100%;
+   height: 350px;
+   border: solid;
+   border-width: 0 1px;
+   border-color: $color-gray-01;
+   background-color: #ffff;
+}
+.tab__label {
+    font-family: $openSans;
+    font-weight: 400;
+    margin: 10px 0 10px 0;
+}
+.tab__group {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    & .form-check {
+        margin: 0 0 0 10px;
+    }
+}
+.tab__group--start {
+    justify-content: flex-start;
+}
+.tab__group--around {
+    justify-content: space-around;
+}
+.tab__group--border {
+    border: solid 1px;
+    border-color: $color-gray-01;
+}
+.tab__input {
+    border: none;
+}
+.tab__range {
+    margin: 20px 0 0 10px;
+}
+.tab__select {
+    width: 100%;
+    height: 40px;
+   
+}
+.tab__button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    padding: 0 10px 0 10px;
+    color: $color-gray-03;
+    border: solid 1px;
+    border-color: $color-gray-01;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+}
 .carousel-indicators{
     @media (min-width: 300px) {
         margin-bottom: 100px;
     }
 }
+.checkbox--text-gray {
+    color: $color-gray-03 !important;
+}
+.checkbox__radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+.checkbox__radio:checked + .checkbox__buttons {
+    & .radio-default {
+        display: none;
+    }
+    & .radio-active {
+        display: block;
+    }
+}
+.checkbox__radio-circle {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 0 0;
+    border: solid 2px;
+    border-radius: 100px;
+    border-color: $color-purple-01;
+}
+.checkbox__radio-fill {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px 0 0;
+    border: solid 2px;
+    border-radius: 100px;
+    background-color: $color-purple-01;
+    border-color: $color-purple-01;
+}
+.radio-default {
+    display: block;
+}
+.radio-active {
+    display: none;
+}
+.checkbox__radio--tab {
+    border: solid 1px;
+    border-color: $color-purple-01;
+}   
 .tab-content{
     width: 100%;
-    height: auto;
-    padding: 10px;
+    height:auto;
     background-color: #ffff;
     border: solid;
     border-width: 0 1px 1px 1px;
@@ -98,7 +200,6 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
-
 }
 .path-bottom{
     width: 100%;
@@ -351,7 +452,21 @@
        justify-content: flex-start;
      }
 }
-
+.cotizador__input--border {
+    width: 100%;
+    height: 50px;
+    border: solid 1px;
+    border-color: $color-gray-01;
+    padding: 0 0 0 20px;
+}
+.select__maquinaria {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 0 0;
+    border:solid 1px;
+    border-color: $color-gray-01;
+    padding: 0 20px 0 20px;
+}
 /* Section auto */
 
 .blk-auto {
@@ -530,7 +645,17 @@
     width: 34px;
     height: auto;
 }
-
-
-/************************************************/
+.input-calculadora {
+    width: 100%;
+    height: 40px;
+    border: solid 1px;
+    border-color: $color-gray-01;
+}
+.tabla__group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 

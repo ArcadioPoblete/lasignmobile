@@ -1,6 +1,26 @@
+.slickBox-green {
+    width: 100%;
+    height: 176px;
+    margin-top: 150px;
+    background-color: $color-green-01;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slick__icon {
+    width: 70px;
+    height: auto;
+    margin: 0 20px 0 20px;
+}
 .slickCarousel { 
     width: 100%;
     height: auto;
+}
+.slick__center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .slickCarousel--green {
     background-color: $color-green-default;

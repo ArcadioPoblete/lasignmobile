@@ -1,0 +1,20 @@
+.headroom {
+    transition: all 0.5s ease-in-out;
+}
+.headroom--pinned {
+    margin-top: -100px;
+
+    @media (min-width: 300px) and (max-width: 900px) {
+        margin-top: 0;   
+    }
+}
+.headroom--unpinned {
+    margin-top: -100px;
+
+    @media (min-width: 300px) and (max-width: 900px) {
+        margin-top: 0;   
+    }
+}
+.headroom--top {
+    margin-top: 0;
+}
