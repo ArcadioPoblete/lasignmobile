@@ -12,6 +12,9 @@
 .paragraph__line--green {
     background-color: $color-green-01;
 }
+.paragraph__line--withe {
+    background-color: #ffff;
+}
 .Paragraph {
     width: 100%;
 }
@@ -46,4 +49,10 @@
 }
 .paragraph__title--border {
     border-bottom: solid 1px $color-green-default;
+}
+.paragraph__title--withe {
+    color: #ffff;
+}
+.paragraph__text--withe {
+    color: #ffff !important;
 }

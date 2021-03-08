@@ -226,6 +226,12 @@
   justify-content: center;
 }
 
+@media (min-width: 300px) and (max-width: 900px) {
+  .filters {
+    padding: 20px;
+  }
+}
+
 .filters__container {
   width: 100%;
   height: auto;
@@ -234,6 +240,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .filters__container {
+    flex-wrap: wrap;
+  }
 }
 
 .filters__button {
@@ -246,6 +258,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .filters__button {
+    width: 160px;
+    height: 130px;
+  }
 }
 
 .filters__icon {
@@ -469,6 +488,12 @@
 
 .button--range {
   margin-top: 120px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .button--range {
+    margin-top: 30px;
+  }
 }
 
 .modal__container {
@@ -945,6 +970,175 @@
 }
 
 /*******************************/
+.section-paths-top {
+  width: 100%;
+  height: 900px;
+  position: relative;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .section-paths-top {
+    width: 100%;
+    height: auto;
+    position: initial;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .section-paths-top {
+    width: 100%;
+    height: 1100px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-paths-top {
+    width: 100%;
+    height: 1400px;
+  }
+}
+
+.section-path-top__container {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 32%;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .section-path-top__container {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding: 0 30px 0 30px;
+    margin: 0 0 50px 0;
+    position: initial;
+    background-color: #62619a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .section-path-top__container {
+    top: 20%;
+  }
+}
+
+.servicios__arrows {
+  width: auto;
+  height: 700px;
+  position: absolute;
+  top: 5%;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .servicios__arrows {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .servicios__arrows {
+    width: auto;
+    height: 700px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .servicios__arrows {
+    width: auto;
+    height: 1000px;
+  }
+}
+
+.servicios__path01 {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .servicios__path01 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .servicios__path01 {
+    width: 700px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .servicios__path01 {
+    width: 1100px;
+    height: auto;
+  }
+}
+
+.servicios__path02 {
+  width: auto;
+  height: 560px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .servicios__path02 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .servicios__path02 {
+    width: 440px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .servicios__path02 {
+    width: auto;
+    height: 800px;
+  }
+}
+
+.servicios__auto {
+  width: 700px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 15%;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .servicios__auto {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .servicios__auto {
+    width: 500px;
+    height: auto;
+    right: 10%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .servicios__auto {
+    width: 800px;
+    height: auto;
+    right: 10%;
+  }
+}
+
 .container-paths {
   width: 100%;
   height: 900px;
@@ -956,51 +1150,18 @@
   }
 }
 
-.triangle_01 {
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-image: url("../../../web/img/pag_servicios/path_01.svg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: contain;
-}
-
-@media (min-width: 1440px) {
-  .triangle_01 {
-    background-size: contain;
-  }
-}
-
-.serv-arrows-left {
-  width: 100%;
-  height: 100%;
-  background-image: url("../../../web/img/pag_servicios/arrows-left.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 15%;
-}
-
-.triangle-02 {
-  width: 100%;
-  height: 100%;
-  background-image: url("../../../web/img/pag_servicios/path_02.svg");
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 40%;
-}
-
-@media (min-width: 1440px) {
-  .triangle-02 {
-    background-size: 36%;
-  }
-}
-
 .box-services {
   width: 100%;
   height: 400px;
   position: relative;
   background-color: #62619a;
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .box-services {
+    width: 100%;
+    height: 250px;
+  }
 }
 
 .box-services__img {
@@ -1019,6 +1180,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .box-service__container {
+    width: 100%;
+    height: auto;
+    margin: 0 0 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .box-service__container {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+  }
 }
 
 .box-service__text {
@@ -1094,6 +1271,14 @@
   border-width: 0 1px;
   border-color: #e1e1e1;
   background-color: #ffff;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .tab__container {
+    width: 100%;
+    height: auto;
+    padding: 0 0 30px 0;
+  }
 }
 
 .tab__label {
@@ -1255,6 +1440,12 @@
   width: auto;
   height: 25px;
   margin-right: 15px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .nav-link__icon {
+    margin: 0;
+  }
 }
 
 .secc-tabs {
@@ -3176,6 +3367,14 @@
   left: 10%;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .collageDistintivo__panel {
+    width: 100%;
+    height: auto;
+    left: 0;
+  }
+}
+
 @media (min-width: 1900px) {
   .collageDistintivo__panel {
     width: 650px;
@@ -3199,6 +3398,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .img-sol {
+    margin-top: 50px;
+  }
 }
 
 /* End beneficios de arrendar*/
@@ -3334,6 +3539,13 @@
   width: 100%;
   height: 450px;
   position: relative;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .serv-collage {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -3477,6 +3689,14 @@
   position: absolute;
 }
 
+@media (min-width: 300px) and (max-width: 600px) {
+  .servicios__boxContainer {
+    width: 100%;
+    height: auto;
+    padding: 10px 0 10px 0;
+  }
+}
+
 .servicios__box {
   width: 100%;
   height: 220px;
@@ -3484,6 +3704,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .servicios__box {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 20px 0;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -4443,6 +4672,7 @@
   width: auto;
   height: 500px;
   position: absolute;
+  z-index: -1;
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
