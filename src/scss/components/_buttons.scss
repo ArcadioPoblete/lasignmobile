@@ -127,3 +127,8 @@
         color: $color-gray-02;
     }    
 }
+
+.button-main__active {
+    background-color: $color-purple-01 !important;
+    color: #ffff;
+}

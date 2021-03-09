@@ -1841,6 +1841,11 @@
   color: #434343;
 }
 
+.button-main__active {
+  background-color: #62619a !important;
+  color: #ffff;
+}
+
 .img-lorem {
   width: 200px;
   height: 150px;

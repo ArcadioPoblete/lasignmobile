@@ -12053,6 +12053,11 @@ fieldset:disabled .btn {
   color: #434343;
 }
 
+.button-main__active {
+  background-color: #62619a !important;
+  color: #ffff;
+}
+
 .img-lorem {
   width: 200px;
   height: 150px;
@@ -15944,7 +15949,7 @@ fieldset:disabled .btn {
 .blockBeneficios {
   width: 100%;
   height: 300px;
-  background-image: url("../../../web/img/enr_solar/bgBeneficios@3x.jpg");
+  background-image: url("../../web/img/enr_solar/bgBeneficios@3x.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
