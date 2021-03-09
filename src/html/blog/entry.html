@@ -7,6 +7,8 @@
     
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="../../../web/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     
@@ -15,35 +17,35 @@
     <div class="nav nav--position">
         <div class="nav__top">
             <div class="container">
-                <div class="row">
-                    <div class="col-5 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-                            <div class="brand">
-                                <a href="../html/index.html">
-                                    <img src="../../../web/img/layout/logo.svg" class="brand__logo" alt="">
-                                </a>
+            <div class="row">
+                <div class="col-5 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="brand">
+                            <a href="../html/index.html">
+                                <img src="../../../web/img/layout/logo.svg" class="brand__logo" alt="">
+                            </a>
+                        </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-5 offset-lg-3 offset-xl-3 offset-xxl-4 d-none d-md-none d-lg-block">
+                        <div class="nav-contact">
+                            <div class="nav-contact__item">
+                                <img src="../../../web/img/layout/icons/icon_phone.svg" class="nav-contact__icon" alt="" srcset="">
+                                <p class="nav-contact__text">442-267-8890</p>
                             </div>
-                    </div>
-                    <div class="col-12 col-md-5 col-lg-6 col-xl-6 col-xxl-5 offset-lg-3 offset-xl-3 offset-xxl-4 d-none d-md-none d-lg-block">
-                            <div class="nav-contact">
-                                <div class="nav-contact__item">
-                                    <img src="../../../web/img/layout/icons/icon_phone.svg" class="nav-contact__icon" alt="" srcset="">
-                                    <p class="nav-contact__text">442-267-8890</p>
-                                </div>
-        
-                                <div class="nav-contact__item">
-                                    <img src="../../../web/img/layout/icons/icon_mail.svg" class="nav-contact__icon" alt="" srcset="">
-                                    <p class="nav-contact__text">buzon@leasingmobile.mx</p>
-                                </div>
+    
+                            <div class="nav-contact__item">
+                                <img src="../../../web/img/layout/icons/icon_mail.svg" class="nav-contact__icon" alt="" srcset="">
+                                <p class="nav-contact__text">buzon@leasingmobile.mx</p>
                             </div>
                         </div>
-                    <div class="col-2 col-md-1 offset-5 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
-                            <ul id="menu-mobile" class="button-drawer">
-                                <li class="button-drawer__line button-drawer__line--small"></li>
-                                <li class="button-drawer__line"></li>
-                                <li class="button-drawer__line"></li>
-                            </ul>
                     </div>
+                <div class="col-2 col-md-1 offset-5 offset-md-8 d-flex justyfi-content-center align-items-center d-block d-lg-none">
+                        <ul id="menu-mobile" class="button-drawer">
+                            <li class="button-drawer__line button-drawer__line--small"></li>
+                            <li class="button-drawer__line"></li>
+                            <li class="button-drawer__line"></li>
+                        </ul>
                 </div>
+            </div>
             </div>
         </div>
         <div id="menu" class="nav__bottom close">
@@ -51,24 +53,42 @@
                 <div class="row">
                     <div class="col-12 col-md-12 col-xl-12 col-xxl-12 p-0 p-md-none">
                         <ul  class="menu">
-                            <li class="menu__item">
-                                <a href="../../html/index.html" class="menu__link">Autos y Equipos de Transporte</a>
+                            <li class="menu__item " data-menu="menu-auto" >
+                                <div class="dropdown">
+                                   <a href="../../html/autos-equipos.html">
+                                        <button  class="btn-dropdown" type="button" aria-expanded="false">
+                                            <p class="p-0 m-0">Autos y Equipos de Transporte</p>
+                                        </button>
+                                   </a>
+                                    <ul id="menu-auto" class="dropdown-menu button-main__options">
+                                        <a href="../../html/autos-transporte.html" class="button-main__link"><li>Autos y transportes</li></a>
+                                        <a href="../../html/seminuevos.html" class="button-main__link"><li>Seminuevos</li></a>
+                                        <a href="../../html/admin-flotillas.html" class="button-main__link"><li>Admin flotillas</li></a>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="menu__item">
                                 <a href="../../html/maquinas-computo.html" class="menu__link">Maquinaria y Equipos de Computo</a>
                             </li>
-                            <li class="menu__item">
-                                <a href="../../energia-solar.html" class="menu__link">Sistemas de Energía Solar</a>
+                            <li class="menu__item ">
+                                <a href="../../html/energia-solar.html" class="menu__link">Sistemas de Energía Solar</a>
                             </li>
-                            <li class="menu__item">
-                                <a href="../../empresa.html" class="menu__link">Nuestra Empresa</a>
+                            <li class="menu__item" data-menu="menu-empresa" >
+                                <div class="dropdown menu_item--dropdown">
+                                    <a href="../../html/empresa.html" class="menu__link">
+                                        <button  class="btn-dropdown" type="button" aria-expanded="false">
+                                            <p class="p-0 m-0">Nuestar empresa</p>
+                                        </button>
+                                    </a>
+                                    <ul id="menu-empresa" class="dropdown-menu button-main__options">
+                                        <a href="../../html/servicios.html" class="button-main__link"><li>Servicioss</li></a>
+                                        <a href="../../html/quienes-somos.html" class="button-main__link"><li>¿Quiénes somos?</li></a>
+                                        <a href="../../html/faq.html" class="button-main__link"><li>Preguntas frecuentes</li></a>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="menu__item menu__item--active">
-                                <a href="../html/blog/index.html" class="menu__link menu__link--active">Blog</a>
-                            </li>
-                            <li id="close-menu" class="menu__close">
-                                <img src="../../../web/img/icons/icon-arrow.svg" class="menu__arrow" alt="" srcset="">
-                                Cerrar
+                                <a href="../html/blog/index.html" class="menu__link">Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -104,7 +124,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod <br> 
                                 tempor incididunt ut labore et dolore magna aliqua.
                             </p>
-                            <div class="col-12 col-md-12 col-lg-12 col-xl-2 col-xxl-1 offset-xl-10 offset-xxl-10 mt-5">
+                            <div class="col-12 col-md-12 col-lg-12 col-xl-2 col-xxl-1 offset-xl-10 offset-xxl-10">
                                 <div class="image-box__social">
                                     <a href=""><img src="../../../web/img/icons/iconFaceboock-w.svg" alt="" srcset=""></a>
                                     <a href=""><img src="../../../web/img/icons/iconInstagram-w.svg" alt="" srcset=""></a>
@@ -122,7 +142,7 @@
     <div class="container mt-xl-5 mt-xxl-5">
         <div class="row">
             <div class="col-10 col-md-10 col-lg-10 col-xl-10 text-gray-03 offset-lg-1">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="blog__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Ducimus quo dolores aperiam illum corporis temporibus sequi, alias consequatur, 
                 cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                 accusantium perspiciatis? Eaque.Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -133,7 +153,7 @@
                 cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                 accusantium perspiciatis? Eaque</p>
                 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="blog__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Ducimus quo dolores aperiam illum corporis temporibus sequi, alias consequatur, 
                     cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                     accusantium perspiciatis? EaqueLorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -141,7 +161,7 @@
                     cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                     accusantium perspiciatis? Eaque</p>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="blog__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Ducimus quo dolores aperiam illum corporis temporibus sequi, alias consequatur, 
                     cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                     accusantium perspiciatis? Eaque</p>
@@ -170,7 +190,7 @@
      <div class="container mt-xl-5">
         <div class="row">
             <div class="col-10 col-md-10 col-lg-10 col-xl-10 text-gray-03 offset-lg-1">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="blog__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Ducimus quo dolores aperiam illum corporis temporibus sequi, alias consequatur, 
                 cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                 accusantium perspiciatis? Eaque.Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -181,7 +201,7 @@
                 cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                 accusantium perspiciatis? Eaque</p>
                 
-                <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="blog__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Ducimus quo dolores aperiam illum corporis temporibus sequi, alias consequatur, 
                 cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                 accusantium perspiciatis? EaqueLorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -189,7 +209,7 @@
                 cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                 accusantium perspiciatis? Eaque</p>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <p class="blog__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Ducimus quo dolores aperiam illum corporis temporibus sequi, alias consequatur, 
                     cumque explicabo laboriosam distinctio, et quasi mollitia possimus. Perferendis, 
                     accusantium perspiciatis? Eaque</p>
@@ -392,7 +412,7 @@
                             <div class="col-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6 offset-md-1 offset-lg-3 offset-xl-3">
                                 <div class="terms__container">
                                     <p class="terms__rigths">© 2020 Leasing Mobile. Derechos Reservados.</p>
-                                    <a href="privacidad.html" class="terms__privacy">Aviso de privacidad</a>
+                                    <a href="../../html/privacidad.html" class="terms__privacy">Aviso de privacidad</a>
                                 </div>
                             </div>
                         </div>
@@ -403,7 +423,13 @@
     </div>
 </footer>
 
-
-    <script type="module" src="../../js/app.js"></script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
+    <script src="../../js/menu.headroom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../../js/slick-slides.js"></script>
+    <script src="../../js/menu-dropdown.js"></script>
 </body>
 </html>
