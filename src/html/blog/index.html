@@ -7,6 +7,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="../../../web/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     
@@ -88,10 +89,6 @@
                                 <li class="menu__item menu__item--active">
                                     <a href="../html/blog/index.html" class="menu__link">Blog</a>
                                 </li>
-                                <li id="close-menu" class="menu__close">
-                                    <img src="../../../web/img/icons/icon-arrow.svg" class="menu__arrow" alt="" srcset="">
-                                    Cerrar
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -147,6 +144,29 @@
     <img src="../../../web/img/icons/icon-arrow.svg" class="section-slide-blog__arrow-next" alt="" srcset="">
 </section>
         
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                <div class="input__group">
+                    <input type="text" class="input-blog" placeholder="Buscar...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                <div  class="dropdown input__group">
+                    <button class="select select__blog" type="button" id="select-maq" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p  class="p-0 m-0 select__text" data-select="maq">Categorias</p>
+                        <i class="fas fa-chevron-down select__icon"></i>
+                    </button>
+                    <ul class="dropdown-menu options" aria-labelledby="select-maq">
+                      <li class="options__maq options" data-option="maq">Arendamiento</li>
+                      <li class="options__maq options" data-option="maq">Energía solar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <!-- Entradas recientes -->
         <div class="row">
@@ -451,5 +471,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="../../js/slick-slides.js"></script>
     <script src="../../js/menu-dropdown.js"></script>
+    <script src="../../js/selects.js"></script>
 </body>
 </html>

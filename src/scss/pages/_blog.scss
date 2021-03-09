@@ -353,4 +353,23 @@
     height: auto;
 }
 
-/*******************************/
+.input__group {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: flex;
+    border: solid 1px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.select__blog {
+    padding: 0 30px 0 30px;
+    height: 90px;
+}
+.input-blog {
+    width: 80%;
+    height: 90px;
+    border: none;
+}
+
