@@ -15,56 +15,44 @@ calcular.addEventListener('click', () => {
             console.log('El monto esta vacio');
     } else {
 
-        
-        recibo = monto.value;
+            valor = monto.value;
 
-        monto = monto.value;
-        monto = monto / 4.55;
-        monto = monto / 0.312;
+            tamSisitema  = monto.value;
+            tamSisitema  = tamSisitema / 4.55;
+            tamSisitema  = tamSisitema / 0.312;
 
-        tamSisitema = Math.round(monto);
-        tamSisitema = new Intl.NumberFormat("es-MX").format(tamSisitema);
+            tamSisitema = Math.round(tamSisitema);
 
 
-        numPaneles = tamSisitema / 400;
-        numPaneles = Math.ceil(numPaneles);
+            numPaneles = tamSisitema / 400;
+            numPaneles = Math.ceil(numPaneles);
 
 
-        if (numPaneles <= 11 ) {
-            costoSistema = numPaneles * 1425000;
-            costoSistema = costoSistema.toString();
-            costoLength = costoSistema.length;
-            costoLength = costoLength - 2;
-            costoSistema = costoSistema.substr(0, costoLength);
-        } else {
-            costoSistema = numPaneles * 1200000;
-            costoSistema = costoSistema.toString();
-            costoLength = costoSistema.length;
-            costoLength = costoLength - 2;
-            costoSistema = costoSistema.substr(0, costoLength);
-        }
-
-        
-
-        anticipo = costoSistema * 0.3;
-
-        renta = costoSistema * 1.3;
-        renta = renta - anticipo;
-        renta = renta / 60;
-
-        ahorro = renta * 2;
-        ahorro  = ahorro / recibo;
-        ahorro = 1 - ahorro;
+            if (numPaneles <= 11 ) {
+                    costoSistema = numPaneles * 14250;
+                    sistema = new Intl.NumberFormat('es-MX').format(costoSistema);
+            } else {
+                    costoSistema = numPaneles *  12000;
+                    sistema= new Intl.NumberFormat('es-MX').format(costoSistema);
+            }
 
 
-        console.log("Monto: " + recibo);
-        console.log("Tamañodel sistema: " + tamSisitema);
-        console.log("Numero de paneles: " + numPaneles);
-        console.log("Costo del sistema: " + costoSistema);
-        console.log("Adquierelo con un anticipo de: " + anticipo);
-        console.log("y 60 rentas de: " + renta);
-        console.log("Ahorro de enrgia de: " + ahorro);
+            anticipo = costoSistema * 0.3;
+            resAnticipo = new Intl.NumberFormat('es-MX').format(anticipo);
 
+            renta = costoSistema * 1.3;
+            renta = renta - anticipo;
+            renta = renta / 60;
 
+            ahorro = renta * 2;
+            ahorro = ahorro / valor;
+            ahorro = 1 - ahorro;
+
+            document.querySelector('.tabla__result').innerHTML = tamSisitema + ' KW';
+            document.querySelector('.tabla__paneles').innerHTML = numPaneles;
+            document.querySelector('.tabla__sistema').innerHTML = '$' +  sistema + '.00';
+            document.querySelector('.tabla__anticipo').innerHTML = '$' + resAnticipo + '.00';
+            document.querySelector('.tabla__renta').innerHTML = '$' + renta + '0';
+            document.querySelector('.tabla__ahorro').innerHTML = ahorro + '%';
     }
 });
