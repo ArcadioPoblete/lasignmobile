@@ -392,21 +392,27 @@
                         <input type="text" class="cotizador__input" name="" placeholder="Teléfono / Extensión">
                         <input type="text" class="cotizador__input" name="" placeholder="Teléfono móvil">
 
-                        <div class="checkbox">
-                            <p class="checkbox__text">Soy:</p>
+                        <div class="checkbox checkbox--purple">
+                            <p class="checkbox__text checkbox--text-gray">Soy:</p>
                             <div class="checkbox__container">
                                 <div class="checkbox__group">
-                                    <label class="checkbox__label" for="flexRadioDefault1">
-                                        <input class="checkbox__input" type="radio" name="flexRadioDefault" value="" id="flexRadioDefault1" checked>
-                                        <div class="checkbox__radio"></div>
-                                        <p class="checkbos__text">Empresa</p>
+                                    <label class="checkbox__label" for="radioMaq01">
+                                        <input class="checkbox__radio" type="radio" name="flexRadioDefault" value="" id="radioMaq01" checked>
+                                       <div class="checkbox__buttons">
+                                            <div class="checkbox__radio-circle--withe  radio-default"></div>
+                                            <div class="checkbox__radio-fill--withe radio-active"></div>
+                                       </div>
+                                        <p class="checkbos__text checkbox--text-gray">Empresa</p>
                                     </label>
                                 </div>
                                 <div class="checkbox__group">
-                                    <label class="checkbox__label" for="flexRadioDefault2">
-                                        <input class="checkbox__input" type="radio" name="flexRadioDefault" value="" id="flexRadioDefault2">
-                                        <div class="checkbox__radio"></div>
-                                        <p class="checkbos__text"> Persona física <br class="d-block d-md-none"> con actividad empresarial</p>
+                                    <label class="checkbox__label" for="radioMaq02">
+                                        <input class="checkbox__radio" type="radio" name="flexRadioDefault" value="" id="radioMaq02">
+                                        <div class="checkbox__buttons">
+                                            <div class="checkbox__radio-circle--withe  radio-default"></div>
+                                            <div class="checkbox__radio-fill--withe radio-active"></div>
+                                        </div>
+                                        <p class="checkbos__text checkbox--text-gray"> Persona física <br class="d-block d-md-none"> con actividad empresarial</p>
                                     </label>
                                 </div>
                             </div>
@@ -414,15 +420,16 @@
 
                         <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                             <div class="dropdown p-0">
-                                <button id="select-auto" class="select" type="button" id="selectAuto" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <p class="p-0 m-0 select__text">Servicio de interés a arrendar</p>
-                                    <i class="fas fa-chevron-down select__icon"></i>
-                                </button>
-                                <ul class="dropdown-menu options" aria-labelledby="selectAuto">
-                                  <li class="options__item">Optiion 1</li>
-                                  <li class="options__item">Optiion 2</li>
-                                  <li class="options__item">Optiion 3</li>
-                                </ul>
+                                <div  class="dropdown p-0">
+                                    <button class="select select__maquinaria" type="button" id="select-maq" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p  class="p-0 m-0 select__text" data-select="maq">Servicio de interés a arrendar</p>
+                                        <i class="fas fa-chevron-down select__icon"></i>
+                                    </button>
+                                    <ul class="dropdown-menu options" aria-labelledby="select-maq">
+                                      <li class="options__maq options" data-option="maq">Maquinaria</li>
+                                      <li class="options__maq options" data-option="maq">Equipo de computo</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
@@ -549,5 +556,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
 <script src="../js/menu.headroom.js"></script>
 <script src="../js/menu-dropdown.js"></script>
+<script src="../js/selects.js"></script>
 </body>
 </html>

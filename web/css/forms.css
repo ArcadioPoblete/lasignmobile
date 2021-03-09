@@ -282,6 +282,29 @@
   }
 }
 
+.checkbox--purple p {
+  color: #ffff !important;
+}
+
+.checkbox__radio-circle--withe {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 0;
+  border: solid 2px;
+  border-radius: 100px;
+  border-color: #ffff;
+}
+
+.checkbox__radio-fill--withe {
+  width: 15px;
+  height: 15px;
+  margin: 0 10px 0 0;
+  border: solid 2px;
+  border-radius: 100px;
+  border-color: #ffff;
+  background-color: #ffff;
+}
+
 .checkbox__text {
   font-family: "Open Sans", sans-serif;
   color: #ffff;

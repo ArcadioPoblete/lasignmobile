@@ -1,5 +1,5 @@
 //Maquinari y equipo de computo
-const optionsMaq = document.querySelectorAll('.options__maq');
+const optionsMaq = document.querySelectorAll('.options');
 const selectText = document.querySelectorAll('.select__text');
 
 optionsMaq.forEach((item) => {
