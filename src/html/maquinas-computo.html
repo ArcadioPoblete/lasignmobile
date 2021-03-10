@@ -7,6 +7,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     
@@ -99,6 +100,68 @@
         </div>
     </div>
 </header><!-- End Navigation -->
+
+
+
+<!-- Navegación mobil -->
+<nav id="menuMobile" class="nav-mobile close-mobile">
+    <ul class="list-mobile">
+        <!-- Autos y Equipos de Transporte -->
+        <li class="list-mobile__item">
+            <div  class="list-mobile__button list-mobile__button--main" data-button="submenuOne">
+               <a href="autos-equipos.html">Autos y Equipos de Transporte</a>
+               <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="submenuOne" class="list-mobile__submenu close__submenu" data-submenu="false">
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="autos-transporte.html">Autos y transporte</a>
+                </div>
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="seminuevos.html">Seminuevos</a>
+                </div>
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="admin-flotillas.html">Admin flotillas</a>
+                </div>
+            </div>
+        </li>
+        <!-- Maquinaria y equipos de computo -->
+        <li class="list-mobile__item list-mobile__button--active">
+            <div class="list-mobile__button">
+                <a href="maquinas-computo.html" >Maquinaria y Equipos de Computo</a>
+            </div>
+        </li>
+        <!-- Sistema de energia solar -->
+        <li class="list-mobile__item">
+            <div class="list-mobile__button">
+                <a href="energia-solar.html">Sistemas de Energía Solar</a>
+            </div>
+        </li>
+        <!-- Nuestra empresa -->
+        <li class="list-mobile__item">
+            <div class="list-mobile__button list-mobile__button--main" data-button="submenuTwo">
+                <a href="servicios.html">Nuestra empresa</a>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="submenuTwo" class="list-mobile__submenu close__submenu" data-submenu="false">
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="servicios.html">Servicios</a>
+                </div>
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="quienes-somos.html">¿Quiénes somos?</a>
+                </div>
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="faq.html">Preguntas frecuentes</a>
+                </div>   
+            </div>         
+        </li>
+        <!-- Cerrar menú -->
+        <li class="list-mobile__item">
+            <div id="button-close" class="list-mobile__button list-mobile__button--closeBttn">
+                <p>Cerrar menú</p>
+            </div>
+        </li>
+    </ul>
+</nav>
 
  <!-- Slide main -->
  <div class="space-top"></div>
@@ -460,8 +523,75 @@
     </div>
 
 
+    <div class="blk-contacto">
+        <div class="container-fluid p-0 mt-3">
+            <div class="row g-0  blk-contacto__container">
+                <!--Datos de contacto -->
+                <div class="col-12 col-md-5 col-gl-12 col-xl-5 col-xxl-3  offset-md-1 offset-xl-1 offset-xxl-3">
+                    <div class="contacto">
+
+                        <div class="col-5">
+                            <h3 class="contacto__title">contáctanos</h3>
+                            <div class="contacto__line"></div>
+                        </div>
+                        
+                        <ul class="contacto__container">
+                            <li class="contacto__item">
+                                <img src="../../web/img/icons/icon_phone.svg" alt="" srcset="">
+                                <p class="contact__text">442-267-8890</p>
+                            </li>
+                            <li class="contacto__item">
+                                <img src="../../web/img/icons/icon_mail.svg" alt="" srcset="">
+                                <p class="contact__text">contacto@leasingmobile.com</p>
+                            </li>
+                            <li class="contacto__item">
+                                <img src="../../web/img/icons/icon_map.svg" alt="" srcset="">
+                                <p class="contact__text">
+                                    Calle Ramon Rodriguez Familiar 20-23, San Javier, <br>
+                                    76020 Santiago de Querétaro, Qro., México
+                                </p>
+                            </li>
+                            <li class="contacto__item">
+                                <img src="../../web/img/icons/icon_map.svg" alt="" srcset="">
+                                <p class="contact__text">
+                                    Manuel E. Izaguirre 29, Cd. Satélite, 53100 <br> Naucalpan de Juárez, Méx.
+                                </p>
+                            </li>
+                            <li class="contacto__item contacto__item--social">
+                                <a href=""><img src="../../web/img/icons/icon_faceboock.svg" alt="" srcset=""></a>
+                                <a href=""><img src="../../web/img/icons/icon_instagram.svg" alt="" srcset=""></a>
+                                <a href=""><img src="../../web/img/icons/icon_twitter.svg"  alt="" srcset=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+                <!-- Formulario contacto -->
+                <div class="col-12 col-md-5 col-gl-12 col-xl-5 col-xxl-3">
+                    <div class="contacto contacto--card">
+                        <h3 class="contacto__title contacto__title--center">escríbenos</h3>
+                        <form action="" class="contacto__form">
+
+                            <input type="text" class="form-contact__input" placeholder="Nombre completo*">
+                            <input type="text" class="form-contact__input" placeholder="Correo electrónico*">
+                            <input type="text" class="form-contact__input" placeholder="Teléfono*">
+                            <input type="text" class="form-contact__input" placeholder="Mensaje">
+                            <div class="col-6 col-md-6 offset-8 offset-md-3 mt-1">
+                                <button class="button button--sz-small button--border-0 button--bg-green  button--small mt-xl-3">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="mapa" class="sec-mapa">
+            </div>
+        </div>
+    </div>
+
+
  <!-- Footer -->    
- <footer class="mt-4 mt-xl-6">
+ <footer>
     <!-- Newsletter -->
     <div class="newsletter">
         <div class="newsletter__background"></div>
@@ -557,5 +687,6 @@
 <script src="../js/menu.headroom.js"></script>
 <script src="../js/menu-dropdown.js"></script>
 <script src="../js/selects.js"></script>
+<script src="../js/menu-mobile.js"></script>
 </body>
 </html>

@@ -89,10 +89,6 @@
                                 <li class="menu__item">
                                     <a href="../html/blog/index.html" class="menu__link">Blog</a>
                                 </li>
-                                <li id="close-menu" class="menu__close">
-                                    <img src="../../../web/img/icons/icon-arrow.svg" class="menu__arrow" alt="" srcset="">
-                                    Cerrar
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -101,14 +97,74 @@
         </div>
     </header><!-- End Navigation -->
 
+    <!-- Navegación mobil -->
+<nav id="menuMobile" class="nav-mobile close-mobile">
+    <ul class="list-mobile">
+        <!-- Autos y Equipos de Transporte -->
+        <li class="list-mobile__item">
+            <div  class="list-mobile__button list-mobile__button--main" data-button="submenuOne">
+               <a href="autos-equipos.html">Autos y Equipos de Transporte</a>
+               <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="submenuOne" class="list-mobile__submenu close__submenu" data-submenu="false">
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="autos-transporte.html">Autos y transporte</a>
+                </div>
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="seminuevos.html">Seminuevos</a>
+                </div>
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="admin-flotillas.html">Admin flotillas</a>
+                </div>
+            </div>
+        </li>
+        <!-- Maquinaria y equipos de computo -->
+        <li class="list-mobile__item">
+            <div class="list-mobile__button">
+                <a href="maquinas-computo.html" >Maquinaria y Equipos de Computo</a>
+            </div>
+        </li>
+        <!-- Sistema de energia solar -->
+        <li class="list-mobile__item ">
+            <div class="list-mobile__button">
+                <a href="energia-solar.html">Sistemas de Energía Solar</a>
+            </div>
+        </li>
+        <!-- Nuestra empresa -->
+        <li class="list-mobile__item">
+            <div class="list-mobile__button list-mobile__button--main list-mobile__button--active" data-button="submenuTwo">
+                <a href="servicios.html">Nuestra empresa</a>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div id="submenuTwo" class="list-mobile__submenu close__submenu" data-submenu="false">
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="servicios.html">Servicios</a>
+                </div>
+                <div class="list-mobile__button list-mobile__button--sub list-mobile__button--active">
+                    <a href="quienes-somos.html">¿Quiénes somos?</a>
+                </div>
+                <div class="list-mobile__button list-mobile__button--sub">
+                    <a href="faq.html">Preguntas frecuentes</a>
+                </div>   
+            </div>         
+        </li>
+        <!-- Cerrar menú -->
+        <li class="list-mobile__item">
+            <div id="button-close" class="list-mobile__button list-mobile__button--closeBttn">
+                <p>Cerrar menú</p>
+            </div>
+        </li>
+    </ul>
+</nav>
+
     <div class="space-top"></div>
     <section class="main-picture">
         <div class="main-picture__container">
             <picture>
                 <!-- Mobile -->
-                <source media="(min-width: 300px) and (max-width: 600px)" srcset="../../web/img/empresa/img5.png">
+                <source media="(min-width: 300px)" srcset="../../web/img/quienes-somos/rectangle.jpg">
                 <!-- Medium -->
-                <source media="(min-width: 768px) and (max-width: 900px)" srcset="../../web/img/rectangle.jpg">
+                <source media="(min-width: 768px) and (max-width: 900px)" srcset="../../web/img/quienes-somos/rectangle.jpg">
                 <!-- Large -->
                 <source media="(min-width: 1024px)"srcset="../../web/img/quienes-somos/rectangle@2x.jpg">
                 <!-- fallback -->
@@ -142,7 +198,7 @@
                     <img src="../../web/img/quienes-somos/group-6@3x.png" class="collageSomos__img01" alt="" srcset="">
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-5 col-xl-5 col-xxl-4 offset-xl-1 offset-xxl-0">
+            <div class="col-10 col-md-6 col-lg-5 col-xl-5 col-xxl-4 offset-1 offset-xl-1 offset-xxl-0">
                 <div class="paragraph mt-xl-6">
                     <p class="paragraph__title">¿quiénes somos?</p>
                     <div class="col-xl-6">
@@ -164,7 +220,7 @@
     <section class="section-somos-block-02">
         <div class="container-fluid p-0">
             <div class="row g-0">
-                <div class="col-xl-5 col-xxl-4 offset-xl-1 offset-xxl-2">
+                <div class="col-10 col-xl-5 col-xxl-4 offset-1 offset-xl-1 offset-xxl-2">
                     <div class="section-somos__paragraph">
                         <div class="paragraph">
                             <p class="paragraph__text paragraph__text--bold paragraph__text--justify">Contamos con alianzas comerciales que nos permiten incrementar nuestro portafolio obteniendo con ello tarifas preferenciales y de esta manera atender a sus necesidades.</p>
@@ -430,5 +486,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
     <script src="../js/menu.headroom.js"></script>
     <script src="../js/menu-dropdown.js"></script>
+    <script src="../js/menu-mobile.js"></script>
 </body>
 </html>

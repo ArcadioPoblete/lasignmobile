@@ -143,15 +143,7 @@
 
 @media (min-width: 300px) and (max-width: 600px) {
   .nav__bottom {
-    width: 70%;
-    height: 100vh;
-    margin-left: 0;
-    position: fixed;
-    background-color: #ffff;
-    top: 0;
-    left: 0;
-    z-index: 1900;
-    box-shadow: 2px 2px 21px 6px rgba(0, 0, 0, 0.4);
+    display: none;
   }
 }
 
@@ -188,13 +180,7 @@
 
 @media (min-width: 300px) and (max-width: 600px) {
   .menu {
-    width: 100%;
-    height: auto;
-    margin: 20px 0 0 0;
-    padding: 0 10px 0 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    display: none;
   }
 }
 
@@ -1746,6 +1732,7 @@
 
 .button--transparent:hover {
   background-color: #7eb441;
+  border-color: #7eb441;
 }
 
 .button--transparent:hover .button__text {
@@ -1779,12 +1766,12 @@
 }
 
 .button--hover-green:hover {
-  background-color: #70a039;
+  background-color: #7eb441;
   color: #ffff;
 }
 
 .button--bg-green:hover {
-  background-color: #70a039;
+  background-color: #7eb441;
 }
 
 .button__text {
@@ -1822,9 +1809,9 @@
 }
 
 .button-main__options {
-  border: none !important;
   border-radius: 0 !important;
   margin: 2px 0 0 !important;
+  padding: 0 !important;
 }
 
 .button-main__options li:hover {
@@ -1844,6 +1831,16 @@
 .button-main__active {
   background-color: #62619a !important;
   color: #ffff;
+}
+
+.button--padd-xl {
+  padding: 0 30px 0 30px;
+}
+
+@media (min-width: 1400px) {
+  .button--padd-xl {
+    padding: 0 70px 0 70px;
+  }
 }
 
 .img-lorem {

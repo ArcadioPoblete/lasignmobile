@@ -46,6 +46,7 @@
 }
 .button--transparent:hover {
     background-color: $color-green-01;
+    border-color: $color-green-01;
     
     & .button__text {
         color: #ffff;
@@ -56,7 +57,7 @@
     }
 }
 .button--border-green {
-    border-color: $color-green-default;
+    border-color: $color-green-01;
 }
 .button--avatar {
     width: 100%;
@@ -70,15 +71,15 @@
     height: 50px;
 }
 .button--bg-green {
-    background-color: $color-green-default;
+    background-color: $color-green-01;
     color: #ffff;
 }
 .button--hover-green:hover {
-    background-color: $color-green-02;
+    background-color: $color-green-01;
     color: #ffff;
 }
 .button--bg-green:hover {
-    background-color: $color-green-02;
+    background-color: $color-green-01;
 }
 .button__text {
     width: 100%;
@@ -109,9 +110,9 @@
     color: $color-gray-03;
 }
 .button-main__options {
-    border: none !important;
     border-radius: 0 !important;
     margin: 2px 0 0 !important;
+    padding: 0 !important;
 
     & li:hover {
         background-color: $color-purple-01 !important;
@@ -131,4 +132,10 @@
 .button-main__active {
     background-color: $color-purple-01 !important;
     color: #ffff;
+}
+.button--padd-xl{
+    padding: 0 30px 0 30px;
+   @media (min-width: 1400px) {
+    padding: 0 70px 0 70px;
+   }
 }

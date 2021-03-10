@@ -8,6 +8,7 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
     <link rel="stylesheet" href="../../web/css/datepicker.css">
+    
     <!--Plugin CSS file with desired skin-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -50,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div id="menu" class="nav__bottom">
+        <div class="nav__bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-12 col-xl-12 col-xxl-12 p-0 p-md-none">
@@ -92,10 +93,6 @@
                             <li class="menu__item">
                                 <a href="../html/blog/index.html" class="menu__link">Blog</a>
                             </li>
-                            <li id="close-menu" class="menu__close">
-                                <img src="../../web/img/icons/icon-arrow.svg" class="menu__arrow" alt="" srcset="">
-                                Cerrar
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -110,18 +107,18 @@
         <!-- Autos y Equipos de Transporte -->
         <li class="list-mobile__item">
             <div  class="list-mobile__button list-mobile__button--main list-mobile__button--active" data-button="submenuOne">
-               <a href="">Autos y Equipos de Transporte</a>
+               <a href="autos-equipos.html">Autos y Equipos de Transporte</a>
                <i class="fas fa-chevron-down"></i>
             </div>
             <div id="submenuOne" class="list-mobile__submenu close__submenu" data-submenu="false">
                 <div class="list-mobile__button list-mobile__button--sub">
-                    <a href="">Autos y transporte</a>
+                    <a href="autos-transporte.html">Autos y transporte</a>
                 </div>
                 <div class="list-mobile__button list-mobile__button--sub">
-                    <a href="">Seminuevos</a>
+                    <a href="seminuevos.html">Seminuevos</a>
                 </div>
                 <div class="list-mobile__button list-mobile__button--sub">
-                    <a href="">Admin flotillas</a>
+                    <a href="admin-flotillas.html">Admin flotillas</a>
                 </div>
             </div>
         </li>
@@ -734,11 +731,13 @@
 <!-- Boton cotización -->
 <div class="container mt-2">
     <div class="row">
-        <div class="col-10 col-md-6 col-lg-4 col-xl-4 col-xxl-4 offset-md-3 offset-1 offset-lg-4 offset-xl-4 px-5">
-            <button class="button button--avatar button--transparent button--border-1 button--rounded button--border-green button--hover-green">
-                <img src="../../web/img/pag_at_tran/iconAvatar@3x.png" width="50px" alt="">
-                <p class="m-0 font-openSans font-regular w-100">Solicita una cotización</p>
-            </button>
+        <div class="col-10 col-md-6 col-lg-4 col-xl-4 col-xxl-4 offset-md-3 offset-1 offset-lg-4 offset-xl-4">
+           <div class="button button--padd-xl">
+                <button class="button button--avatar button--transparent button--border-1 button--rounded button--border-green button--hover-green">
+                    <img src="../../web/img/pag_at_tran/iconAvatar@3x.png" width="50px" alt="">
+                    <p class="m-0 font-openSans font-regular w-100">Solicita una cotización</p>
+                </button>
+           </div>
         </div>
     </div>
 </div>
@@ -1064,5 +1063,7 @@
     <script src="../js/mask.js"></script>
     <script src="../js/selects.js"></script>
     <script src="../js/menu-mobile.js"></script>
+    <script src="../js/datepicker-full.js"></script>
+    <script src="../js/select-fechas.js"></script>
 </body>
 </html>
