@@ -5,3 +5,7 @@ import './_select-inputs';
 import './_menu-mobile';
 import './_submenu';
 import './_calculadora';
+import './_datepicker-full';
+import './_datePicker';
+import './_box-servicios';
+import './_mapa';
