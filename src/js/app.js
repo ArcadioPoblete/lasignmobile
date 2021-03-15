@@ -1,14 +1,10 @@
-import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
-import '../../node_modules/@fortawesome/fontawesome-free/js/all.js';
-import  '../../node_modules/headroom.js/dist/headroom.js';
-import './components/components.js';
+import 'bootstrap';
+import 'jquery';
+import 'ion-rangeslider';
+import 'headroom.js';
+import '@fortawesome/fontawesome-free';
+import 'slick-carousel';
+import './components/components';
 
 
-const picker = document.querySelectorAll('.datePicker');
-
-picker.forEach((item) => {
-    const datepicker = new Datepicker(item, {
-      
-  });
-});
 

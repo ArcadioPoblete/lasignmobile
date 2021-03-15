@@ -1,3 +1,5 @@
+import Headroom from 'headroom.js';
+
 window.onload = () => {
     const menu = document.getElementById('header');
     const headroom = new Headroom(menu, {

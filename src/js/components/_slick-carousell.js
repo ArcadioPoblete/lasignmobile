@@ -1,6 +1,6 @@
+import $ from 'jquery';
 
-
-$(document).ready(function(){
+$(window).ready(function(){
   
   $('.slick').slick({
     infinite: true,
@@ -41,7 +41,6 @@ $(document).ready(function(){
     slidesToShow: 1,
     adaptiveHeight: true
   });
-
   
 });
 
