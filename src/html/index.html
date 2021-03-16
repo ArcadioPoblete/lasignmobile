@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leasign mobile</title>
-    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../web/img/layout/favicon.svg" type="image/x-icon">
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
     <link rel="stylesheet" href="../../web/css/datepicker.css">
@@ -446,8 +447,11 @@
                             <div class="tab__container">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 mt-2">
-                                            <input id="monto" type="text" class="input-calculadora" placeholder="$1,000,00">
+                                        <div class="col-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4 offset-xl-3 mt-2">
+                                            <div class="group-calculadora" >
+                                                <p>$</p>
+                                                <input id="monto" type="text" class="input-calculadora" placeholder="1,000,00">
+                                            </div>
                                         </div>
                                         <div class="col-12 col-md-12 col-lg-12 col-xl-2 col-xxl-2 mt-2">
                                             <button id="cal-index" type="button" class="button button--border-0 button--bg-green button--small">
@@ -456,44 +460,48 @@
                                         </div>
                                     </div>
                                     <div class="row mt-1">
-                                        <div class="col-xl-5">
-                                            <div class="tabla__group">
-                                                <p class="tabla__text">Tamaño de sistema sugerido</p>
-                                                <p class="tabla__result">7,044 kW</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-5">
-                                            <div class="tabla__group">
-                                                <p class="tabla__text">Número de paneles solares</p>
-                                                <p class="tabla__paneles">8</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xl-5">
-                                            <div class="tabla__group">
-                                                <p class="tabla__text">Costo del sistema</p>
-                                                <p class="tabla__sistema">$216,000.00</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xl-5">
-                                            <div class="tabla__group">
-                                                <p class="tabla__text">Adquierelo con un anticipo de</p>
-                                                <p class="tabla__anticipo">$64,800.00</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xl-5">
-                                            <div class="tabla__group">
-                                                <p class="tabla__text">Y 60 rentas de</p>
-                                                <p class="tabla__renta">$3,600.00</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xl-5">
-                                            <div class="tabla__group">
-                                                <p class="tabla__text">Ahorro bimestral</p>
-                                                <p class="tabla__ahorro">28%</p>
+                                        <div class="col-12 col-md-12 col-lg-12 col-xl-10 col-xxl-8 offset-xl-2">
+                                            <div class="row g-0">
+                                                <div class="col-xl-5">
+                                                    <div class="tabla__group border__row border__row-0 border__row-3">
+                                                        <p class="tabla__text">Tamaño de sistema sugerido:</p>
+                                                        <p class="tabla__result">7,044 kW</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-5">
+                                                    <div class="tabla__group border__row border__row-0 border__row-1 border__row-3">
+                                                        <p class="tabla__text">Número de paneles solares</p>
+                                                        <p class="tabla__paneles">8</p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="col-xl-5">
+                                                    <div class="tabla__group border__row border__row-0 border__row-3">
+                                                        <p class="tabla__text">Costo del sistema:</p>
+                                                        <p class="tabla__sistema">$216,000.00</p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="col-xl-5">
+                                                    <div class="tabla__group border__row border__row-0 border__row-1 border__row-3">
+                                                        <p class="tabla__text">Adquierelo con un anticipo de:</p>
+                                                        <p class="tabla__anticipo">$64,800.00</p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="col-xl-5">
+                                                    <div class="tabla__group border__row border__row-0 border__row-2 border__row-3">
+                                                        <p class="tabla__text">Y 60 rentas de:</p>
+                                                        <p class="tabla__renta">$3,600.00</p>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="col-xl-5">
+                                                    <div class="tabla__group border__row border__row-0 border__row-1 border__row-2 border__row-3">
+                                                        <p class="tabla__text">Ahorro bimestral:</p>
+                                                        <p class="tabla__ahorro">28%</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1048,6 +1056,8 @@
     </div>
 </footer>
 
-    <script src="../../web/js/app.js"></script>
+<script src="../../web/js/app.js"></script>
+<script src="../js/mapa.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUZd0B-9YNIiIAF6TkYb20Q61AYveHHyo&callback=initMap&libraries=&v=weekly" async ></script>
 </body>
 </html>

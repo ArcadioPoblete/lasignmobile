@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leasign mobile</title>
     
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="../../web/img/layout/favicon.svg" type="image/x-icon">
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="../../web/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -183,19 +185,19 @@
                 <ul class="nav nav-pills tabs mb-3" id="pills-tab" role="tablist">
                     <!-- Tab 01 -->
                     <li class="nav-item tabs__item" role="presentation">
-                        <button class="nav-link tabs__button" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#tab-autos" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                            Autos y equipos <br class="d-block d-lg-none"> de transporte
+                        <button class="nav-link tabs__button active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#tab-autos" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                          General
                         </button>
                     </li>
                     <!-- Tab 02 -->
                     <li class="nav-item tabs__item" role="presentation">
                         <button class="nav-link tabs__button" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#tab-maq" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                                Maquinaria y equipos <br class="d-block d-lg-none"> de cómputo
+                               Aministración de flotillas
                         </button>
                     </li>
                     <!-- Tab 03 -->
                     <li class="nav-item tabs__item" role="presentation">
-                        <button class="nav-link tabs__button active" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tab-energia" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <button class="nav-link tabs__button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tab-energia" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
                                 Sistemas <br class="d-block d-lg-none"> de energía solar
                         </button>
                     </li>
@@ -204,37 +206,376 @@
                   <!-- Contenido de Tabs -->
                     <div class="tab-content" id="pills-tabContent">
                         <!-- Tab content 01 -->
-                        <div class="tab-pane fade" id="tab-autos" role="tabpanel" aria-labelledby="pills-home-tab">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rem ullam 
-                            exercitationem reiciendis beatae voluptas sunt nostrum id ut, amet repellat, 
-                            a facilis similique sint vero minima aspernatur, nam numquam!
+                        <div class="tab-pane fade show active" id="tab-autos" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="accordion" id="accordGeneral">
+
+                                <!-- Acordion 01 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerGeneral-01">
+                                        <button class="accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#general01" aria-expanded="true" aria-controls="general01">
+                                            1.- ¿Qué es el arrendamiento puro?
+                                            <i class="fas fa-plus float-right  accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus  accord__icon accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="general01" class="accordion-collapse accord__collapse collapse show" aria-labelledby="headerGeneral-01" data-bs-parent="#accordGeneral">
+                                        <div class="accordion-body">
+                                            Ceder el uso y goce de un bien por un plazo determinado (12 a 48 meses) al arrendatario, a 
+                                            cambio del pago de una renta mensual; contando con la opción de compra al término 
+                                            del plazo estipulado, la devolución del activo o extensión de plazo.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Acordion 02 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerGeneral-02">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#general02" aria-expanded="false" aria-controls="general02">
+                                            2.- ¿Quiénes son candidatos a solicitar arrendamiento puro?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="general02" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerGeneral-02" data-bs-parent="#accordGeneral">
+                                        <div class="accordion-body">
+                                            Personas Morales y Personas Físicas con Actividad Empresarial, cuyo objetivo principal sea 
+                                            reducir la carga fiscal, incrementar su capital de trabajo y mejorar su flujo de efectivo.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Acordion 03 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerGeneral-03">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#general03" aria-expanded="false" aria-controls="general03">
+                                            3.- ¿Qué tipos de bienes se pueden arrendar?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="general03" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerGeneral-03" data-bs-parent="#accordGeneral">
+                                        <div class="accordion-body">
+                                            Automóviles (ejecutivos o utilitarios), equipos de transporte, maquinaria, equipo de tecnología, todo lo relacionado con activos productivos.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Acordion 04 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerGeneral-04">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#general04" aria-expanded="false" aria-controls="general04">
+                                            4.- ¿Cuáles son las ventajas del arrendamiento puro?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="general04" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerGeneral-03" data-bs-parent="#accordGeneral">
+                                        <div class="accordion-body">
+                                            - No se descapitaliza, contando con liquidez para otras áreas productivas
+                                            - La renta se registra contablemente como un gasto operativo, por lo cual se convierte en deducible
+                                            - Es un producto que genera flexibilidad en los plazos y montos, adaptándose a las necesidades financieras.
+                                            - Renovación constante del equipo de trabajo
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Acordion 05 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerGeneral-05">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#general05" aria-expanded="false" aria-controls="general05">
+                                            4.- ¿Cuáles son las ventajas del arrendamiento puro?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="general05" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerGeneral-05" data-bs-parent="#accordGeneral">
+                                        <div class="accordion-body">
+                                            - No se descapitaliza, contando con liquidez para otras áreas productivas
+                                            - La renta se registra contablemente como un gasto operativo, por lo cual se convierte en deducible
+                                            - Es un producto que genera flexibilidad en los plazos y montos, adaptándose a las necesidades financieras.
+                                            - Renovación constante del equipo de trabajo
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- Acordion 06 -->
+                                 <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerGeneral-06">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#general06" aria-expanded="false" aria-controls="general06">
+                                            6.- ¿Qué sucede al final del arrendamiento?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="general06" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerGeneral-06" data-bs-parent="#accordGeneral">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Puede extender el plazo del contrato</li>
+                                                <li>Comprar el bien a un valor privilegiado</li>
+                                                <li>Vender el bien a un tercero</li>
+                                                <li>Devolver el bien</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
 
                         <!-- Tab 02 -->
                         <div class="tab-pane fade" id="tab-maq" role="tabpanel" aria-labelledby="pills-profile-tab">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rem ullam 
-                            exercitationem reiciendis beatae voluptas sunt nostrum id ut, amet repellat, 
-                            a facilis similique sint vero minima aspernatur, nam numquam!
+                            <div class="accordion" id="accordFlotilla">
+                                 
+                                <!-- Acordion 01 -->
+                                 <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-01">
+                                        <button class="accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla01" aria-expanded="true" aria-controls="flotilla01">
+                                            1.- ¿Cómo funciona el servicio de administración de flotillas?
+                                            <i class="fas fa-plus float-right  accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus  accord__icon accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla01" class="accordion-collapse accord__collapse collapse show" aria-labelledby="headerFlotilla-01" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Funciona ofreciendo soluciones relacionadas con tus vehículos que permiten mantener 
+                                            control de toda la información precisa y detallada que necesitas para cumplir con 
+                                            las obligaciones de trámites y servicios tanto preventivos como correctivos. Archivamos 
+                                            el historial relevante de tus unidades mediante nuestro sistema de monitorización, 
+                                            generamos reportes y alertas para que puedas tener control del mantenimiento.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Acordion 02 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-02">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla02" aria-expanded="false" aria-controls="flotilla02">
+                                            2.- ¿Cómo controlo la información de mi vehículo?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla02" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-02" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            A través de un sistema GPS que se conecta al vehículo y genera información con la cual podrás 
+                                            obtener reportes y alertas sobre el estado de las unidades, el kilometraje y el 
+                                            uso de combustible. Aplicando de manera oportuna y correcta los servicios de mantenimiento.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Acordion 03 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-03">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla03" aria-expanded="false" aria-controls="flotilla03">
+                                            3.- ¿Qué información contiene el reporte, y para qué me sirve?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla03" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-03" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Gráficos y tablas semáforo que alertarán sobre cualquier servicio o trámite pendiente.
+                                            Además, tiene múltiples ventajas, como la planificación optimizada de sus recursos 
+                                            permitiéndole minimizar o incluso eliminar los riesgos que están asociados 
+                                            con la inversión en una flotilla.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Acordion 04 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-04">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla04" aria-expanded="false" aria-controls="flotilla04">
+                                            4.- ¿Qué son las alertas? 
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla04" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-04" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Información enviada en tiempo real sobre cualquier suceso inesperado o pendiente en relación al servicio. 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- Acordion 05 -->
+                                 <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-05">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla05" aria-expanded="false" aria-controls="flotilla05">
+                                            5.- ¿Cómo me envían las alertas/reportes?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla05" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-05" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Contamos con un sistema de envío flexible vía correo, WhatsApp, SMS.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Acordion 06 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-06">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla06" aria-expanded="false" aria-controls="flotilla06">
+                                            6.- ¿De qué me sirve contar con el servicio de administración de flotillas?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla06" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-06" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Pagar en tiempo tus obligaciones evitara cargos adicionales. 
+                                            Mantén tu vehiculó en buen estado cumpliendo en tiempo con los servicios, así evitarás perder garantías. 
+                                            Ahorra gastos de combustible y mantenimiento.
+                                            Facilitamos los procesos de cualquier trámite vehicular
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Acordion 07 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-07">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla07" aria-expanded="false" aria-controls="flotilla07">
+                                            7.- ¿Qué beneficios fiscales, operativos y económicos obtengo?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla07" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-07" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Podrás deducir el impuesto sobre las rentas
+                                            Optimizar tiempos y tener información disponible para analizar y disminuir los gastos del uso y mantenimiento del activo.	
+                                            Con nuestra red de proveedores obtendrás descuentos de flotilla. 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Acordion 08 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-08">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla08" aria-expanded="false" aria-controls="flotilla08">
+                                            8.- ¿Los vehículos de la flotilla deben ser arrendados con Leasing Mobile?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla08" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-08" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            No, podemos administrar cualquier vehículo, propio o arrendado con otra compañía. 
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Acordion 09 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-09">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla09" aria-expanded="false" aria-controls="flotilla09">
+                                            9.- ¿Cuántos vehículos necesito para obtener el servicio flotilla?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla09" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-09" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Un vehículo.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Acordion 10 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-10">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla10" aria-expanded="false" aria-controls="flotilla10">
+                                            10.- ¿Quién lleva mi vehículo a servicio?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla10" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-10" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Nosotros lo hacemos por ti, recogemos tu vehículo y te lo entregamos al finalizar el servicio.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Acordion 11 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-11">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla11" aria-expanded="false" aria-controls="flotilla11">
+                                            11.- ¿La flotilla es para vehículos particulares o de carga?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla11" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-11" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Manejamos ambos esquemas.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Acordion 12 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-12">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla12" aria-expanded="false" aria-controls="flotilla12">
+                                            12.- ¿Ustedes se encargan de los trámites vehiculares?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla12" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-12" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Sí, no tendrías que preocuparte por ningún seguimiento.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Acordion 13 -->
+                                <div class="accordion-item accord">
+                                    <h2 class="accordion-header accord__item" id="headerFlotilla-13">
+                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#flotilla13" aria-expanded="false" aria-controls="flotilla13">
+                                            13.- ¿Es necesario pagar el dispositivo GPS o viene incluido con la renta del vehículo?
+                                            <i class="fas fa-plus float-right accord__icon  accord__active"></i>
+                                            <i class="fas fa-minus fas fa-minus accord__icon  accord__close"></i> 
+                                        </button>
+                                    </h2>
+                                    <div id="flotilla13" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerFlotilla-13" data-bs-parent="#accordFlotilla">
+                                        <div class="accordion-body">
+                                            Para casos arrendados con Leasing Mobile el costo del equipo móvil se incluye en el arrendamiento; para caso contrario tiene un costo inicial por el equipo y una mensualidad representativa.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
 
                         <!-- Tab 03 -->
-                        <div class="tab-pane fade show active" id="tab-energia" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="tab-pane fade" id="tab-energia" role="tabpanel" aria-labelledby="pills-contact-tab">
                             <!-- Accordion -->
                             <div class="accordion" id="accordionExample">
                                 <!-- Acordion 01 -->
                                 <div class="accordion-item accord">
                                     <h2 class="accordion-header accord__item" id="headerAccAutos-01">
                                         <button class="accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord01" aria-expanded="true" aria-controls="accord01">
-                                            ¿Cómo se si requiero un sistema de energía solar?
+                                            1. ¿Cómo sé si requiero un sistema de energía solar?
                                             <i class="fas fa-plus float-right  accord__icon  accord__active"></i>
                                             <i class="fas fa-plus fas fa-minus  accord__icon accord__close"></i> 
                                         </button>
                                     </h2>
                                     <div id="accord01" class="accordion-collapse accord__collapse collapse show" aria-labelledby="headerAccAutos-01" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
+                                            Si tu consumo es mayor a $2,000, tu tarifa será considerada por CFE como DAC (Domestico de Alto Consumo), en este caso el sistema de energía solar es la mejor solución.
                                         </div>
                                     </div>
                                 </div>
@@ -243,16 +584,16 @@
                                 <div class="accordion-item accord">
                                     <h2 class="accordion-header accord__item" id="headerAccAutos-02">
                                         <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord02" aria-expanded="false" aria-controls="controlls01">
-                                            ¿Cómo funciona su servicio de arrendamiento?
+                                            2.- ¿Los sistemas solares son caros?
                                             <i class="fas fa-plus float-right accord__icon  accord__active"></i>
                                             <i class="fas fa-plus fas fa-minus accord__icon  accord__close"></i> 
                                         </button>
                                     </h2>
                                     <div id="accord02" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerAccAutos-02" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
+                                            Actualmente los sistemas de energía solar son costosos dado que se trata de tecnología de importación, 
+                                            en Leasing Solar buscamos ofrecerte un sistema de energía solar y todos sus beneficios a un bajo costo inicial y facilidades de pago. 
+                                            Recuperas tu inversión en 4 años, siendo que el sistema puede generar una vida útil de 30 años.
                                         </div>
                                     </div>
                                 </div>
@@ -261,16 +602,15 @@
                                 <div class="accordion-item accord">
                                     <h2 class="accordion-header accord__item" id="headerAccAutos-03">
                                         <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord03" aria-expanded="false" aria-controls="controlls01">
-                                            ¿Qué beneficios me brindaría arrendar sistemas de energía solar con Leasing Mobile?
+                                            3.- ¿Por qué es una gran oportunidad arrendar?
                                             <i class="fas fa-plus float-right accord__icon  accord__active"></i>
                                             <i class="fas fa-plus fas fa-minus accord__icon  accord__close"></i> 
                                         </button>
                                     </h2>
                                     <div id="accord03" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headerAccAutos-03" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
+                                            No te descapitalizas ya que nosotros pagamos el costo de la instalación fotovoltaica, y usted pagara cómodas mensualidades 
+                                            menores a su recibo de CFE, al término del contrato puedes adquirir el sistema.
                                         </div>
                                     </div>
                                 </div>
@@ -279,16 +619,18 @@
                                 <div class="accordion-item accord">
                                     <h2 class="accordion-header accord__item" id="headingThree">
                                         <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord04" aria-expanded="false" aria-controls="collapseThree">
-                                            ¿Cuánto ahorraría con un sistema de energía solar?
+                                            4.- ¿Qué otros beneficios obtengo con el sistema?
                                             <i class="fas fa-plus float-right accord__icon  accord__active"></i>
                                             <i class="fas fa-plus fas fa-minus  accord__icon accord__close"></i> 
                                         </button>
                                     </h2>
                                     <div id="accord04" class="accordion-collapse accord__collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
+                                            Ahorro en tus recibos de pago a CFE hasta de un 98%
+                                            Las rentas pueden ser deducibles al considerarse una inversión para tu casa o 
+                                            negocio. Esquemas de pagos ajustados a tus necesidades. Control total de su energía, 
+                                            con nuestro sistema de monitoreo 24/7. Tendrás doble respaldo, al contar con garantías del equipo y de la instalación 
+                                            siempre con el servicio del personal técnico de Leasing Solar.  
                                         </div>
                                     </div>
                                 </div>
@@ -297,16 +639,14 @@
                                 <div class="accordion-item accord">
                                     <h2 class="accordion-header accord__item" id="headingThree">
                                         <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord05" aria-expanded="false" aria-controls="collapseThree">
-                                            ¿Qué impacto tiene en el medio ambiente?
+                                            5.- ¿Qué garantías tengo con este sistema?
                                             <i class="fas fa-plus float-right accord__icon accord__active"></i>
                                             <i class="fas fa-plus fas fa-minus accord__icon accord__close"></i> 
                                         </button>
                                     </h2>
                                     <div id="accord05" class="accordion-collapse accord__collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
+                                            30 años de garantía en los equipos instalados.
                                         </div>
                                     </div>
                                 </div>
@@ -315,16 +655,16 @@
                                 <div class="accordion-item accord">
                                     <h2 class="accordion-header accord__item" id="headingThree">
                                         <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord06" aria-expanded="false" aria-controls="collapseThree">
-                                            ¿Cómo funciona la instalación de sus sistemas?
+                                            6.- ¿Cómo funciona la instalación de sus sistemas?
                                             <i class="fas fa-plus float-right accord__icon accord__active"></i>
                                             <i class="fas fa-plus fas fa-minus accord__icon accord__close"></i> 
                                         </button>
                                     </h2>
                                     <div id="accord06" class="accordion-collapse accord__collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
+                                            Los paneles generan energía eléctrica por la radiación del sol, a través de un aparato llamado inversor se 
+                                            transforma la energía para ser utilizada como energía convencional. La energía excedente se va a 
+                                            la red de CFE para posteriormente ser utilizada y tomarse en cuenta en su siguiente recibo.
                                         </div>
                                     </div>
                                 </div>
@@ -333,16 +673,14 @@
                                 <div class="accordion-item accord">
                                     <h2 class="accordion-header accord__item" id="headingThree">
                                         <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord07" aria-expanded="false" aria-controls="collapseThree">
-                                            Después de acabar mi contrato de arrendamiento, ¿Existe la opción de quedarme con el equipo?
+                                            7.- ¿Qué impacto tiene en el medio ambiente?
                                             <i class="fas fa-plus float-right accord__icon accord__active"></i>
                                             <i class="fas fa-plus fas fa-minus accord__icon accord__close"></i> 
                                         </button>
                                     </h2>
                                     <div id="accord07" class="accordion-collapse accord__collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
+                                            Una pequeña instalación de paneles solares puede evitar hasta 3.2 toneladas de gases contaminantes, esto equivale a 3 árboles plantados en un año.
                                         </div>
                                     </div>
                                 </div>
@@ -351,55 +689,20 @@
                                 <div class="accordion-item accord">
                                     <h2 class="accordion-header accord__item" id="headingThree">
                                         <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord08" aria-expanded="false" aria-controls="collapseThree">
-                                            ¿Qué diferencia hay entre los sistemas de energía convencionales y los de energía solar?
+                                            8.- ¿Qué diferencia hay entre los sistemas de energía convencionales y los de energía solar?
                                             <i class="fas fa-plus float-right accord__icon accord__active"></i>
                                             <i class="fas fa-plus fas fa-minus accord__icon accord__close"></i> 
                                         </button>
                                     </h2>
                                     <div id="accord08" class="accordion-collapse accord__collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
+                                            Los sistemas de energía solar no contaminan ya que toda la energía proviene del sol fuente de energía ilimitada, 
+                                            a diferencia de la energía convencional que se genera a través de la combustión de hidrocarburos que 
+                                            emiten gases contaminantes que cada día son más escasos y caros.
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- Acordion 09 -->
-                                <div class="accordion-item accord">
-                                    <h2 class="accordion-header accord__item" id="headingThree">
-                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accord09" aria-expanded="false" aria-controls="collapseThree">
-                                            ¿Es limpia la energía producida por las fotoceldas solares?
-                                            <i class="fas fa-plus float-right accord__icon accord__active"></i>
-                                            <i class="fas fa-plus fas fa-minus accord__icon accord__close"></i> 
-                                        </button>
-                                    </h2>
-                                    <div id="accord09" class="accordion-collapse accord__collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Acordion 10 -->
-                                <div class="accordion-item accord">
-                                    <h2 class="accordion-header accord__item" id="headingThree">
-                                        <button class="collapsed accord__button" type="button" data-bs-toggle="collapse" data-bs-target="#accod10" aria-expanded="false" aria-controls="collapseThree">
-                                            ¿Por qué es conveniente arrendar sistemas de energía solar?
-                                            <i class="fas fa-plus float-right accord__icon accord__active"></i>
-                                            <i class="fas fa-plus fas fa-minus accord__icon accord__close"></i> 
-                                        </button>
-                                    </h2>
-                                    <div id="accod10" class="accordion-collapse  accord__collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet atque quisquam illum aliquid! 
-                                            Est voluptatum necessitatibus nostrum commodi ipsam ad quod eveniet dolore, deserunt 
-                                            culpa dolorem libero magnam. Obcaecati, qui.
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                   </div>
@@ -498,7 +801,6 @@
             </div>
         </div>
     </footer>
-
 
     
     <script src="../../web/js/app.js"></script>

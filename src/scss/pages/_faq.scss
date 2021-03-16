@@ -120,6 +120,13 @@
     color: #ffff !important;
     outline: none;
 
+    & .accord__active {
+        display: none;
+    }
+    & .accord__close {
+        display: block;
+    }
+
     @media (min-width: 300px) {
        width: 100%;
        height: auto;
@@ -143,14 +150,8 @@
 .accord__icon {
     font-size: 12px;
 }
-.accord__active {
-    display: none;
-}
-.accord__close {
-    display: block;
-}
+
 .collapsed {
-    
    & .accord__active {
        display: block;
    }

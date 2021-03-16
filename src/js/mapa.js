@@ -434,7 +434,7 @@ function initMap() {
       ]
     });
   
-    const message = '<div>Esta es mi casa</div>';
+    const message = '<div>Leasign Mobile</div>';
   
     const infowindow = new google.maps.InfoWindow({
       content: message,
@@ -444,7 +444,7 @@ function initMap() {
     const marker = new google.maps.Marker({
           position: cords,
           map: map,
-          icon: '../../web/img/layout/marker-cdmx.svg',
+          icon: '../../web/img/layout/markerMap.svg',
           title: "Mi casa"
     });
   
